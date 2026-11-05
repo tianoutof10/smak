@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
 import test from 'node:test'
-import { COXCOMB, coxcombRadius, coxcombSector, clockPoint } from '../src/features/insights/coxcomb.ts'
+import { COXCOMB, coxcombRadius, coxcombSector, clockPoint } from '../review/brewing-insights/coxcomb.ts'
 
 test('coxcomb encodes count by sector area, not radius', () => {
   const area = (count: number) => coxcombRadius(count, 20) ** 2 - COXCOMB.inner ** 2

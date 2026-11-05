@@ -71,7 +71,7 @@ AI-written narratives, population comparisons, caffeine/health claims, coffee co
 Replace only the current history-card footprint with two adjacent cards, retaining coverflow, profile settings and machine utilities. The wider left card takes about 60% of the row; the latest-shot card takes 40%, with a 12px gap. Do not steal height from profile selection.
 
 - Left card: seven chronological daily bars above a bottom-aligned `Past 7 days insight` title, shot count and `Avg. yield`. Both rows fill the card's padded width: title left, metrics right. A full-size inner container owns this layout so native button sizing cannot shrink-wrap the contents. Whole card opens the seven-day Overview. No routine `Espresso · completed days` subtext; scope remains accessible to screen readers, and offline/incomplete/loading notices appear only when needed.
-- Bars use the same solid OpenCoffeeShop green, 20px width and rounded shape as the Overview; height alone indicates count, with neutral weekday initials. A known zero day has a baseline tick, not a fabricated positive bar. Full dates/counts remain accessible. Home shows seven chronological days; the Overview groups by weekday and adds previous-period comparison bars.
+- Bars use the same solid Bestpresso green, 20px width and rounded shape as the Overview; height alone indicates count, with neutral weekday initials. A known zero day has a baseline tick, not a fabricated positive bar. Full dates/counts remain accessible. Home shows seven chronological days; the Overview groups by weekday and adds previous-period comparison bars.
 - Home `Avg. yield` is the arithmetic mean of usable final yields, excluding missing values, not zero-filling them. Overview's `Typical yield` remains the median. Production must surface coverage and the selected beverage scope alongside the period; the prototype includes coverage in the accessible description.
 - Right card: pressure/flow thumbnail above the shot-time profile name and timestamp, with a compact dose → yield chip. Show only known fields; never borrow dose from today's selected profile. Whole card opens the latest eligible shot, including today.
 - Each card is a single generous keyboard/pointer target; charts inside are not separate tiny touch targets. Dark surfaces follow the reference; light mode uses matching light-theme surfaces.
@@ -81,7 +81,7 @@ After a shot, immediate analysis remains accessible through the latest-shot card
 
 ### Insights overview
 
-Use OpenCoffeeShop's quiet charcoal/warm-grey surfaces, thin outlines, green accents, neutral metric text and generous spacing. Dark remains the initial theme; honour the user's saved theme. Light mode uses the existing light surfaces and darker accent text. No blur or background animations.
+Use Bestpresso's quiet charcoal/warm-grey surfaces, thin outlines, green accents, neutral metric text and generous spacing. Dark remains the initial theme; honour the user's saved theme. Light mode uses the existing light surfaces and darker accent text. No blur or background animations.
 
 Persistent shell:
 
@@ -93,7 +93,7 @@ Persistent shell:
 - In light mode, secondary previous-period bars and their legend use a softer grey-green than the coxcomb's selected Previous dataset. The latter is primary information in that view and retains 3:1 contrast against its clock face and hover state; keep both within the same neutral hue family.
 - Four metrics follow the charts in one divided surface, not four oversized cards.
 - Weekday bars remain the main chart; a 24-hour coxcomb sits to the right. Twelve equal-angle sectors cover midnight through 24:00, with only 00/06/12/18 clock labels. Account for the empty center when calculating area: squared outer radius minus squared inner radius is proportional to count. Current and preceding periods share one maximum; zero counts have no colored sector. Use solid theme fills without outlines. The center starts as `24h`; selecting a sector replaces it with the count and reveals a compact time-window link below. Preserve selection when switching comparison periods, and reset it when changing the 7/30/180-day range. Keep broad time bands available for narrative summaries.
-- Bar charts share rounded ends and solid OpenCoffeeShop-green fills, with a muted solid fill for the previous period and matching legend markers. No outlines or gradient strokes on bars. Keep the existing shot-detail telemetry styling separate.
+- Bar charts share rounded ends and solid Bestpresso-green fills, with a muted solid fill for the previous period and matching legend markers. No outlines or gradient strokes on bars. Keep the existing shot-detail telemetry styling separate.
 - Home's profile panel, insight entry and latest-shot entry share one neutral surface in each theme; the selected profile's animated art remains separate. The entry bar chart has a 24px top inset, including short-screen layouts.
 - Profile ranking and one restrained observation card below.
 - Recent brews preview and a `View all history` entry point below the overview.
@@ -132,7 +132,7 @@ Show median-yield and count differences as factual metric annotations, not an au
 
 ### Current foundation
 
-OpenCoffeeShop reads shot IDs, timestamps, workflow/profile snapshots, stop reasons, annotations and time-series measurements. Its UI adapter currently retains only a subset; the default history request is a 30-item page. Do not derive a monthly report from that page.
+Bestpresso reads shot IDs, timestamps, workflow/profile snapshots, stop reasons, annotations and time-series measurements. Its UI adapter currently retains only a subset; the default history request is a 30-item page. Do not derive a monthly report from that page.
 
 Decaid's local models already support grinder and bean-batch context, barista/drinker labels, dose/yield annotations, enjoyment and notes. Their presence in a model is not evidence that existing records populate them. In particular, dose annotations can be derived from a target dose: a field named `actualDoseWeight` is not sufficient proof of weighing.
 
@@ -148,7 +148,7 @@ Request an aggregate for an explicit inclusive local start date, exclusive end d
 
 History queries must support the same dates, timezone, beverage, eligibility, weekday/local-hour window and stable profile identity predicates. Hour windows are start-inclusive and end-exclusive, with 24:00 ending the local day. Detail remains lazy-loaded by shot ID. Existing endpoints remain unchanged; add capabilities rather than changing their response meanings.
 
-OpenCoffeeShop owns explanation templates, insight ranking and UI. Decaid owns canonical eligibility, deduplication, aggregation and matching queries so totals and drill-down do not disagree between skins. Do not silently compute an approximate result from a partial client cache if the capability is missing.
+Bestpresso owns explanation templates, insight ranking and UI. Decaid owns canonical eligibility, deduplication, aggregation and matching queries so totals and drill-down do not disagree between skins. Do not silently compute an approximate result from a partial client cache if the capability is missing.
 
 ### Eligibility and provenance
 

@@ -5,7 +5,7 @@ import test from 'node:test'
 const styles = readFileSync(new URL('../src/styles/index.css', import.meta.url), 'utf8')
 const adjustmentScreen = readFileSync(new URL('../src/components/ValueAdjustment/ValueAdjustmentProvider.tsx', import.meta.url), 'utf8')
 
-test('blocks selection and touch callouts across the OpenCoffeeShop root', () => {
+test('blocks selection and touch callouts across the Smak root', () => {
   assert.match(styles, /#root,#root \* \{[^}]*user-select:none;[^}]*-webkit-user-select:none;[^}]*-webkit-touch-callout:none;/)
 })
 

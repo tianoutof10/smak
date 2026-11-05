@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
 import test from 'node:test'
-import { OPENCOFFEESHOP_TARGET_YIELD_OVERRIDE_KEY, profileConfiguredTargetYield, profileTargetNeedsWorkflowSync, profileTargetYield, profileUserTargetNeedsWorkflowSync, profileUsesStopAtWeight, workflowPatchForSavedActiveProfile, workflowValuesForProfile } from '../src/api/decaid/profileWorkflow.ts'
+import { SMAK_TARGET_YIELD_OVERRIDE_KEY, profileConfiguredTargetYield, profileTargetNeedsWorkflowSync, profileTargetYield, profileUserTargetNeedsWorkflowSync, profileUsesStopAtWeight, workflowPatchForSavedActiveProfile, workflowValuesForProfile } from '../src/api/decaid/profileWorkflow.ts'
 import type { DecaidProfileRecord } from '../src/api/decaid/types.ts'
 import type { BrewProfile } from '../src/domain/brewing.ts'
 import { brewEn } from '../src/i18n/en/brew.ts'
@@ -54,7 +54,7 @@ test('saving a yield creates an explicit override for a profile without a progra
   assert.equal(values.patch.profile?.target_weight, 42)
   assert.equal(values.patch.context?.targetYield, 42)
   assert.equal(values.metadata.targetYield, 42)
-  assert.equal(values.metadata[OPENCOFFEESHOP_TARGET_YIELD_OVERRIDE_KEY], 42)
+  assert.equal(values.metadata[SMAK_TARGET_YIELD_OVERRIDE_KEY], 42)
 })
 
 test('saving zero disables brew by weight and persists that choice', () => {
@@ -62,37 +62,37 @@ test('saving zero disables brew by weight and persists that choice', () => {
   assert.equal(values.patch.profile?.target_weight, 0)
   assert.equal(values.patch.context?.targetYield, 0)
   assert.equal(values.metadata.targetYield, 0)
-  assert.equal(values.metadata[OPENCOFFEESHOP_TARGET_YIELD_OVERRIDE_KEY], 0)
+  assert.equal(values.metadata[SMAK_TARGET_YIELD_OVERRIDE_KEY], 0)
 })
 
 test('a saved zero keeps brew by weight disabled when the profile is selected again', () => {
   const disabledRecord = record(40)
   disabledRecord.metadata = {
     targetYield: null,
-    [OPENCOFFEESHOP_TARGET_YIELD_OVERRIDE_KEY]: 0,
+    [SMAK_TARGET_YIELD_OVERRIDE_KEY]: 0,
   }
   const values = workflowValuesForProfile(disabledRecord, domainProfile('—'))
   assert.equal(values.patch.profile?.target_weight, 0)
   assert.equal(values.patch.context?.targetYield, 0)
-  assert.equal(values.metadata[OPENCOFFEESHOP_TARGET_YIELD_OVERRIDE_KEY], 0)
+  assert.equal(values.metadata[SMAK_TARGET_YIELD_OVERRIDE_KEY], 0)
 })
 
-test('only an explicit OpenCoffeeShop override revives a profile without a programmed yield', () => {
+test('only an explicit Smak override revives a profile without a programmed yield', () => {
   assert.equal(profileConfiguredTargetYield(record(null).profile, { targetYield: 36 }), undefined)
-  assert.equal(profileConfiguredTargetYield(record(null).profile, { targetYield: 42, [OPENCOFFEESHOP_TARGET_YIELD_OVERRIDE_KEY]: 42 }), 42)
+  assert.equal(profileConfiguredTargetYield(record(null).profile, { targetYield: 42, [SMAK_TARGET_YIELD_OVERRIDE_KEY]: 42 }), 42)
   assert.equal(profileConfiguredTargetYield(record(40).profile, { targetYield: 42 }), 42)
-  assert.equal(profileConfiguredTargetYield(record(40).profile, { targetYield: null, [OPENCOFFEESHOP_TARGET_YIELD_OVERRIDE_KEY]: 0 }), undefined)
-  assert.equal(profileConfiguredTargetYield(record(40).profile, { targetYield: null, [OPENCOFFEESHOP_TARGET_YIELD_OVERRIDE_KEY]: 0 }, 40), 40)
+  assert.equal(profileConfiguredTargetYield(record(40).profile, { targetYield: null, [SMAK_TARGET_YIELD_OVERRIDE_KEY]: 0 }), undefined)
+  assert.equal(profileConfiguredTargetYield(record(40).profile, { targetYield: null, [SMAK_TARGET_YIELD_OVERRIDE_KEY]: 0 }, 40), 40)
 })
 
 test('restores the saved user yield when the current workflow lost it', () => {
-  const metadata = { [OPENCOFFEESHOP_TARGET_YIELD_OVERRIDE_KEY]: 42 }
+  const metadata = { [SMAK_TARGET_YIELD_OVERRIDE_KEY]: 42 }
   assert.equal(profileUserTargetNeedsWorkflowSync(metadata, null), true)
   assert.equal(profileUserTargetNeedsWorkflowSync(metadata, 36), true)
   assert.equal(profileUserTargetNeedsWorkflowSync(metadata, 42), false)
   assert.equal(profileUserTargetNeedsWorkflowSync({}, 42), false)
-  assert.equal(profileUserTargetNeedsWorkflowSync({ [OPENCOFFEESHOP_TARGET_YIELD_OVERRIDE_KEY]: 0 }, 42), true)
-  assert.equal(profileUserTargetNeedsWorkflowSync({ [OPENCOFFEESHOP_TARGET_YIELD_OVERRIDE_KEY]: 0 }, null), false)
+  assert.equal(profileUserTargetNeedsWorkflowSync({ [SMAK_TARGET_YIELD_OVERRIDE_KEY]: 0 }, 42), true)
+  assert.equal(profileUserTargetNeedsWorkflowSync({ [SMAK_TARGET_YIELD_OVERRIDE_KEY]: 0 }, null), false)
   assert.doesNotMatch(brewingData, /profileTargetNeedsWorkflowSync\(/)
 })
 

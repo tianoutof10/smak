@@ -1,15 +1,15 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
 import { readFileSync } from 'node:fs'
-import { normalizeOpenCoffeeShopPreferences, applyOpenCoffeeShopPreferences } from '../src/features/settings/openCoffeeShopPreferences.ts'
+import { normalizeSmakPreferences, applySmakPreferences } from '../src/features/settings/smakPreferences.ts'
 
 test('animations remain enabled for existing installations, and explicit opt-out survives normalization', () => {
   for (const value of [undefined, {}, { animationsEnabled: null }, { animationsEnabled: 'false' }]) {
-    assert.equal(normalizeOpenCoffeeShopPreferences(value).animationsEnabled, true)
+    assert.equal(normalizeSmakPreferences(value).animationsEnabled, true)
   }
-  const saved = JSON.parse(JSON.stringify(normalizeOpenCoffeeShopPreferences({ animationsEnabled: false, theme: 'light' })))
-  assert.equal(normalizeOpenCoffeeShopPreferences(saved).animationsEnabled, false)
-  assert.equal(normalizeOpenCoffeeShopPreferences(saved).theme, 'light')
+  const saved = JSON.parse(JSON.stringify(normalizeSmakPreferences({ animationsEnabled: false, theme: 'light' })))
+  assert.equal(normalizeSmakPreferences(saved).animationsEnabled, false)
+  assert.equal(normalizeSmakPreferences(saved).theme, 'light')
 })
 
 test('applying preferences enables the static rendering path before the app mounts', () => {
@@ -17,9 +17,9 @@ test('applying preferences enables the static rendering path before the app moun
   const dataset: Record<string, string> = {}
   Object.defineProperty(globalThis, 'document', { configurable: true, value: { documentElement: { dataset }, querySelector: () => null } })
   try {
-    applyOpenCoffeeShopPreferences(normalizeOpenCoffeeShopPreferences({ animationsEnabled: false }))
+    applySmakPreferences(normalizeSmakPreferences({ animationsEnabled: false }))
     assert.equal(dataset.animations, 'off')
-    applyOpenCoffeeShopPreferences(normalizeOpenCoffeeShopPreferences({ animationsEnabled: true }))
+    applySmakPreferences(normalizeSmakPreferences({ animationsEnabled: true }))
     assert.equal(dataset.animations, 'on')
   } finally {
     if (original) Object.defineProperty(globalThis, 'document', original)

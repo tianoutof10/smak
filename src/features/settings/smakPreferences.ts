@@ -9,7 +9,7 @@ export type LiveView = 'chart' | 'calm'
 /** Home: today's coffee and recipe, or the full machine dashboard. */
 export type HomeView = 'today' | 'machine'
 
-export interface OpenCoffeeShopPreferences {
+export interface SmakPreferences {
   theme: 'nordic' | 'dark' | 'light'
   completionSoundEnabled: boolean
   animationsEnabled: boolean
@@ -25,10 +25,10 @@ export interface OpenCoffeeShopPreferences {
   homeView: HomeView
 }
 
-export const OPENCOFFEESHOP_PREFERENCES_KEY = 'opencoffeeshop.preferences.v1'
-const preferenceEvent = 'opencoffeeshop:preferences-changed'
+export const SMAK_PREFERENCES_KEY = 'smak.preferences.v1'
+const preferenceEvent = 'smak:preferences-changed'
 
-export const DEFAULT_OPENCOFFEESHOP_PREFERENCES: OpenCoffeeShopPreferences = {
+export const DEFAULT_SMAK_PREFERENCES: SmakPreferences = {
   theme: 'nordic',
   completionSoundEnabled: true,
   animationsEnabled: true,
@@ -49,10 +49,10 @@ const finiteRange = (value: unknown, fallback: number) => {
   return Number.isFinite(number) ? Math.round(Math.max(0, Math.min(2_000, number))) : fallback
 }
 
-export function normalizeOpenCoffeeShopPreferences(value: unknown): OpenCoffeeShopPreferences {
-  const candidate = value && typeof value === 'object' ? value as Partial<OpenCoffeeShopPreferences> : {}
-  const critical = finiteRange(candidate.waterCriticalLevelMl, DEFAULT_OPENCOFFEESHOP_PREFERENCES.waterCriticalLevelMl)
-  const warning = Math.max(critical + 1, finiteRange(candidate.waterWarningLevelMl, DEFAULT_OPENCOFFEESHOP_PREFERENCES.waterWarningLevelMl))
+export function normalizeSmakPreferences(value: unknown): SmakPreferences {
+  const candidate = value && typeof value === 'object' ? value as Partial<SmakPreferences> : {}
+  const critical = finiteRange(candidate.waterCriticalLevelMl, DEFAULT_SMAK_PREFERENCES.waterCriticalLevelMl)
+  const warning = Math.max(critical + 1, finiteRange(candidate.waterWarningLevelMl, DEFAULT_SMAK_PREFERENCES.waterWarningLevelMl))
   const chartLineWeight = candidate.chartLineWeight === 'standard' || candidate.chartLineWeight === 'bold'
     ? candidate.chartLineWeight
     : 'fine'
@@ -65,10 +65,10 @@ export function normalizeOpenCoffeeShopPreferences(value: unknown): OpenCoffeeSh
     animationsEnabled: candidate.animationsEnabled !== false,
     screensaverBrightness: typeof candidate.screensaverBrightness === 'number' && Number.isFinite(candidate.screensaverBrightness)
       ? Math.round(Math.max(0, Math.min(100, candidate.screensaverBrightness)))
-      : DEFAULT_OPENCOFFEESHOP_PREFERENCES.screensaverBrightness,
+      : DEFAULT_SMAK_PREFERENCES.screensaverBrightness,
     screensaverScreenOffDelaySeconds: typeof candidate.screensaverScreenOffDelaySeconds === 'number' && Number.isFinite(candidate.screensaverScreenOffDelaySeconds)
       ? Math.round(Math.max(0, Math.min(3_600, candidate.screensaverScreenOffDelaySeconds)))
-      : DEFAULT_OPENCOFFEESHOP_PREFERENCES.screensaverScreenOffDelaySeconds,
+      : DEFAULT_SMAK_PREFERENCES.screensaverScreenOffDelaySeconds,
     waterWarningLevelMl: Math.min(2_000, warning),
     waterCriticalLevelMl: Math.min(1_999, critical),
     chartLineWeight,
@@ -81,17 +81,17 @@ export function normalizeOpenCoffeeShopPreferences(value: unknown): OpenCoffeeSh
   }
 }
 
-export function readOpenCoffeeShopPreferences() {
-  if (typeof window === 'undefined') return DEFAULT_OPENCOFFEESHOP_PREFERENCES
+export function readSmakPreferences() {
+  if (typeof window === 'undefined') return DEFAULT_SMAK_PREFERENCES
   try {
-    const stored = window.localStorage.getItem(OPENCOFFEESHOP_PREFERENCES_KEY)
-    return normalizeOpenCoffeeShopPreferences(stored ? JSON.parse(stored) : undefined)
+    const stored = window.localStorage.getItem(SMAK_PREFERENCES_KEY)
+    return normalizeSmakPreferences(stored ? JSON.parse(stored) : undefined)
   } catch {
-    return DEFAULT_OPENCOFFEESHOP_PREFERENCES
+    return DEFAULT_SMAK_PREFERENCES
   }
 }
 
-export function applyOpenCoffeeShopPreferences(preferences = readOpenCoffeeShopPreferences()) {
+export function applySmakPreferences(preferences = readSmakPreferences()) {
   setActiveLanguage(resolveLanguage(preferences.language))
   if (typeof document !== 'undefined') {
     document.documentElement.dataset.chartLineWeight = preferences.chartLineWeight
@@ -102,24 +102,24 @@ export function applyOpenCoffeeShopPreferences(preferences = readOpenCoffeeShopP
   return preferences
 }
 
-export function writeOpenCoffeeShopPreferences(patch: Partial<OpenCoffeeShopPreferences>) {
-  const next = normalizeOpenCoffeeShopPreferences({ ...readOpenCoffeeShopPreferences(), ...patch })
+export function writeSmakPreferences(patch: Partial<SmakPreferences>) {
+  const next = normalizeSmakPreferences({ ...readSmakPreferences(), ...patch })
   try {
-    window.localStorage.setItem(OPENCOFFEESHOP_PREFERENCES_KEY, JSON.stringify(next))
+    window.localStorage.setItem(SMAK_PREFERENCES_KEY, JSON.stringify(next))
   } catch {
     // The current session can still use the selection when storage is unavailable.
   }
-  applyOpenCoffeeShopPreferences(next)
+  applySmakPreferences(next)
   window.dispatchEvent(new CustomEvent(preferenceEvent, { detail: next }))
   return next
 }
 
-export function useOpenCoffeeShopPreferences() {
-  const [preferences, setPreferences] = useState(readOpenCoffeeShopPreferences)
+export function useSmakPreferences() {
+  const [preferences, setPreferences] = useState(readSmakPreferences)
   useEffect(() => {
-    const onPreference = (event: Event) => setPreferences((event as CustomEvent<OpenCoffeeShopPreferences>).detail ?? readOpenCoffeeShopPreferences())
+    const onPreference = (event: Event) => setPreferences((event as CustomEvent<SmakPreferences>).detail ?? readSmakPreferences())
     const onStorage = (event: StorageEvent) => {
-      if (event.key === OPENCOFFEESHOP_PREFERENCES_KEY || event.key === null) setPreferences(applyOpenCoffeeShopPreferences())
+      if (event.key === SMAK_PREFERENCES_KEY || event.key === null) setPreferences(applySmakPreferences())
     }
     window.addEventListener(preferenceEvent, onPreference)
     window.addEventListener('storage', onStorage)
@@ -130,7 +130,7 @@ export function useOpenCoffeeShopPreferences() {
   }, [])
   return {
     preferences,
-    updatePreferences: writeOpenCoffeeShopPreferences,
-    resetPreferences: () => writeOpenCoffeeShopPreferences(DEFAULT_OPENCOFFEESHOP_PREFERENCES),
+    updatePreferences: writeSmakPreferences,
+    resetPreferences: () => writeSmakPreferences(DEFAULT_SMAK_PREFERENCES),
   }
 }

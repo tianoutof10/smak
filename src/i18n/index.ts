@@ -26,7 +26,7 @@ export function loadLanguage(language: Language): Promise<void> {
   loading.set(language, promise)
   return promise
 }
-const languageEvent = 'opencoffeeshop:language-changed'
+const languageEvent = 'smak:language-changed'
 
 type Catalog = EnglishCatalog
 export type MessageKey = { [Key in keyof Catalog]: Catalog[Key] extends string ? Key : never }[keyof Catalog]
@@ -44,7 +44,7 @@ const browserLanguages = (): readonly string[] => {
   return navigator.languages?.length ? navigator.languages : navigator.language ? [navigator.language] : []
 }
 
-/** `auto` follows the first device language OpenCoffeeShop supports; anything else falls back to English. */
+/** `auto` follows the first device language Smak supports; anything else falls back to English. */
 export function resolveLanguage(preference: LanguagePreference = 'auto', languages: readonly string[] = browserLanguages()): Language {
   if (preference !== 'auto') return preference
   for (const tag of languages) {

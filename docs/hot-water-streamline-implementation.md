@@ -1,6 +1,6 @@
-# Streamline hot-water integration in OpenCoffeeShop
+# Streamline hot-water integration in Bestpresso
 
-Branch: `fix/streamline-hot-water-sync`. Scope: issue #51's hot-water settings and readback path, not a replacement of OpenCoffeeShop's interface or the native sequencer.
+Branch: `fix/streamline-hot-water-sync`. Scope: issue #51's hot-water settings and readback path, not a replacement of Bestpresso's interface or the native sequencer.
 
 ## Implemented
 
@@ -18,9 +18,9 @@ Branch: `fix/streamline-hot-water-sync`. Scope: issue #51's hot-water settings a
 
 Unlike Streamline, automatic corrections wait for a connected, explicitly idle machine and completed initial workflow loading. They do not run during a dispense, espresso or cleaning restoration.
 
-Shared-store failure is surfaced and blocks the hot-water target write. OpenCoffeeShop does not silently fall back to an old device-local target for automatic repair: that could fight another device's newer shared choice. A workflow failure can leave remembered intent saved for a later retry; it is not an atomic transaction.
+Shared-store failure is surfaced and blocks the hot-water target write. Bestpresso does not silently fall back to an old device-local target for automatic repair: that could fight another device's newer shared choice. A workflow failure can leave remembered intent saved for a later retry; it is not an atomic transaction.
 
-The existing OpenCoffeeShop policy remains: scale stopping is enabled when a scale is connected. Independent espresso/hot-water calibration remains unchanged. The machine's volume/time backstops, flow, tare handling, projection formula and native stop controller are not modified by reconciliation. No new machine start/stop command was introduced.
+The existing Bestpresso policy remains: scale stopping is enabled when a scale is connected. Independent espresso/hot-water calibration remains unchanged. The machine's volume/time backstops, flow, tare handling, projection formula and native stop controller are not modified by reconciliation. No new machine start/stop command was introduced.
 
 ## Verification
 

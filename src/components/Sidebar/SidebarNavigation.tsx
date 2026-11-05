@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react'
-import logo from '../../assets/opencoffeeshop-mark.svg'
+import logo from '../../assets/figma/decent-logo.png'
 import './sidebarNavigation.css'
 
 export function SidebarBrand({ onClose, closeLabel }: { onClose: () => void; closeLabel: string }) {

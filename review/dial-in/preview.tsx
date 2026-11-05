@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { createRoot } from 'react-dom/client'
 import { LiveBrewingScreen } from '../../src/features/brew/LiveBrewingScreen'
 import { PreviousShotScreen } from '../../src/features/history/PreviousShotScreen'
-import { writeOpenCoffeeShopPreferences } from '../../src/features/settings/openCoffeeShopPreferences'
+import { writeSmakPreferences } from '../../src/features/settings/smakPreferences'
 import { CoffeeScreen } from '../../src/features/beans/CoffeeScreen'
 import { coffeeUpdates, readCoffeeLibrary } from '../../src/features/beans/coffeeLibrary'
 import { getDecaidEndpoints } from '../../src/api/decaid/config'
@@ -39,7 +39,7 @@ try {
   if (!readCoffeeLibrary().beans.length) {
     const roast = new Date(Date.now() - 6 * 86_400_000).toISOString().slice(0, 10)
     const { library } = coffeeUpdates.addBean(readCoffeeLibrary(), { name: 'Sample · Ethiopia Guji', roaster: 'Review Roasters', origin: 'Ethiopia', process: 'Washed', roastLevel: 'light', roastDate: roast, altitudeMasl: 2000, tastingNotes: ['jasmine', 'peach'] })
-    localStorage.setItem(`opencoffeeshop-coffee-v1:${getDecaidEndpoints().apiBase}`, JSON.stringify(library))
+    localStorage.setItem(`smak-coffee-v1:${getDecaidEndpoints().apiBase}`, JSON.stringify(library))
   }
 } catch { /* review only */ }
 
@@ -53,7 +53,7 @@ const soakPoints: LiveShotPoint[] = Array.from({ length: 61 }, (_, i) => {
 function Review() {
   const [view, setView] = useState<'calm' | 'soak' | 'finished' | 'history' | 'coffee'>('calm')
   const [light, setLight] = useState(false)
-  const show = (next: typeof view) => { if (next === 'calm' || next === 'soak') writeOpenCoffeeShopPreferences({ liveView: 'calm' }); setView(next) }
+  const show = (next: typeof view) => { if (next === 'calm' || next === 'soak') writeSmakPreferences({ liveView: 'calm' }); setView(next) }
   const progress = { ...base, elapsedMs: 21_000, points: points.slice(0, 106) }
   return <>
     <nav className="stage-review-nav" aria-label="Review controls">

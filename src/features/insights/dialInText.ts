@@ -15,6 +15,7 @@ export function stepText(step: DialInStep) {
     case 'grindFiner':
     case 'grindCoarser': {
       const finer = step.kind === 'grindFiner'
+      if (step.steps && step.steps > 1 && step.toSetting !== undefined && step.grindSetting) return t(finer ? 'insights.dialIn.step.grindFinerSteps' : 'insights.dialIn.step.grindCoarserSteps', { count: step.steps, from: step.grindSetting, to: settingText(step.toSetting) })
       if (step.toSetting !== undefined && step.grindSetting) return t(finer ? 'insights.dialIn.step.grindFinerTo' : 'insights.dialIn.step.grindCoarserTo', { from: step.grindSetting, to: settingText(step.toSetting), unit: step.unit ?? t('insights.dialIn.step.grindUnitDefault') })
       if (step.grindSetting) return t(finer ? 'insights.dialIn.step.grindFinerFrom' : 'insights.dialIn.step.grindCoarserFrom', { setting: step.grindSetting })
       return t(finer ? 'insights.dialIn.step.grindFiner' : 'insights.dialIn.step.grindCoarser')

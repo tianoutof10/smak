@@ -8,7 +8,7 @@ export function withStageEvidence(detail: PreviousShot, saved?: SavedStageEviden
 }
 // Small source-scoped journal: survives reloads before a shot detail is fetched.
 // Telemetry stays in the existing IndexedDB history cache, not localStorage.
-const keyFor = (source: string) => `opencoffeeshop-stage-evidence-v1:${source}`
+const keyFor = (source: string) => `smak-stage-evidence-v1:${source}`
 const memory = new Map<string, Record<string, SavedStageEvidence>>()
 function read(source: string): Record<string, SavedStageEvidence> {
   try {

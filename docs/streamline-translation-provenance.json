@@ -1,7 +1,7 @@
 {
   "source": "https://github.com/decentespresso/streamline-js/blob/c47156be646168bd89587e69c9ec511867658a90/src/ui/de1%20gui%20translation%20-%20Sheet1.csv",
   "revision": "c47156be646168bd89587e69c9ec511867658a90",
-  "permission": "Project owner confirmed permission to reuse on 2026-09-19. Upstream copyright: Decent Espresso and translation contributors. No change to OpenCoffeeShop licensing is implied.",
+  "permission": "Project owner confirmed permission to reuse on 2026-09-19. Upstream copyright: Decent Espresso and translation contributors. No change to Smak licensing is implied.",
   "entries": {
     "common.metric.volume": {
       "english": "Volume",

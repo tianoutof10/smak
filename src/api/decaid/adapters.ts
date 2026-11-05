@@ -7,7 +7,6 @@ import { t } from '../../i18n/index.ts'
 import { profileStepsToTargetPoints } from './profileTargetPoints.ts'
 import { profileConfiguredTargetYield, profileTargetYield } from './profileWorkflow.ts'
 import type { DecaidProfileRecord, DecaidWorkflow, FavoriteAssignments, ShotRecord } from './types.ts'
-import { migrateProfileMetadata } from '../../compatibility/legacyDataMigration.ts'
 
 const MM_TO_ML = [0,16,43,70,97,124,151,179,206,233,261,288,316,343,371,398,426,453,481,509,537,564,592,620,648,676,704,732,760,788,816,844,872,900,929,957,985,1013,1042,1070,1104,1138,1172,1207,1242,1277,1312,1347,1382,1417,1453,1488,1523,1559,1594,1630,1665,1701,1736,1772,1808,1843,1879,1915,1951,1986,2022,2058]
 export const STEAM_HEATER_READY_C = 130
@@ -69,14 +68,14 @@ export function profileRecordsToDomain(records: DecaidProfileRecord[], workflow:
   if (!visible.length) return profilesWithParsedTitles(fallback)
   return sortProfilesForDirectory(visible.map((record): BrewProfile => {
     const profile = record.profile ?? {}
-    const metadata = migrateProfileMetadata(record.metadata)
+    const metadata = record.metadata ?? {}
     const isActive = profile.title === workflow.profile?.title
     const parsedTitle = parseProfileTitle(profile.title)
     const chartSteps = profile.steps?.length ? profile.steps : isActive ? workflow.profile?.steps : undefined
     return {
       id: record.id || profile.title || createId(),
       source: sourceForRecord(record),
-      createdAt: textValue(metadata.openCoffeeShopCreatedAt),
+      createdAt: textValue(metadata.smakCreatedAt),
       author: textValue(profile.author),
       name: parsedTitle.name,
       category: parsedTitle.category ?? textValue(profile.category),

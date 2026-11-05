@@ -8,7 +8,7 @@ import { ValueAdjustmentContext } from './ValueAdjustmentContext'
 import type { ValueAdjustmentMode, ValueAdjustmentRequest } from './ValueAdjustmentContext'
 import { appendNumericKey, gestureIncrement, maximumGesturePointers, normalizedAdjustmentValue as normalizedValue, normalizedNumericDraft, numericDraftRangeIssue, removeNumericKey } from './valueAdjustmentGestures'
 
-const SUGGESTION_STORAGE_KEY = 'opencoffeeshop.value-adjustment-suggestions.v2'
+const SUGGESTION_STORAGE_KEY = 'smak.value-adjustment-suggestions.v2'
 type SuggestionStore = Partial<Record<ValueAdjustmentRequest['suggestionKey'], number[]>>
 
 // Draft text stays dot-based: it round-trips through appendNumericKey/Number() for direct

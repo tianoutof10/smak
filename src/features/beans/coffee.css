@@ -13,14 +13,6 @@
 .coffee-card h2 { margin:0; font-size:15px; font-weight:500; color:var(--coffee-label); }
 .coffee-card__head { display:flex; align-items:center; justify-content:space-between; gap:12px; }
 .coffee-editor { grid-column:1 / -1; }
-.coffee-living-editor { grid-column:1 / -1; }
-.coffee-living-editor__sliders { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(14px,2vw,24px); padding:8px 0; }
-.coffee-living-slider { display:flex; flex-direction:column; gap:10px; min-width:0; }
-.coffee-living-slider>span { display:flex; align-items:baseline; justify-content:space-between; gap:8px; color:var(--coffee-label); font-size:14px; }
-.coffee-living-slider strong { color:var(--coffee-value); font-size:20px; font-weight:450; white-space:nowrap; }
-.coffee-living-slider input { width:100%; accent-color:var(--coffee-accent); }
-.coffee-living-slider small { color:var(--coffee-label); font-size:11px; }
-.coffee-living-editor__context { padding-top:10px; border-top:1px solid var(--coffee-outline); }
 .coffee-muted { margin:0; font-size:14px; line-height:1.45; color:var(--coffee-label); }
 .coffee-message { margin:0; font-size:14px; color:#f2b880; }
 .coffee-bean-summary { display:flex; flex-direction:column; gap:4px; min-width:0; }
@@ -97,7 +89,7 @@ label.coffee-entry-option input[type=file] { position:absolute; inset:0; opacity
 .coffee-entry span { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
 .coffee-entry small { color:#8a8a8a; font-weight:500; }
 .coffee-entry i { width:9px; height:9px; flex:none; border-radius:50%; background:#42c599; }
-@media (max-width:700px) { .coffee-header { flex-wrap:wrap; } .coffee-tabs { order:3; flex-basis:100%; justify-content:flex-start; } .coffee-bean-list li { flex-direction:column; align-items:flex-start; } .coffee-living-editor__sliders { grid-template-columns:minmax(0,1fr); } }
+@media (max-width:700px) { .coffee-header { flex-wrap:wrap; } .coffee-tabs { order:3; flex-basis:100%; justify-content:flex-start; } .coffee-bean-list li { flex-direction:column; align-items:flex-start; } }
 [data-theme="light"] .coffee-screen { --coffee-accent:#246e47; --coffee-label:#6a746c; --coffee-value:#23382d; --coffee-surface:#ffffff; --coffee-outline:rgba(37,65,49,.14); background:radial-gradient(ellipse at 0 0,#fdfefa,transparent 65%),linear-gradient(125deg,#f4f6ef,#f0ede6); }
 [data-theme="light"] :is(.coffee-bean-summary span,.coffee-reasons,.coffee-preset p,.coffee-toggle,.coffee-tabs button,.coffee-choice button) { color:#3d4d43; }
 [data-theme="light"] :is(.coffee-field input,.coffee-inline input,.coffee-entry-option textarea) { background:#f7f8f4; }

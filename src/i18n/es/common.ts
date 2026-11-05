@@ -48,7 +48,7 @@ export const common = {
   "common.utility.scale": "Báscula",
   "common.utility.tank": "Depósito",
   "common.language.label": "Idioma",
-  "common.language.hint": "Solo OpenCoffeeShop; Decaid y los nombres de perfiles no cambian",
+  "common.language.hint": "Solo Smak; Decaid y los nombres de perfiles no cambian",
   "common.language.auto": "Según dispositivo ({language})"
 } satisfies Translation<EnglishCatalog>
 

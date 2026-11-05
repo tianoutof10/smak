@@ -98,7 +98,7 @@ test('a bloom pause is not choked flow and creates no resistance samples', () =>
   assert.equal(analysis.resistance.some(sample => sample.elapsedMs > 6_500 && sample.elapsedMs < 20_000), false)
 })
 
-test('a simulated clean shot does not raise false channel alarms', () => {
+test("the earlier Gemini prototype's simulated clean shot no longer raises false channel alarms", () => {
   const points: LiveShotPoint[] = []
   for (let elapsed = 0; elapsed < 25; elapsed += 0.1) {
     points.push({
@@ -125,7 +125,7 @@ test('shots without pressurised flow are not analysable', () => {
 test('a real LRv3 shot (Londinium-style, public Decent share) reads as clean and steady', async () => {
   const { readFileSync } = await import('node:fs')
   const { shotToDomain } = await import('../src/api/decaid/adapters.ts')
-  const record = JSON.parse(readFileSync(new URL('../src/fixtures/real-shot-lrv3.json', import.meta.url), 'utf8'))
+  const record = JSON.parse(readFileSync(new URL('./fixtures/real-shot-lrv3.json', import.meta.url), 'utf8'))
   const analysis = analyseShot(shotToDomain(record).points ?? [])
   assert.deepEqual(analysis.findings, [], 'no channel or stall on a clean real shot')
   assert.ok(analysis.mainExtractionAtMs! > 14_000 && analysis.mainExtractionAtMs! < 16_500, 'shape is measured after the 3 bar infusion')

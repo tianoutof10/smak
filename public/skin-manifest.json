@@ -1,8 +1,7 @@
 {
-  "id": "opencoffeeshop",
-  "name": "OpenCoffeeShop",
-  "description": "A coffee-first, science-led brewing interface for Decaid",
-  "version": "0.1.32-patch005",
-  "author": "Hendri",
-  "repository": "https://github.com/tianoutof10/OpenCoffeeShop"
+  "id": "smak",
+  "name": "Smak",
+  "description": "Taste-first espresso: one tap after each shot, advice that learns your coffee, a clean Scandinavian design. Built on Bestpresso by Hendri (GPLv3).",
+  "version": "0.2.0",
+  "author": "Tian Sánchez-Ballado, after Hendri"
 }

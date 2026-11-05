@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState } from 'react'
 import type { ChangeEvent, ReactNode } from 'react'
 import { daysOffRoast, parseBeanText, startingRecipe, type Bean, type BeanDraft, type RoastLevel } from '../../domain/beans'
-import { CHASSIS_LIMITS, clampChassis, type ChassisParams } from '../../domain/chassis'
+import type { ChassisParams } from '../../domain/chassis'
 import type { BrewStyle, BurrClass, GearSetup } from '../../domain/gear'
 import { RESEARCH_PRESETS, type PresetId } from '../../domain/researchPresets'
 import { formatDecimal, t } from '../../i18n/index.ts'
-import { useOpenCoffeeShopPreferences } from '../settings/openCoffeeShopPreferences'
+import { useSmakPreferences } from '../settings/smakPreferences'
 import { activeBean, coffeeUpdates, useCoffeeLibrary, type CoffeeLibrary } from './coffeeLibrary'
 import { journeyFor, recipeForBean, targetFor } from './dialJourney'
 import { RestLine } from './RestLine'
@@ -17,7 +17,7 @@ import { scanLabel, type LabelScanHandle } from './labelScan'
 import { BeanImportError, importBeanFromUrl } from './webImport'
 import './coffee.css'
 
-export type CoffeeTab = 'beans' | 'gear' | 'presets' | 'calibrate' | 'living'
+export type CoffeeTab = 'beans' | 'gear' | 'presets' | 'calibrate'
 
 interface CoffeeScreenProps {
   initialTab?: CoffeeTab
@@ -26,7 +26,6 @@ interface CoffeeScreenProps {
   connected: boolean
   doseGrams?: number
   targetYield?: number
-  activeChassis?: ChassisParams
   onAddPreset: (id: PresetId) => Promise<boolean>
   onApplyStartingRecipe: (params: ChassisParams) => Promise<boolean>
   /** Sets the active profile's target yield (palate calibration). */
@@ -227,54 +226,9 @@ function BeansTab({ connected, doseGrams, onApplyStartingRecipe }: Pick<CoffeeSc
   </>
 }
 
-function LivingProfileTab({ connected, doseGrams, activeChassis, onApplyStartingRecipe }: Pick<CoffeeScreenProps, 'connected' | 'doseGrams' | 'activeChassis' | 'onApplyStartingRecipe'>) {
-  const { library } = useCoffeeLibrary()
-  const bean = activeBean(library)
-  const suggested = startingRecipe(bean, library.gear, doseGrams).params
-  const [params, setParams] = useState(() => clampChassis(activeChassis ?? suggested))
-  const [applyState, setApplyState] = useState<'idle' | 'applying' | 'applied' | 'failed'>('idle')
-  const change = (key: 'flowTarget' | 'pressureCapBar' | 'temperatureC', value: number) => {
-    setParams(current => clampChassis({ ...current, [key]: value }))
-    setApplyState('idle')
-  }
-  const apply = async () => {
-    setApplyState('applying')
-    const saved = await onApplyStartingRecipe(params).catch(() => false)
-    setApplyState(saved ? 'applied' : 'failed')
-  }
-  const controls = [
-    { key: 'flowTarget', label: t('library.coffee.recipe.flow'), unit: 'ml/s' },
-    { key: 'pressureCapBar', label: t('library.coffee.recipe.ceiling'), unit: 'bar' },
-    { key: 'temperatureC', label: t('library.coffee.recipe.temperature'), unit: '°C' },
-  ] as const
-  return <section className="coffee-card coffee-living-editor">
-    <h2>{t('library.coffee.livingEditor.title')}</h2>
-    <p className="coffee-muted">{activeChassis ? t('library.coffee.livingEditor.active') : t('library.coffee.livingEditor.fromBean', { bean: bean?.name ?? t('library.coffee.noneLoaded') })}</p>
-    <p className="coffee-muted">{t('library.coffee.livingEditor.hint')}</p>
-    <div className="coffee-living-editor__sliders">{controls.map(({ key, label, unit }) => {
-      const [min, max] = CHASSIS_LIMITS[key]
-      const value = params[key]
-      return <label className="coffee-living-slider" key={key}>
-        <span>{label}<strong>{formatDecimal(value, 1)} {unit}</strong></span>
-        <input aria-label={label} type="range" min={min} max={max} step="0.1" value={value} onChange={event => change(key, Number(event.target.value))} />
-        <small>{formatDecimal(min, 1)}–{formatDecimal(max, 1)} {unit}</small>
-      </label>
-    })}</div>
-    <dl className="coffee-recipe coffee-living-editor__context">
-      <div><dt>{t('library.coffee.recipe.dose')}</dt><dd>{formatDecimal(params.doseGrams, 1)} g</dd></div>
-      <div><dt>{t('library.coffee.recipe.ratio')}</dt><dd>1:{formatDecimal(params.targetWeight / Math.max(1, params.doseGrams), 1)} · {formatDecimal(params.targetWeight, 1)} g</dd></div>
-      <div><dt>{t('library.coffee.recipe.soak')}</dt><dd>{formatDecimal(params.soakSeconds, 1)} s</dd></div>
-    </dl>
-    <div className="coffee-actions coffee-actions--start">
-      <button type="button" className="coffee-primary" disabled={!connected || applyState === 'applying' || applyState === 'applied'} onClick={() => void apply()}>{applyState === 'applying' ? t('insights.dialIn.apply.applying') : applyState === 'applied' ? t('library.coffee.recipeApplied') : t('library.coffee.applyRecipe')}</button>
-      <span className="coffee-muted">{!connected ? t('library.coffee.connectToApply') : applyState === 'failed' ? t('insights.dialIn.apply.failed') : applyState === 'applied' ? t('library.coffee.livingEditor.saved') : t('library.coffee.livingEditor.applyHint')}</span>
-    </div>
-  </section>
-}
-
 function GearTab() {
   const { library, update } = useCoffeeLibrary()
-  const { preferences, updatePreferences } = useOpenCoffeeShopPreferences()
+  const { preferences, updatePreferences } = useSmakPreferences()
   const gear = library.gear
   const set = (patch: Partial<GearSetup>) => update(current => coffeeUpdates.setGear(current, patch))
   const numberOrUndefined = (value: string) => value.trim() === '' ? undefined : Number(value)
@@ -333,9 +287,9 @@ function PresetsTab({ existingProfileTitles, connected, onAddPreset }: Pick<Coff
   })}</>
 }
 
-export function CoffeeScreen({ initialTab = 'beans', existingProfileTitles, connected, doseGrams, targetYield, activeChassis, onAddPreset, onApplyStartingRecipe, onSetYield, onClose }: CoffeeScreenProps) {
+export function CoffeeScreen({ initialTab = 'beans', existingProfileTitles, connected, doseGrams, targetYield, onAddPreset, onApplyStartingRecipe, onSetYield, onClose }: CoffeeScreenProps) {
   const [tab, setTab] = useState<CoffeeTab>(initialTab)
-  const tabs: Array<{ id: CoffeeTab; label: string }> = [{ id: 'beans', label: t('library.coffee.tab.beans') }, { id: 'living', label: t('library.coffee.tab.livingProfile') }, { id: 'gear', label: t('library.coffee.tab.gear') }, { id: 'presets', label: t('library.coffee.tab.presets') }, { id: 'calibrate', label: t('library.coffee.tab.calibrate') }]
+  const tabs: Array<{ id: CoffeeTab; label: string }> = [{ id: 'beans', label: t('library.coffee.tab.beans') }, { id: 'gear', label: t('library.coffee.tab.gear') }, { id: 'presets', label: t('library.coffee.tab.presets') }, { id: 'calibrate', label: t('library.coffee.tab.calibrate') }]
   return <main className="coffee-screen">
     <header className="coffee-header">
       <h1>{t('library.coffee.title')}</h1>
@@ -344,7 +298,6 @@ export function CoffeeScreen({ initialTab = 'beans', existingProfileTitles, conn
     </header>
     <div className="coffee-body" role="tabpanel">
       {tab === 'beans' && <BeansTab connected={connected} doseGrams={doseGrams} onApplyStartingRecipe={onApplyStartingRecipe} />}
-      {tab === 'living' && <LivingProfileTab connected={connected} doseGrams={doseGrams} activeChassis={activeChassis} onApplyStartingRecipe={onApplyStartingRecipe} />}
       {tab === 'gear' && <GearTab />}
       {tab === 'presets' && <PresetsTab existingProfileTitles={existingProfileTitles} connected={connected} onAddPreset={onAddPreset} />}
       {tab === 'calibrate' && <CalibrationFlight doseGrams={doseGrams} targetYield={targetYield} connected={connected} onSetYield={onSetYield} />}

@@ -2,7 +2,7 @@
 
 ## Confirmed gap
 
-OpenCoffeeShop exposed Decaid's `blockTareDuringShot` setting, but its scale card and
+Bestpresso exposed Decaid's `blockTareDuringShot` setting, but its scale card and
 tare handler did not enforce it locally. The handler sent `PUT /api/v1/scale/tare`
 and only displayed an error if Decaid rejected it.
 
@@ -32,7 +32,7 @@ are outside this app-side protection; the settings hint already states this.
 - Build passed; lint has only the existing five review-page warnings.
 - Browser test mounted the real brewing hook and scale card with mocked REST and
   WebSocket traffic. A permissive full-gateway server accepted every tare request,
-  while OpenCoffeeShop prevented requests throughout protected shot phases. Verified
+  while Bestpresso prevented requests throughout protected shot phases. Verified
   idle recovery, the setting-disabled opt-out and settings-read failure.
 - No real machine or scale commands were issued. Reporter hardware validation is
   still needed, especially to distinguish on-screen from physical-button tare.

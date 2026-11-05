@@ -10,7 +10,7 @@ Pressure and flow reasons include the saved recipe's direction, value and unit, 
 
 ## Evidence priority
 
-1. An explicit, stage-matched request from Decaid's `ws/v1/machine/shotState` weight exit, or an accepted OpenCoffeeShop manual advance, within two seconds before an observed adjacent transition. Explicit competing requests remain OR alternatives.
+1. An explicit, stage-matched request from Decaid's `ws/v1/machine/shotState` weight exit, or an accepted Bestpresso manual advance, within two seconds before an observed adjacent transition. Explicit competing requests remain OR alternatives.
 2. Telemetry and the shot-time profile: duration boundary interval, pressure/flow exits, actual stage weight, or integrated stage volume. A first adjacent-stage sample can confirm a nearby sensor crossing only when the departing stage was already trending toward it and both sampling intervals are within 1.5 seconds. Arbitrary new-stage jumps do not qualify. Earlier gaps do not discard valid boundary evidence, but prevent volume integration. Duration and sensor comparisons account for firmware rounding; unknown machine families retain plausible encoded thresholds as inferred alternatives. No assumed weight look-ahead. Opposite-axis limiters are not exits.
 3. Unknown. Without a specific recorded stop reason, natural completion can be inferred only at the final configured stage. Explicit stop reasons take priority; missing stages are never labelled skipped from a frame jump alone.
 

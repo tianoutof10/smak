@@ -62,7 +62,7 @@ export type DialInStep =
   | { kind: 'keep' }
   | { kind: 'puckPrep' }
   | { kind: 'lowerPeakPressure'; fromBar?: number; toBar: number; apply?: ApplyAction }
-  | { kind: 'grindFiner' | 'grindCoarser'; grindSetting?: string; toSetting?: number; unit?: string; apply?: ApplyAction }
+  | { kind: 'grindFiner' | 'grindCoarser'; grindSetting?: string; toSetting?: number; unit?: string; /** More than one step when sized from your history. */ steps?: number; apply?: ApplyAction }
   | { kind: 'longerYield' | 'shorterYield'; fromGrams?: number; toGrams?: number; toRatio?: number; apply?: ApplyAction }
   | { kind: 'moreDose' | 'lessDose'; fromGrams?: number; toGrams?: number; toYieldGrams?: number; apply?: ApplyAction }
   | { kind: 'warmer'; fromC?: number; toC: number; apply?: ApplyAction }

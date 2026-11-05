@@ -180,8 +180,8 @@
     "translation": "Sprache"
   },
   "common.language.hint": {
-    "source": "OpenCoffeeShop only; Decaid and profile names stay as they are",
-    "translation": "Nur OpenCoffeeShop; Decaid und Profilnamen bleiben unverändert"
+    "source": "Smak only; Decaid and profile names stay as they are",
+    "translation": "Nur Smak; Decaid und Profilnamen bleiben unverändert"
   },
   "common.language.auto": {
     "source": "Follow device ({language})",
@@ -204,8 +204,8 @@
     "translation": "Visualizer konnte diesen Freigabecode nicht importieren."
   },
   "shell.app.visualizerImportMissing": {
-    "source": "The profile was imported, but Decaid did not return it to OpenCoffeeShop.",
-    "translation": "Das Profil wurde importiert, aber Decaid hat es nicht an OpenCoffeeShop zurückgegeben."
+    "source": "The profile was imported, but Decaid did not return it to Smak.",
+    "translation": "Das Profil wurde importiert, aber Decaid hat es nicht an Smak zurückgegeben."
   },
   "shell.appShell.expandUtilityPanels": {
     "source": "Expand utility panels",
@@ -642,8 +642,8 @@
     "translation": "Das Update konnte nicht gestartet werden."
   },
   "shell.updates.connectionLost": {
-    "source": "OpenCoffeeShop lost its connection to Decaid. Try again in a moment.",
-    "translation": "OpenCoffeeShop hat die Verbindung zu Decaid verloren. Versuch es gleich noch einmal."
+    "source": "Smak lost its connection to Decaid. Try again in a moment.",
+    "translation": "Smak hat die Verbindung zu Decaid verloren. Versuch es gleich noch einmal."
   },
   "shell.cleaning.title": {
     "source": "Cleaning",
@@ -2845,9 +2845,9 @@
     "source": "Advanced",
     "translation": "Erweitert"
   },
-  "settings.group.openCoffeeShop": {
-    "source": "OpenCoffeeShop",
-    "translation": "OpenCoffeeShop"
+  "settings.group.smak": {
+    "source": "Smak",
+    "translation": "Smak"
   },
   "settings.group.makeMaintain": {
     "source": "Make & maintain",
@@ -2906,8 +2906,8 @@
     "translation": "Einstellungen"
   },
   "settings.section.overview.description": {
-    "source": "Your machine, preparation and OpenCoffeeShop preferences in one place.",
-    "translation": "Deine Maschine, Zubereitung und OpenCoffeeShop-Einstellungen an einem Ort."
+    "source": "Your machine, preparation and Smak preferences in one place.",
+    "translation": "Deine Maschine, Zubereitung und Smak-Einstellungen an einem Ort."
   },
   "settings.section.prepare.title": {
     "source": "Prepare drinks",
@@ -2930,16 +2930,16 @@
     "translation": "Warnungen & Wasser"
   },
   "settings.section.alerts.description": {
-    "source": "Choose when OpenCoffeeShop should draw attention and which brewing safeguards apply.",
-    "translation": "Lege fest, wann OpenCoffeeShop dich aufmerksam machen soll und welche Sicherungen beim Bezug gelten."
+    "source": "Choose when Smak should draw attention and which brewing safeguards apply.",
+    "translation": "Lege fest, wann Smak dich aufmerksam machen soll und welche Sicherungen beim Bezug gelten."
   },
   "settings.section.devices.title": {
     "source": "Connected devices",
     "translation": "Verbundene Geräte"
   },
   "settings.section.devices.description": {
-    "source": "Find, connect and choose the machine and scale OpenCoffeeShop should prefer.",
-    "translation": "Suche, verbinde und wähle Maschine und Waage, die OpenCoffeeShop bevorzugen soll."
+    "source": "Find, connect and choose the machine and scale Smak should prefer.",
+    "translation": "Suche, verbinde und wähle Maschine und Waage, die Smak bevorzugen soll."
   },
   "settings.section.power.title": {
     "source": "Power & display",
@@ -2962,8 +2962,8 @@
     "translation": "Daten & Datenschutz"
   },
   "settings.section.data.description": {
-    "source": "Back up or restore Decaid data without leaving OpenCoffeeShop.",
-    "translation": "Sichere oder stelle Decaid-Daten wieder her, ohne OpenCoffeeShop zu verlassen."
+    "source": "Back up or restore Decaid data without leaving Smak.",
+    "translation": "Sichere oder stelle Decaid-Daten wieder her, ohne Smak zu verlassen."
   },
   "settings.section.extensions.title": {
     "source": "Extensions",
@@ -3082,8 +3082,8 @@
     "translation": "Maschinenverbindung braucht Aufmerksamkeit"
   },
   "settings.overview.hero.description": {
-    "source": "Everyday OpenCoffeeShop and Decaid controls now share this settings surface.",
-    "translation": "Alltägliche OpenCoffeeShop- und Decaid-Einstellungen teilen sich jetzt diese Oberfläche."
+    "source": "Everyday Smak and Decaid controls now share this settings surface.",
+    "translation": "Alltägliche Smak- und Decaid-Einstellungen teilen sich jetzt diese Oberfläche."
   },
   "settings.overview.hero.machineConnected": {
     "source": "Machine connected",
@@ -3154,8 +3154,8 @@
     "translation": "Wasserwarnung"
   },
   "settings.action.personalize": {
-    "source": "Personalize OpenCoffeeShop",
-    "translation": "OpenCoffeeShop personalisieren"
+    "source": "Personalize Smak",
+    "translation": "Smak personalisieren"
   },
   "settings.eyebrow.decaid": {
     "source": "Decaid",
@@ -3599,11 +3599,11 @@
     "source": "Display",
     "translation": "Anzeige"
   },
-  "settings.experience.openCoffeeShopTheme": {
-    "source": "OpenCoffeeShop theme",
-    "translation": "OpenCoffeeShop-Design"
+  "settings.experience.smakTheme": {
+    "source": "Smak theme",
+    "translation": "Smak-Design"
   },
-  "settings.experience.openCoffeeShopThemeHint": {
+  "settings.experience.smakThemeHint": {
     "source": "Light mode is in beta. Dark is the default.",
     "translation": "Der helle Modus ist in der Beta-Phase. Dunkel ist die Standardeinstellung."
   },
@@ -3620,8 +3620,8 @@
     "translation": "Decaid-Systemdesign"
   },
   "settings.experience.decaidThemeHint": {
-    "source": "Appearance outside OpenCoffeeShop",
-    "translation": "Erscheinungsbild außerhalb von OpenCoffeeShop"
+    "source": "Appearance outside Smak",
+    "translation": "Erscheinungsbild außerhalb von Smak"
   },
   "settings.option.followDevice": {
     "source": "Follow device",
@@ -3636,8 +3636,8 @@
     "translation": "Uhrzeitformat"
   },
   "settings.experience.clockFormatHint": {
-    "source": "Screensaver and history times in OpenCoffeeShop",
-    "translation": "Bildschirmschoner- und Historienzeiten in OpenCoffeeShop"
+    "source": "Screensaver and history times in Smak",
+    "translation": "Bildschirmschoner- und Historienzeiten in Smak"
   },
   "settings.clock.12h": {
     "source": "12-hour (AM/PM)",
@@ -3648,8 +3648,8 @@
     "translation": "24-Stunden"
   },
   "settings.experience.temperatureUnitHint": {
-    "source": "OpenCoffeeShop display only; Decaid stays in Celsius",
-    "translation": "Nur OpenCoffeeShop-Anzeige; Decaid bleibt bei Celsius"
+    "source": "Smak display only; Decaid stays in Celsius",
+    "translation": "Nur Smak-Anzeige; Decaid bleibt bei Celsius"
   },
   "settings.unit.celsius": {
     "source": "Celsius (°C)",
@@ -3668,8 +3668,8 @@
     "translation": "Linienstärke"
   },
   "settings.experience.lineWeight.description": {
-    "source": "Apply one telemetry line weight throughout OpenCoffeeShop.",
-    "translation": "Wendet eine einheitliche Telemetrie-Linienstärke in ganz OpenCoffeeShop an."
+    "source": "Apply one telemetry line weight throughout Smak.",
+    "translation": "Wendet eine einheitliche Telemetrie-Linienstärke in ganz Smak an."
   },
   "settings.experience.reset.title": {
     "source": "Reset preferences",
@@ -3680,8 +3680,8 @@
     "translation": "Stellt die Standardwerte dieses Skins wieder her. Deine Profile und Maschineneinstellungen bleiben unverändert."
   },
   "settings.action.resetPreferences": {
-    "source": "Reset OpenCoffeeShop preferences",
-    "translation": "OpenCoffeeShop-Einstellungen zurücksetzen"
+    "source": "Reset Smak preferences",
+    "translation": "Smak-Einstellungen zurücksetzen"
   },
   "settings.data.backup.eyebrow": {
     "source": "Backup",

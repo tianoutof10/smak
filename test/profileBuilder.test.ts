@@ -74,7 +74,7 @@ test('unsaved JSON imports can be saved immediately without being forced into co
   assert.match(screen, /copyName: Boolean\(initialRecord.id\) && !overwriteSource/)
   const imported = app.slice(app.indexOf('const editImportedProfile'), app.indexOf('const checkVisualizerImport'))
   assert.match(imported, /deduplicateImportedProfileTitle\(profile, existingTitles\)/)
-  assert.match(imported, /openCoffeeShopSource: 'imported'/)
+  assert.match(imported, /smakSource: 'imported'/)
   assert.doesNotMatch(imported, /id: /)
 })
 

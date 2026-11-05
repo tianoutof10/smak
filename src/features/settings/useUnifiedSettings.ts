@@ -60,7 +60,7 @@ export interface UnifiedSettingsSnapshot {
   capabilities: MachineCapabilities
 }
 
-export const UNIFIED_SETTINGS_SAVED_EVENT = 'opencoffeeshop:unified-settings-saved'
+export const UNIFIED_SETTINGS_SAVED_EVENT = 'smak:unified-settings-saved'
 
 const emptySnapshot = (): UnifiedSettingsSnapshot => ({
   rea: {}, machine: {}, advanced: {}, workflow: {}, display: {}, presence: {}, devices: [], plugins: [], info: {}, capabilities: {},

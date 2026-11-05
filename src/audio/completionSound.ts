@@ -1,5 +1,5 @@
 import completionSoundUrl from '../assets/audio/brew-complete.mp3'
-import { readOpenCoffeeShopPreferences } from '../features/settings/openCoffeeShopPreferences'
+import { readSmakPreferences } from '../features/settings/smakPreferences'
 
 type AudioContextConstructor = typeof AudioContext
 
@@ -42,7 +42,7 @@ const loadCompletionBuffer = (audioContext: AudioContext) => {
 
 /** Unlocks and preloads the cue during a user gesture so delayed playback works on tablets. */
 export function primeCompletionSound() {
-  if (!readOpenCoffeeShopPreferences().completionSoundEnabled) return
+  if (!readSmakPreferences().completionSoundEnabled) return
   try {
     const audioContext = getContext()
     if (!audioContext) return
@@ -54,7 +54,7 @@ export function primeCompletionSound() {
 }
 
 export async function playCompletionSound() {
-  if (!readOpenCoffeeShopPreferences().completionSoundEnabled) return
+  if (!readSmakPreferences().completionSoundEnabled) return
   try {
     const audioContext = getContext()
     if (!audioContext) return

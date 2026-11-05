@@ -1,12 +1,12 @@
 # Brewing Insights — RC device test
 
-The RC instructions below are retained for earlier test packages. The public v0.1.28 package uses the normal OpenCoffeeShop skin ID; see [v0.1.28 release notes](../RELEASE-v0.1.28.md).
+The RC instructions below are retained for earlier test packages. The public v0.1.28 package uses the normal `bestpresso` skin ID; see [v0.1.28 release notes](../RELEASE-v0.1.28.md).
 
-This build uses your existing Decaid saved shots. It does not modify that history or upload it anywhere. The package installs as **RC OpenCoffeeShop · Insights**, with skin ID `rc-opencoffeeshop`, separate from the public OpenCoffeeShop skin. It replaces an older RC skin with the same ID if one is installed.
+This build uses your existing Decaid saved shots. It does not modify that history or upload it anywhere. The package installs as **RC Bestpresso · Insights**, with skin ID `rc-bestpresso`, separate from the public `bestpresso` skin. It replaces an older RC skin with the same ID if one is installed.
 
 ## Start
 
-1. Import the supplied RC ZIP into Decaid and select **RC OpenCoffeeShop · Insights**.
+1. Import the supplied RC ZIP into Decaid and select **RC Bestpresso · Insights**.
 2. Keep Decaid available and open **Past 7 days insight** from Home. Check the last-sync time and saved-record count (up to 1,000). Existing 100-record caches expand automatically; the first larger sync may take longer.
 3. Compare the count, dose and yield against known shots. Select Pour-over for tea/pour-over recipes. Choose History → All cached history to include today's shots.
 

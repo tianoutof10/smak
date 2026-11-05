@@ -11,29 +11,17 @@
   "entries": {
     "brew.metric.yieldFlow": {
       "english": "Yield flow",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Scale-reported beverage output rate in g/s, not cumulative yield."
     },
     "shell.liveOperation.targetTemperature": {
       "english": "Target temperature",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Hot-water setpoint, not a measured outlet temperature."
     },
     "shell.status.heating": {
       "english": "Heating",
-      "languages": [
-        "it"
-      ],
+      "languages": ["it"],
       "note": "Compact Italian status-pill wording; other languages retain their existing provenance."
     },
     "settings.prepare.espressoYield": {
@@ -464,7 +452,7 @@
       ]
     },
     "common.language.hint": {
-      "english": "OpenCoffeeShop only; Decaid and profile names stay as they are",
+      "english": "Smak only; Decaid and profile names stay as they are",
       "languages": [
         "fr",
         "it",
@@ -518,7 +506,7 @@
       ]
     },
     "shell.app.visualizerImportMissing": {
-      "english": "The profile was imported, but Decaid did not return it to OpenCoffeeShop.",
+      "english": "The profile was imported, but Decaid did not return it to Smak.",
       "languages": [
         "fr",
         "it",
@@ -1355,7 +1343,7 @@
       ]
     },
     "shell.updates.connectionLost": {
-      "english": "OpenCoffeeShop lost its connection to Decaid. Try again in a moment.",
+      "english": "Smak lost its connection to Decaid. Try again in a moment.",
       "languages": [
         "fr",
         "it",
@@ -5791,8 +5779,8 @@
         "zh-Hans"
       ]
     },
-    "settings.group.openCoffeeShop": {
-      "english": "OpenCoffeeShop",
+    "settings.group.smak": {
+      "english": "Smak",
       "languages": [
         "fr",
         "it",
@@ -5936,7 +5924,7 @@
       ]
     },
     "settings.section.overview.description": {
-      "english": "Your machine, preparation and OpenCoffeeShop preferences in one place.",
+      "english": "Your machine, preparation and Smak preferences in one place.",
       "languages": [
         "fr",
         "it",
@@ -5990,7 +5978,7 @@
       ]
     },
     "settings.section.alerts.description": {
-      "english": "Choose when OpenCoffeeShop should draw attention and which brewing safeguards apply.",
+      "english": "Choose when Smak should draw attention and which brewing safeguards apply.",
       "languages": [
         "fr",
         "it",
@@ -6008,7 +5996,7 @@
       ]
     },
     "settings.section.devices.description": {
-      "english": "Find, connect and choose the machine and scale OpenCoffeeShop should prefer.",
+      "english": "Find, connect and choose the machine and scale Smak should prefer.",
       "languages": [
         "fr",
         "it",
@@ -6062,7 +6050,7 @@
       ]
     },
     "settings.section.data.description": {
-      "english": "Back up or restore Decaid data without leaving OpenCoffeeShop.",
+      "english": "Back up or restore Decaid data without leaving Smak.",
       "languages": [
         "fr",
         "it",
@@ -6278,7 +6266,7 @@
       ]
     },
     "settings.overview.hero.description": {
-      "english": "Everyday OpenCoffeeShop and Decaid controls now share this settings surface.",
+      "english": "Everyday Smak and Decaid controls now share this settings surface.",
       "languages": [
         "fr",
         "it",
@@ -6422,7 +6410,7 @@
       ]
     },
     "settings.action.personalize": {
-      "english": "Personalize OpenCoffeeShop",
+      "english": "Personalize Smak",
       "languages": [
         "fr",
         "it",
@@ -7267,8 +7255,8 @@
         "zh-Hans"
       ]
     },
-    "settings.experience.openCoffeeShopTheme": {
-      "english": "OpenCoffeeShop theme",
+    "settings.experience.smakTheme": {
+      "english": "Smak theme",
       "languages": [
         "fr",
         "it",
@@ -7276,7 +7264,7 @@
         "zh-Hans"
       ]
     },
-    "settings.experience.openCoffeeShopThemeHint": {
+    "settings.experience.smakThemeHint": {
       "english": "Light mode is in beta. Dark is the default.",
       "languages": [
         "fr",
@@ -7313,7 +7301,7 @@
       ]
     },
     "settings.experience.decaidThemeHint": {
-      "english": "Appearance outside OpenCoffeeShop",
+      "english": "Appearance outside Smak",
       "languages": [
         "fr",
         "it",
@@ -7349,7 +7337,7 @@
       ]
     },
     "settings.experience.clockFormatHint": {
-      "english": "Screensaver and history times in OpenCoffeeShop",
+      "english": "Screensaver and history times in Smak",
       "languages": [
         "fr",
         "it",
@@ -7376,7 +7364,7 @@
       ]
     },
     "settings.experience.temperatureUnitHint": {
-      "english": "OpenCoffeeShop display only; Decaid stays in Celsius",
+      "english": "Smak display only; Decaid stays in Celsius",
       "languages": [
         "fr",
         "it",
@@ -7421,7 +7409,7 @@
       ]
     },
     "settings.experience.lineWeight.description": {
-      "english": "Apply one telemetry line weight throughout OpenCoffeeShop.",
+      "english": "Apply one telemetry line weight throughout Smak.",
       "languages": [
         "fr",
         "it",
@@ -7448,7 +7436,7 @@
       ]
     },
     "settings.action.resetPreferences": {
-      "english": "Reset OpenCoffeeShop preferences",
+      "english": "Reset Smak preferences",
       "languages": [
         "fr",
         "it",
@@ -8418,4080 +8406,1863 @@
     },
     "insights.dialIn.open": {
       "english": "Taste",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.openAriaLabel": {
       "english": "Taste this shot and get the next step",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.close": {
       "english": "Close",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.puckHeading": {
       "english": "What the puck did",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.notAnalysable": {
       "english": "Not enough pressurised flow to analyse this shot.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.clean": {
       "english": "No sudden resistance drops or stalled flow found.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.drop.title": {
       "english": "Possible channel at {time}",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.drop.detail": {
       "english": "Puck resistance fell {pct}% in about a second, at {pressure} bar and {flow} ml/s.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.drop.early": {
       "english": "Early in the shot, this usually points to distribution or tamping.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.drop.late": {
       "english": "Late in the shot, this can be the puck eroding under high pressure.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.choked.title": {
       "english": "Flow stalled at {time}",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.choked.detail": {
       "english": "{pressure} bar pushed only {flow} ml/s for {seconds} s.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.metric.firstDrops": {
       "english": "First drops",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.metric.peakResistance": {
       "english": "Peak resistance",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.metric.resistanceFell": {
       "english": "Peak-to-end drop",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.metric.breakdown": {
       "english": "Breakdown",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.metric.ratio": {
       "english": "Ratio",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.breakdown.steady": {
       "english": "Steady",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.breakdown.mixed": {
       "english": "Mixed",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.breakdown.uneven": {
       "english": "Uneven",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.method": {
       "english": "Resistance = pressure ÷ flow², Decent’s convention. Thresholds aren’t calibrated to your machine yet.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.tasteHeading": {
       "english": "How did it taste?",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.nextHeading": {
       "english": "Next shot",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.then": {
       "english": "Then",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.basis.both": {
       "english": "Based on your tasting and the shot data.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.basis.taste": {
       "english": "Based on your tasting.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.step.keep": {
       "english": "Keep everything the same.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.step.puckPrep": {
       "english": "Fix puck prep first: distribute thoroughly (WDT), tamp level, and check the basket and puck screen. Keep grind and ratio the same.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.step.lowerPeakPressure": {
       "english": "Lower the peak pressure to {to} bar.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.step.lowerPeakPressureFrom": {
       "english": "Lower the peak pressure from {from} to {to} bar.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.step.grindFiner": {
       "english": "Grind one step finer.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.step.grindFinerFrom": {
       "english": "Grind one step finer than {setting}.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.step.grindCoarser": {
       "english": "Grind one step coarser.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.step.grindCoarserFrom": {
       "english": "Grind one step coarser than {setting}.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.step.longerYield": {
       "english": "Pull a longer shot, about 10% more yield.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.step.longerYieldTo": {
       "english": "Stop at {to} g instead of {from} g.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.step.shorterYield": {
       "english": "Pull a shorter shot, about 10% less yield.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.step.shorterYieldTo": {
       "english": "Stop at {to} g instead of {from} g.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.step.moreDose": {
       "english": "Add about 1 g of coffee at the same ratio.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.step.moreDoseTo": {
       "english": "Dose {to} g instead of {from} g, and stop at {yield} g to keep the same ratio.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.step.lessDose": {
       "english": "Use about 1 g less coffee at the same ratio.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.step.lessDoseTo": {
       "english": "Dose {to} g instead of {from} g, and stop at {yield} g to keep the same ratio.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.reason.chokedFlow": {
       "english": "Flow stalled at high pressure. A stalled bed extracts unevenly, and grinding finer past this point can lower extraction (Cameron et al., 2020).",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.reason.puckDrop": {
       "english": "Resistance dropped suddenly, which often means water found a channel. Changing grind or ratio won’t fix uneven flow.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.ratioValue": {
       "english": "1:{ratio}",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.chartMarker.drop": {
       "english": "Possible channel",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.chartMarker.choked": {
       "english": "Flow stalled",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "brew.liveScreen.calmView": {
       "english": "Calm",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Calm live view: a single yield ring shown while a shot runs."
     },
     "brew.liveScreen.chartView": {
       "english": "Chart",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Calm live view: a single yield ring shown while a shot runs."
     },
     "brew.liveScreen.calmViewAriaLabel": {
       "english": "Switch to the calm view",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Calm live view: a single yield ring shown while a shot runs."
     },
     "brew.liveScreen.chartViewAriaLabel": {
       "english": "Switch to the chart view",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Calm live view: a single yield ring shown while a shot runs."
     },
     "brew.liveScreen.calmRingAriaLabel": {
       "english": "{weight} of {target} grams",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Calm live view: a single yield ring shown while a shot runs."
     },
     "brew.liveScreen.calmRingTimeAriaLabel": {
       "english": "{seconds} seconds elapsed",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Calm live view: a single yield ring shown while a shot runs."
     },
     "brew.liveScreen.calmStage": {
       "english": "Stage",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Calm live view: a single yield ring shown while a shot runs."
     },
     "insights.dialIn.thenAfterPrep": {
       "english": "If it’s still off once flow is even",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Display-only dial-in sheet: puck-resistance findings and taste-compass advice; see docs/shot-analysis-and-dial-in.md."
     },
     "brew.liveScreen.calmDaysOffRoast": {
       "english": "{days} days off roast",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "brew.liveScreen.calmTargetTime": {
       "english": "of {target} g · {time}",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "brew.liveScreen.calmSoaking": {
       "english": "Blooming · the puck is soaking",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "brew.liveScreen.calmFlagDrop": {
       "english": "Possible channel at {time} s",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "brew.liveScreen.calmFlagChoked": {
       "english": "Flow is stalling at high pressure",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "brew.liveScreen.calmSwipeHint": {
       "english": "Swipe up for the chart",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.apply.button": {
       "english": "Apply",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.apply.applying": {
       "english": "Applying…",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.apply.applied": {
       "english": "Applied",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.apply.failed": {
       "english": "Couldn’t apply. Check the connection and try again.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.apply.targetYield": {
       "english": "Target yield → {value} g",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.apply.dose": {
       "english": "Dose → {value} g",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.apply.temperature": {
       "english": "Temperature → {value} °C",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.apply.grind": {
       "english": "Grind reference → {value} (turn the grinder yourself)",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.apply.chassis": {
       "english": "Updates the Living Profile for your next shot",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.orInstead": {
       "english": "Or instead",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.openPresets": {
       "english": "Open presets",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.step.grindFinerTo": {
       "english": "Grind one {unit} finer: {from} → {to}.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.step.grindCoarserTo": {
       "english": "Grind one {unit} coarser: {from} → {to}.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.step.grindUnitDefault": {
       "english": "step",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.step.yieldRatioTo": {
       "english": "Stop at {to} g instead of {from} g (1:{ratio}).",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.step.warmer": {
       "english": "Raise the brew temperature to {to} °C.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.step.warmerFrom": {
       "english": "Raise the brew temperature from {from} to {to} °C.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.step.longerSoak": {
       "english": "Lengthen the soak from {from} to {to} s.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.step.tryTurbo": {
       "english": "Try the 6 bar Turbo preset.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.step.checkWater": {
       "english": "Check your water: {ppm} ppm alkalinity can mute acidity.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.reason.dialedIn": {
       "english": "Balanced and clean.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.reason.astringent": {
       "english": "A drying finish usually means uneven extraction under high pressure. A 6 bar ceiling, as in the Turbo protocol (Cameron et al., 2020), protects the puck.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.reason.astringentLowPressure": {
       "english": "Drying even at low pressure points to prep or an over-long tail rather than pressure.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.reason.sour": {
       "english": "Sour at a normal pace: pass more water. A longer ratio raises extraction without the uneven flow that grinding finer can cause (Cameron et al., 2020).",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.reason.sourLongRatio": {
       "english": "Sour, but the ratio is already {ratio}. More water would mostly thin the cup, so improve saturation or extraction rate instead.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.reason.sourBody": {
       "english": "Traditional Body style: resolve sourness with temperature rather than a longer, thinner shot.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.reason.bitter": {
       "english": "Bitter: cutting the ratio by about 0.2 trims the bitter tail of the shot.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.reason.bitterShortRatio": {
       "english": "Bitter, but the ratio is already {ratio}. Coarsen the grind instead of shortening further.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.title": {
       "english": "Coffee",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.close": {
       "english": "Close",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.tab.beans": {
       "english": "Beans",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.tab.gear": {
       "english": "Gear & style",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.tab.presets": {
       "english": "Research presets",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.entryEmpty": {
       "english": "Add coffee",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.daysShort": {
       "english": "{days} d",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.loaded": {
       "english": "Loaded now",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.noneLoaded": {
       "english": "No coffee loaded. Add a bag so the app can tune its starting recipe and remember your grind.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.addBeans": {
       "english": "Add beans",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.edit": {
       "english": "Edit",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.finishBag": {
       "english": "Finish bag",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.load": {
       "english": "Load",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.restore": {
       "english": "Restore",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.yourBeans": {
       "english": "Your beans",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.finishedBags": {
       "english": "Finished bags",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.showFinished": {
       "english": "Show finished",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.showCurrent": {
       "english": "Show current",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.noBeans": {
       "english": "No beans yet.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.noFinished": {
       "english": "No finished bags.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.daysOffRoast": {
       "english": "{days} days off roast",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.noRoastDate": {
       "english": "No roast date",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.startingRecipe": {
       "english": "Starting recipe · Living Profile",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.startingRecipeHint": {
       "english": "Worked out from this bean and your gear before water touches the coffee. After each shot, Dial in refines it.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.recipe.temperature": {
       "english": "Temperature",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.recipe.ratio": {
       "english": "Ratio",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.recipe.soak": {
       "english": "Soak",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.recipe.flow": {
       "english": "Flow",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.recipe.ceiling": {
       "english": "Pressure ceiling",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.recipe.dose": {
       "english": "Dose",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.recipe.source": {
       "english": "Source",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.applyRecipe": {
       "english": "Apply to Living Profile",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.recipeApplied": {
       "english": "Applied",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.applyRecipeDetail": {
       "english": "Creates or updates the Living Profile and selects it.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.connectToApply": {
       "english": "Connect to Decaid to change profiles.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.reason.styleClarity": {
       "english": "Modern Clarity: longer ratio and a 6.5 bar ceiling.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.reason.styleBody": {
       "english": "Traditional Body: shorter ratio and a higher ceiling.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.reason.roastLight": {
       "english": "Light roast: hotter water, longer ratio and soak for dense beans.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.reason.roastDark": {
       "english": "Dark roast: cooler water and a short ratio.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.reason.highGrown": {
       "english": "Grown above 1,800 m: slightly hotter for denser beans.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.reason.freshRoast": {
       "english": "Under a week off roast: 10 s longer soak to let CO₂ escape.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.reason.veryFreshRoast": {
       "english": "Under 4 days off roast: 15 s longer soak for heavy degassing.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.reason.fermentedProcess": {
       "english": "Natural or fermented process: earlier taper, as these pucks break down faster.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.reason.conicalBurrs": {
       "english": "Conical or bimodal burrs make more fines: ceiling kept at 8 bar or below, with a gentle decline.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.reason.unimodalBurrs": {
       "english": "High-uniformity flat burrs: slightly higher flow, since the bed is less likely to choke.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.reason.highExtractionBasket": {
       "english": "High-extraction basket: +0.5 ml/s flow. Expect to grind finer to keep back-pressure.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.reason.hardWater": {
       "english": "High-alkalinity water: slightly longer ratio and cooler water.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.addTitle": {
       "english": "Add beans",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.scanLabel": {
       "english": "Scan the bag label",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.scanHint": {
       "english": "Take a photo. Text is read on this tablet; nothing is uploaded.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.scanning": {
       "english": "Reading the label… {pct}%",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.scanFailed": {
       "english": "The label couldn’t be read. Try a closer, well-lit photo, or enter the details yourself.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.importUrl": {
       "english": "Import from the roaster’s page",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.import": {
       "english": "Import",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.importing": {
       "english": "Importing…",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.importInvalid": {
       "english": "That doesn’t look like a web address.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.importBlocked": {
       "english": "This site doesn’t allow reading its page from here. Paste the description below instead.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.importNoProduct": {
       "english": "No coffee details were found on that page. Paste the description below instead.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.pasteText": {
       "english": "Paste a description",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.pastePlaceholder": {
       "english": "Origin, process, variety, roast date, tasting notes…",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.readText": {
       "english": "Read details",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.manual": {
       "english": "Enter details yourself",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.cancel": {
       "english": "Cancel",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.editTitle": {
       "english": "Edit beans",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.reviewTitle": {
       "english": "Check the details",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.reviewHint": {
       "english": "Recognised fields are suggestions. Correct anything that’s wrong before saving.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.field.name": {
       "english": "Coffee name",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.field.roaster": {
       "english": "Roaster",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.field.origin": {
       "english": "Origin",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.field.region": {
       "english": "Region",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.field.producer": {
       "english": "Producer or farm",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.field.variety": {
       "english": "Variety",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.field.process": {
       "english": "Process",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.field.roastDate": {
       "english": "Roast date",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.field.altitude": {
       "english": "Altitude (m)",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.field.notes": {
       "english": "Tasting notes, comma separated",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.field.roastLevel": {
       "english": "Roast level",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.roast.light": {
       "english": "Light",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.roast.medium": {
       "english": "Medium",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.roast.dark": {
       "english": "Dark",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.rawText": {
       "english": "Recognised text",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.nameRequired": {
       "english": "Give the coffee a name.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.duplicate": {
       "english": "You already have {name} with the same roaster and roast date. Use that bag, or save this as a new bag?",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.useExisting": {
       "english": "Use existing",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.saveNewBag": {
       "english": "Save as new bag",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.save": {
       "english": "Save and load",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.styleTitle": {
       "english": "Flavour goal",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.style": {
       "english": "Style",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.style.clarity": {
       "english": "Modern Clarity",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.style.body": {
       "english": "Traditional Body",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.style.clarityHint": {
       "english": "Sourness is fixed with a longer ratio; lower pressure ceilings.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.style.bodyHint": {
       "english": "Sourness is fixed with temperature and dose; shorter ratios and higher ceilings.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.liveViewDefault": {
       "english": "During a shot, start with",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.liveView.calm": {
       "english": "Morning view",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.liveView.chart": {
       "english": "Chart",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.grinderTitle": {
       "english": "Grinder",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.grinderName": {
       "english": "Grinder",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.grindUnit": {
       "english": "Its unit",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.grindUnitPlaceholder": {
       "english": "notch, mark, click…",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.grindStep": {
       "english": "One advice step =",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.burrs": {
       "english": "Burrs",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.burrs.conical": {
       "english": "Conical",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.burrs.bimodalFlat": {
       "english": "Flat (traditional)",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.burrs.unimodalFlat": {
       "english": "Flat (high uniformity)",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.basketTitle": {
       "english": "Basket, puck and water",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.basket": {
       "english": "Basket",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.basket.standard": {
       "english": "Standard precision",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.basket.highExtraction": {
       "english": "High extraction",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.basketDose": {
       "english": "Basket size (g)",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.water": {
       "english": "Water alkalinity (ppm)",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.paperFilter": {
       "english": "Paper filter under the puck",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.puckScreen": {
       "english": "Puck screen on top",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.gearHint": {
       "english": "Used for starting recipes, grind advice in your grinder’s units, and analysis thresholds. A bottom paper filter raises the channel threshold because it lets the bed flow faster.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.beanStyle.anyBean": {
       "english": "Any bean · adapts",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.beanStyle.lightMedium": {
       "english": "Light to medium roasts",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.beanStyle.denseLight": {
       "english": "Dense light roasts",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.beanStyle.everyday": {
       "english": "Everyday · most coffees",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.preset.living": {
       "english": "Living Profile",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.preset.turbo": {
       "english": "Turbo Shot",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.preset.blooming": {
       "english": "Blooming Espresso",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.preset.flowLed": {
       "english": "Flow-Prioritized",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.presetWhy.living": {
       "english": "One adaptive profile instead of many. It fills until the bed pressurises, soaks until pressure relaxes, then extracts by flow under a pressure ceiling. After each shot, Dial in proposes changes to soak, ceiling, flow and yield, applied with one tap.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.presetWhy.turbo": {
       "english": "Cameron et al. (2020): a lower dose, a coarser grind and a 6 bar ceiling gave more even, more repeatable extraction. About 15 g in, 40 g out in roughly 15 seconds, for clarity and sweetness.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.presetWhy.blooming": {
       "english": "Scott Rao: fill quickly at 4 ml/s until 4 bar, rest 30 s with the pump off and the group sealed so the puck saturates and degasses, then percolate gently at 2 ml/s.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.presetWhy.flowLed": {
       "english": "Schmieder et al. (2023): flow rate had the largest effect on the compounds in the cup, ahead of grind and temperature, though all were minor next to total yield. Holds a flat 1.8 ml/s and lets pressure taper as the puck erodes.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.presetAdd": {
       "english": "Add to library",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.presetAdding": {
       "english": "Adding…",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "library.coffee.presetAdded": {
       "english": "In your library",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Round 2 of the dial-in feature (sensory sliders, Living Profile, beans, gear, presets); see docs/shot-analysis-and-dial-in.md."
     },
     "settings.theme.nordic": {
       "english": "Nordic (warm dark)",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Appearance option: the warm Nordic theme (default)."
     },
     "insights.taste.strong": {
       "english": "Strong",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Taste square after a shot: extraction (sour–bitter) across, strength (weak–strong) up and down; see docs/shot-analysis-and-dial-in.md."
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
+      "note": "Taste square after a shot: extraction (sour\u2013bitter) across, strength (weak\u2013strong) up and down; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.taste.weak": {
       "english": "Weak",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Taste square after a shot: extraction (sour–bitter) across, strength (weak–strong) up and down; see docs/shot-analysis-and-dial-in.md."
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
+      "note": "Taste square after a shot: extraction (sour\u2013bitter) across, strength (weak\u2013strong) up and down; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.taste.sour": {
       "english": "Sour",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Taste square after a shot: extraction (sour–bitter) across, strength (weak–strong) up and down; see docs/shot-analysis-and-dial-in.md."
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
+      "note": "Taste square after a shot: extraction (sour\u2013bitter) across, strength (weak\u2013strong) up and down; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.taste.bitter": {
       "english": "Bitter",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Taste square after a shot: extraction (sour–bitter) across, strength (weak–strong) up and down; see docs/shot-analysis-and-dial-in.md."
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
+      "note": "Taste square after a shot: extraction (sour\u2013bitter) across, strength (weak\u2013strong) up and down; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.taste.pathAriaLabel": {
       "english": "Taste square with {count} tasted shots",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Taste square after a shot: extraction (sour–bitter) across, strength (weak–strong) up and down; see docs/shot-analysis-and-dial-in.md."
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
+      "note": "Taste square after a shot: extraction (sour\u2013bitter) across, strength (weak\u2013strong) up and down; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.taste.extractionAxis": {
       "english": "Extraction: sour to bitter",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Taste square after a shot: extraction (sour–bitter) across, strength (weak–strong) up and down; see docs/shot-analysis-and-dial-in.md."
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
+      "note": "Taste square after a shot: extraction (sour\u2013bitter) across, strength (weak\u2013strong) up and down; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.taste.strengthAxis": {
       "english": "Strength: weak to strong",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Taste square after a shot: extraction (sour–bitter) across, strength (weak–strong) up and down; see docs/shot-analysis-and-dial-in.md."
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
+      "note": "Taste square after a shot: extraction (sour\u2013bitter) across, strength (weak\u2013strong) up and down; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.taste.notSet": {
       "english": "Not set",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Taste square after a shot: extraction (sour–bitter) across, strength (weak–strong) up and down; see docs/shot-analysis-and-dial-in.md."
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
+      "note": "Taste square after a shot: extraction (sour\u2013bitter) across, strength (weak\u2013strong) up and down; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.taste.finish": {
       "english": "Finish",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Taste square after a shot: extraction (sour–bitter) across, strength (weak–strong) up and down; see docs/shot-analysis-and-dial-in.md."
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
+      "note": "Taste square after a shot: extraction (sour\u2013bitter) across, strength (weak\u2013strong) up and down; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.taste.clean": {
       "english": "Clean",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Taste square after a shot: extraction (sour–bitter) across, strength (weak–strong) up and down; see docs/shot-analysis-and-dial-in.md."
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
+      "note": "Taste square after a shot: extraction (sour\u2013bitter) across, strength (weak\u2013strong) up and down; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.taste.drying": {
       "english": "Drying",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Taste square after a shot: extraction (sour–bitter) across, strength (weak–strong) up and down; see docs/shot-analysis-and-dial-in.md."
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
+      "note": "Taste square after a shot: extraction (sour\u2013bitter) across, strength (weak\u2013strong) up and down; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.taste.withMilk": {
       "english": "With milk",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Taste square after a shot: extraction (sour–bitter) across, strength (weak–strong) up and down; see docs/shot-analysis-and-dial-in.md."
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
+      "note": "Taste square after a shot: extraction (sour\u2013bitter) across, strength (weak\u2013strong) up and down; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.taste.prompt": {
       "english": "Tap where this shot landed.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Taste square after a shot: extraction (sour–bitter) across, strength (weak–strong) up and down; see docs/shot-analysis-and-dial-in.md."
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
+      "note": "Taste square after a shot: extraction (sour\u2013bitter) across, strength (weak\u2013strong) up and down; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.taste.promptDetail": {
       "english": "Across: sour to bitter. Up and down: weak to strong. The ring is the target.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Taste square after a shot: extraction (sour–bitter) across, strength (weak–strong) up and down; see docs/shot-analysis-and-dial-in.md."
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
+      "note": "Taste square after a shot: extraction (sour\u2013bitter) across, strength (weak\u2013strong) up and down; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.taste.words.sourWeak": {
       "english": "Sour and thin",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Taste square after a shot: extraction (sour–bitter) across, strength (weak–strong) up and down; see docs/shot-analysis-and-dial-in.md."
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
+      "note": "Taste square after a shot: extraction (sour\u2013bitter) across, strength (weak\u2013strong) up and down; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.taste.words.sourBalanced": {
       "english": "Sour",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Taste square after a shot: extraction (sour–bitter) across, strength (weak–strong) up and down; see docs/shot-analysis-and-dial-in.md."
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
+      "note": "Taste square after a shot: extraction (sour\u2013bitter) across, strength (weak\u2013strong) up and down; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.taste.words.sourStrong": {
       "english": "Sour but heavy",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Taste square after a shot: extraction (sour–bitter) across, strength (weak–strong) up and down; see docs/shot-analysis-and-dial-in.md."
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
+      "note": "Taste square after a shot: extraction (sour\u2013bitter) across, strength (weak\u2013strong) up and down; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.taste.words.balancedWeak": {
       "english": "Thin",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Taste square after a shot: extraction (sour–bitter) across, strength (weak–strong) up and down; see docs/shot-analysis-and-dial-in.md."
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
+      "note": "Taste square after a shot: extraction (sour\u2013bitter) across, strength (weak\u2013strong) up and down; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.taste.words.balancedBalanced": {
       "english": "Balanced",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Taste square after a shot: extraction (sour–bitter) across, strength (weak–strong) up and down; see docs/shot-analysis-and-dial-in.md."
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
+      "note": "Taste square after a shot: extraction (sour\u2013bitter) across, strength (weak\u2013strong) up and down; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.taste.words.balancedStrong": {
       "english": "Heavy",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Taste square after a shot: extraction (sour–bitter) across, strength (weak–strong) up and down; see docs/shot-analysis-and-dial-in.md."
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
+      "note": "Taste square after a shot: extraction (sour\u2013bitter) across, strength (weak\u2013strong) up and down; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.taste.words.bitterWeak": {
       "english": "Bitter and thin",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Taste square after a shot: extraction (sour–bitter) across, strength (weak–strong) up and down; see docs/shot-analysis-and-dial-in.md."
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
+      "note": "Taste square after a shot: extraction (sour\u2013bitter) across, strength (weak\u2013strong) up and down; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.taste.words.bitterBalanced": {
       "english": "Bitter",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Taste square after a shot: extraction (sour–bitter) across, strength (weak–strong) up and down; see docs/shot-analysis-and-dial-in.md."
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
+      "note": "Taste square after a shot: extraction (sour\u2013bitter) across, strength (weak\u2013strong) up and down; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.taste.words.bitterStrong": {
       "english": "Bitter and heavy",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Taste square after a shot: extraction (sour–bitter) across, strength (weak–strong) up and down; see docs/shot-analysis-and-dial-in.md."
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
+      "note": "Taste square after a shot: extraction (sour\u2013bitter) across, strength (weak\u2013strong) up and down; see docs/shot-analysis-and-dial-in.md."
     },
     "insights.dialIn.howWasIt": {
       "english": "How was it?",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
     "insights.dialIn.subtitleShot": {
       "english": "{bean} · shot {shot}",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
     "insights.dialIn.subtitleNoBean": {
       "english": "No coffee loaded. The advice still works, but there’s no dial-in path to keep.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
     "insights.dialIn.onTarget": {
       "english": "On target",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
     "insights.dialIn.tentative": {
       "english": "A small move. Taste the next shot before changing anything else.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
     "insights.dialIn.milkTarget": {
       "english": "Aiming for a stronger shot, because this one is for milk.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
     "insights.dialIn.stop.dialedIn": {
       "english": "Dialed in. Stop here.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
     "insights.dialIn.stop.dialedInDetail": {
       "english": "Two shots in a row on target. This is the recipe for {bean}.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
     "insights.dialIn.stop.onceMore": {
       "english": "One more to be sure.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
     "insights.dialIn.stop.onceMoreDetail": {
       "english": "Pull it once more the same way. If it lands here again, that’s the recipe.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
     "insights.dialIn.pin.button": {
       "english": "Pin this recipe",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
     "insights.dialIn.pin.pinned": {
       "english": "Pinned",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
     "insights.dialIn.pin.detail": {
       "english": "Today’s recipe for {bean}, and the start for its next bag.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
     "insights.dialIn.refractometer": {
       "english": "Refractometer",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
     "insights.dialIn.eyValue": {
       "english": "{ey}% extraction",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
     "insights.dialIn.tds": {
       "english": "TDS (%)",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
     "insights.dialIn.eyDetail": {
       "english": "{tds}% TDS → {ey}% extraction yield. The blue ring shows it on the square.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
     "insights.dialIn.tdsHint": {
       "english": "Optional. Enter a TDS reading to see extraction yield next to what you tasted.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
     "insights.dialIn.palateDisagrees": {
       "english": "Your palate and the refractometer disagree. Trust the cup, and taste again.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
     "insights.dialIn.findingCount": {
       "english": "{count} flagged",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
     "insights.dialIn.metric.pace": {
       "english": "Pace",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
     "insights.dialIn.pace.fast": {
       "english": "Fast · {rate} g/s",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
     "insights.dialIn.pace.normal": {
       "english": "Normal · {rate} g/s",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
     "insights.dialIn.pace.slow": {
       "english": "Slow · {rate} g/s",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
     "insights.dialIn.reason.sourFast": {
       "english": "Sour, and it ran fast ({rate} g/s): water rushed past the coffee. A finer grind gives it more contact; more water would only thin it.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
     "insights.dialIn.reason.sourWeak": {
       "english": "Sour and thin: under-extracted, with too little in the cup. A finer grind extracts more without diluting.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
     "insights.dialIn.reason.sourWeakSlow": {
       "english": "Sour and thin, but the shot already ran slowly, so grinding finer risks stalling it. More heat or a longer soak extracts more instead.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
     "insights.dialIn.reason.sourStrong": {
       "english": "Sour but heavy: under-extracted and concentrated. More water through the puck fixes both.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
     "insights.dialIn.reason.bitterSlow": {
       "english": "Bitter, and it ran slowly ({rate} g/s): too much contact. Coarsen the grind.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
     "insights.dialIn.reason.bitterStrong": {
       "english": "Bitter and heavy: over-extracted and concentrated. A coarser grind takes out less.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
     "insights.dialIn.reason.bitterWeak": {
       "english": "Bitter and thin: the tail of the shot is adding bitterness and water. Stop earlier.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
     "insights.dialIn.reason.weak": {
       "english": "Balanced but thin: more coffee at the same ratio adds strength without changing extraction much.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
     "insights.dialIn.reason.weakBasketFull": {
       "english": "Thin, but the basket is already at its rated dose. A shorter ratio concentrates the cup instead.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
     "insights.dialIn.reason.strong": {
       "english": "Balanced but heavy: a slightly longer ratio opens it up.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
     "insights.dialIn.reason.puckDropFresh": {
       "english": "Resistance dropped suddenly. This coffee is only {days} days off roast; trapped CO₂ makes uneven flow more likely, so prep carefully and give it a longer soak.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
     "shell.today.heatingFor": {
       "english": "Heating · {time}",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.state.ready": {
       "english": "Ready",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.state.heating": {
       "english": "Heating",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.state.notHeating": {
       "english": "Not heating",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.state.thirsty": {
       "english": "Add water",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.state.sleeping": {
       "english": "Asleep",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.state.disconnected": {
       "english": "Offline",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.hint.ready": {
       "english": "Start the shot at the group head.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.hint.heating": {
       "english": "Nearly there. Start at the group head when it’s ready.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.hint.notHeating": {
       "english": "Check the power button on the machine.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.hint.thirsty": {
       "english": "Fill the water tank.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.hint.sleeping": {
       "english": "Wake the machine to heat up.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.hint.disconnected": {
       "english": "Can’t reach the machine.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.pullDemo": {
       "english": "Pull a demo shot",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.altitude": {
       "english": "{metres} m",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.recipe.notDialed": {
       "english": "Not dialed in yet. Taste after each shot and the next step will follow.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.recipe.doseYield": {
       "english": "{dose} → {yield} g",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.recipe.grind": {
       "english": "grind {grind}",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.recipe.previousBag": {
       "english": "From your last bag of {bean}: {recipe}.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.recipe.pinnedDiffers": {
       "english": "Pinned for this bag: {recipe}.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.recipe.pinned": {
       "english": "This is the pinned recipe for this bag.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.recipe.use": {
       "english": "Use it",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.recipe.used": {
       "english": "In use",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.journey.empty": {
       "english": "Not tasted yet",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.journey.started": {
       "english": "1 shot tasted",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.journey.converging": {
       "english": "{count} shots tasted · getting closer",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.journey.wandering": {
       "english": "{count} shots tasted · change one thing at a time",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.journey.dialedIn": {
       "english": "Dialed in on shot {shot}",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.journey.open": {
       "english": "Open this coffee’s dial-in",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.loaded": {
       "english": "Loaded",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.lastCup": {
       "english": "Last cup: {taste}",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.changeCoffee": {
       "english": "Coffee",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.noCoffeeEyebrow": {
       "english": "Today",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.noCoffee": {
       "english": "What are you brewing?",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.noCoffeeDetail": {
       "english": "Add the bag: scan the label, paste the roaster’s link, or type it in. The recipe and the advice follow the beans.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.addBag": {
       "english": "Add a bag",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.recipeTitle": {
       "english": "Today’s recipe",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.ratio": {
       "english": "Ratio",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.temperature": {
       "english": "Temperature",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.grind": {
       "english": "Grind",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.noProfile": {
       "english": "No profile selected",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.changeProfile": {
       "english": "Change",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.drift.finer": {
       "english": "Pinned {days} days ago. As coffee ages it runs faster; try one step finer, {from} → {to}.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.drift.general": {
       "english": "Pinned {days} days ago. As coffee ages it runs faster; expect to grind a little finer.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.tank": {
       "english": "Water {pct}%",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.calibrate": {
       "english": "Calibrate your palate",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.machineControls": {
       "english": "Machine controls",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.viewSwitch": {
       "english": "Home view",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.viewToday": {
       "english": "Today",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "shell.today.viewMachine": {
       "english": "Machine",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
     "library.rest.noDate": {
       "english": "Add a roast date to see how this coffee is resting.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "How a bag is resting by days off roast and roast level."
     },
     "library.rest.tooFresh": {
       "english": "Day {days}. Still degassing: expect uneven flow, and don’t chase the taste today. At its best in about {toPeak} days.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "How a bag is resting by days off roast and roast level."
     },
     "library.rest.opening": {
       "english": "Day {days}. Still opening up; it should taste better over the next {toPeak} days.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "How a bag is resting by days off roast and roast level."
     },
     "library.rest.peak": {
       "english": "Day {days}. In its best window.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "How a bag is resting by days off roast and roast level."
     },
     "library.rest.fading": {
       "english": "Day {days}. Past its best window: expect it to run faster and lose some aromatics.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "How a bag is resting by days off roast and roast level."
     },
     "library.rest.roasted": {
       "english": "Roasted",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "How a bag is resting by days off roast and roast level."
     },
     "library.rest.dayShort": {
       "english": "Day {days}",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "How a bag is resting by days off roast and roast level."
     },
     "library.coffee.forMilk": {
       "english": "Usually drunk with milk (aims for a stronger shot)",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Coffee screen: beans, dial-in path and pinned recipe."
     },
     "library.coffee.dialTitle": {
       "english": "Dial-in",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Coffee screen: beans, dial-in path and pinned recipe."
     },
     "library.coffee.dialedIn": {
       "english": "Dialed in",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Coffee screen: beans, dial-in path and pinned recipe."
     },
     "library.coffee.dialEmpty": {
       "english": "No tastings yet. After each shot, tap where it landed; the path shows up here.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Coffee screen: beans, dial-in path and pinned recipe."
     },
     "library.coffee.pinnedRecipe": {
       "english": "Pinned recipe",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Coffee screen: beans, dial-in path and pinned recipe."
     },
     "library.coffee.previousBagRecipe": {
       "english": "Starting from your last bag of {bean}",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Coffee screen: beans, dial-in path and pinned recipe."
     },
     "library.coffee.unpin": {
       "english": "Unpin",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Coffee screen: beans, dial-in path and pinned recipe."
     },
     "library.coffee.withMilkShort": {
       "english": "with milk",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Coffee screen: beans, dial-in path and pinned recipe."
     },
     "library.coffee.tab.calibrate": {
       "english": "Palate",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Coffee screen: beans, dial-in path and pinned recipe."
     },
     "library.calibrate.title": {
       "english": "Calibrate your palate",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Palate calibration flight: short, long and middle shots of one coffee."
     },
     "library.calibrate.intro": {
       "english": "Three shots of the same coffee, tasted side by side, so sour and bitter mean something concrete.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Palate calibration flight: short, long and middle shots of one coffee."
     },
     "library.calibrate.how": {
       "english": "Keep the dose at {dose} g and the grind where it is. Only the yield changes. Pull all three and taste them together.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Palate calibration flight: short, long and middle shots of one coffee."
     },
     "library.calibrate.recipe": {
       "english": "{dose} g → {yield} g · 1:{ratio}",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Palate calibration flight: short, long and middle shots of one coffee."
     },
     "library.calibrate.short.title": {
       "english": "Short",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Palate calibration flight: short, long and middle shots of one coffee."
     },
     "library.calibrate.short.taste": {
       "english": "Under-extracted: sharp, sour, sometimes salty, with a thin finish that disappears fast. That’s the left side of the square.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Palate calibration flight: short, long and middle shots of one coffee."
     },
     "library.calibrate.long.title": {
       "english": "Long",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Palate calibration flight: short, long and middle shots of one coffee."
     },
     "library.calibrate.long.taste": {
       "english": "Over-extracted: bitter, hollow, and drying at the end. That’s the right side.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Palate calibration flight: short, long and middle shots of one coffee."
     },
     "library.calibrate.middle.title": {
       "english": "In between",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Palate calibration flight: short, long and middle shots of one coffee."
     },
     "library.calibrate.middle.taste": {
       "english": "Sweetness appears and the acidity rounds out. Put this one at the centre, and judge the others against it.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Palate calibration flight: short, long and middle shots of one coffee."
     },
     "library.calibrate.setYield": {
       "english": "Set yield to {yield} g",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Palate calibration flight: short, long and middle shots of one coffee."
     },
     "library.calibrate.yieldSet": {
       "english": "Yield set",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Palate calibration flight: short, long and middle shots of one coffee."
     },
     "library.calibrate.afterTitle": {
       "english": "When you’re done",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Palate calibration flight: short, long and middle shots of one coffee."
     },
     "library.calibrate.after": {
       "english": "Put your usual yield back. From now on, tap the square with these three cups in mind.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Palate calibration flight: short, long and middle shots of one coffee."
     },
     "library.calibrate.restore": {
       "english": "Restore {yield} g",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Palate calibration flight: short, long and middle shots of one coffee."
     },
     "library.calibrate.restored": {
       "english": "Restored",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Palate calibration flight: short, long and middle shots of one coffee."
     },
     "insights.dialIn.metric.paceForYou": {
       "english": "Pace (yours: {usual} g/s)",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
     "insights.dialIn.reason.weakFixedDose": {
       "english": "Balanced but thin, and your dose stays fixed: a shorter ratio concentrates the cup.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
     "insights.dialIn.whichCoffee": {
       "english": "Which coffee is this?",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
     "library.coffee.fixedDose": {
       "english": "My dose stays the same (advice changes yield, grind or temperature instead)",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Coffee screen: beans, gear, dial-in path and pinned recipe."
     },
     "shell.today.scaleMissing": {
       "english": "The scale isn’t connected, so yield and pace won’t be recorded and the advice falls back to taste alone.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
       "note": "Today home: the loaded bag, today's recipe and machine readiness. Espresso starts at the group head."
     },
-    "insights.lab.eyebrow": {
-      "english": "SHOT LAB",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Shot Lab comparison UI; translated and reviewed for this feature."
+    "insights.dialIn.grindUsed": {
+      "english": "Grind for this shot",
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
+      "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
-    "insights.lab.title": {
-      "english": "Compare two pulls",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Shot Lab comparison UI; translated and reviewed for this feature."
+    "insights.dialIn.grindFinerAria": {
+      "english": "One step finer",
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
+      "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
-    "insights.lab.subtitle": {
-      "english": "Overlay recorded pressure and flow on each shot’s own timeline.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Shot Lab comparison UI; translated and reviewed for this feature."
+    "insights.dialIn.grindCoarserAria": {
+      "english": "One step coarser",
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
+      "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
-    "insights.lab.measuredOnly": {
-      "english": "Recorded telemetry",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Shot Lab comparison UI; translated and reviewed for this feature."
+    "insights.dialIn.step.grindFinerSteps": {
+      "english": "Grind {count} steps finer: {from} → {to}.",
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
+      "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
-    "insights.lab.pressure": {
-      "english": "Pressure",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Shot Lab comparison UI; translated and reviewed for this feature."
+    "insights.dialIn.step.grindCoarserSteps": {
+      "english": "Grind {count} steps coarser: {from} → {to}.",
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
+      "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
-    "insights.lab.flow": {
-      "english": "Flow",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Shot Lab comparison UI; translated and reviewed for this feature."
+    "insights.dialIn.learned.grindBag": {
+      "english": "Sized from {count} earlier changes on this coffee: one grind step moved the cup about {effect} across the square.",
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
+      "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
-    "insights.lab.plotAria": {
-      "english": "{metric} comparison chart",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Shot Lab comparison UI; translated and reviewed for this feature."
+    "insights.dialIn.learned.grindAll": {
+      "english": "Sized from {count} earlier changes across your coffees: one grind step moved the cup about {effect} across the square.",
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
+      "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
-    "insights.lab.shotA": {
-      "english": "Shot A",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Shot Lab comparison UI; translated and reviewed for this feature."
+    "insights.dialIn.learned.yieldBag": {
+      "english": "Sized from {count} earlier changes on this coffee: each gram of yield moved the cup about {effect} across the square.",
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
+      "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     },
-    "insights.lab.shotB": {
-      "english": "Shot B",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Shot Lab comparison UI; translated and reviewed for this feature."
-    },
-    "insights.lab.normalizedTime": {
-      "english": "Elapsed time (%)",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Shot Lab comparison UI; translated and reviewed for this feature."
-    },
-    "insights.lab.dose": {
-      "english": "Dose",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Shot Lab comparison UI; translated and reviewed for this feature."
-    },
-    "insights.lab.secondsUnit": {
-      "english": "s",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Shot Lab comparison UI; translated and reviewed for this feature."
-    },
-    "insights.lab.gramsUnit": {
-      "english": "g",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Shot Lab comparison UI; translated and reviewed for this feature."
-    },
-    "insights.lab.note": {
-      "english": "Curves are aligned by elapsed-time percentage, not by matching events. Similar shapes do not prove similar extraction or taste.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Shot Lab comparison UI; translated and reviewed for this feature."
-    },
-    "insights.lab.emptyTitle": {
-      "english": "Two recorded shots needed",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Shot Lab comparison UI; translated and reviewed for this feature."
-    },
-    "insights.lab.emptyBody": {
-      "english": "Once two saved espresso shots include pressure or flow telemetry, you can compare their curves here.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Shot Lab comparison UI; translated and reviewed for this feature."
-    },
-    "insights.lab.phaseAligned": {
-      "english": "Matching recorded phases (%)",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Shot Lab comparison UI; translated for this feature."
-    },
-    "insights.lab.phaseNote": {
-      "english": "Aligned at recorded phase boundaries: {phases}. Phase alignment is used only because both shots recorded the same sequence; values remain observations, not taste predictions.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Shot Lab comparison UI; translated for this feature."
-    },
-    "insights.lab.contextLabel": {
-      "english": "Bean and recipe context for both shots",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Shot Lab comparison UI; translated for this feature."
-    },
-    "insights.lab.beanUnlinked": {
-      "english": "No bean linked to this shot",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Shot Lab comparison UI; translated for this feature."
-    },
-    "insights.lab.grindUnknown": {
-      "english": "Grind setting not recorded",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Shot Lab comparison UI; translated for this feature."
-    },
-    "insights.lab.observationsLabel": {
-      "english": "Recorded observations and next experiment",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Shot Lab comparison UI; translated for this feature."
-    },
-    "insights.lab.observedLabel": {
-      "english": "Recorded values",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Shot Lab comparison UI; translated for this feature."
-    },
-    "insights.lab.durationObserved": {
-      "english": "Duration · A {a} s / B {b} s",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Shot Lab comparison UI; translated for this feature."
-    },
-    "insights.lab.yieldObserved": {
-      "english": "Yield · A {a} g / B {b} g",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Shot Lab comparison UI; translated for this feature."
-    },
-    "insights.lab.hypothesisLabel": {
-      "english": "Interpretation limits",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Shot Lab comparison UI; translated for this feature."
-    },
-    "insights.lab.hypothesisCaution": {
-      "english": "These measurements show what changed in the recorded shots. They do not establish why, extraction quality, or taste.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Shot Lab comparison UI; translated for this feature."
-    },
-    "insights.lab.nextExperiment": {
-      "english": "One controlled next experiment",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Shot Lab comparison UI; translated for this feature."
-    },
-    "insights.lab.experiment": {
-      "english": "Repeat the recipe and change only the grind setting by one small step.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Shot Lab comparison UI; translated for this feature."
-    },
-    "insights.lab.experimentDetail": {
-      "english": "Keep the same bean, dose, target yield, profile, and water temperature. Record the result; no machine setting is changed here.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Shot Lab comparison UI; translated for this feature."
-    },
-    "insights.lab.phaseSummary": {
-      "english": "Measured values by matching phase",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Shot Lab phase summary; translated for this feature."
-    },
-    "insights.lab.phase": {
-      "english": "Phase",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Shot Lab phase summary; translated for this feature."
-    },
-    "insights.lab.phaseDuration": {
-      "english": "Duration · s",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Shot Lab phase summary; translated for this feature."
-    },
-    "insights.lab.phasePressure": {
-      "english": "Mean pressure · bar",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Shot Lab phase summary; translated for this feature."
-    },
-    "insights.lab.phaseFlow": {
-      "english": "Mean flow · ml/s",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Shot Lab phase summary; translated for this feature."
-    },
-    "insights.lab.phaseSamples": {
-      "english": "Samples · pressure / flow",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Shot Lab phase summary; translated for this feature."
-    },
-    "insights.lab.phaseMeanNote": {
-      "english": "Means use recorded samples only; the sample counts show pressure and flow coverage in A/B order. These are descriptive measurements, not calibrated phase scores.",
-      "languages": [
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Shot Lab phase summary; translated for this feature."
-    },
-    "library.coffee.tab.livingProfile": {
-      "english": "Living Profile",
-      "languages": [
-        "de",
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Living Profile editor; explicit draft/apply workflow."
-    },
-    "library.coffee.livingEditor.title": {
-      "english": "Tune the Living Profile",
-      "languages": [
-        "de",
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Living Profile editor; explicit draft/apply workflow."
-    },
-    "library.coffee.livingEditor.active": {
-      "english": "Editing your active Living Profile. Changes remain a draft until you apply them.",
-      "languages": [
-        "de",
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Living Profile editor; explicit draft/apply workflow."
-    },
-    "library.coffee.livingEditor.fromBean": {
-      "english": "Starting from a recipe for {bean}. Changes remain a draft until you apply them.",
-      "languages": [
-        "de",
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Living Profile editor; explicit draft/apply workflow."
-    },
-    "library.coffee.livingEditor.hint": {
-      "english": "Adjust one variable at a time. Flow target, pressure ceiling, and temperature stay within supported ranges. This editor never changes a live shot.",
-      "languages": [
-        "de",
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Living Profile editor; explicit draft/apply workflow."
-    },
-    "library.coffee.livingEditor.applyHint": {
-      "english": "Saves this profile and selects it; it will not change settings during a live shot.",
-      "languages": [
-        "de",
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Living Profile editor; explicit draft/apply workflow."
-    },
-    "library.coffee.livingEditor.saved": {
-      "english": "Profile saved and selected.",
-      "languages": [
-        "de",
-        "fr",
-        "it",
-        "zh-Hant",
-        "zh-Hans"
-      ],
-      "note": "Living Profile editor; explicit draft/apply workflow."
+    "insights.dialIn.learned.yieldAll": {
+      "english": "Sized from {count} earlier changes across your coffees: each gram of yield moved the cup about {effect} across the square.",
+      "languages": ["fr", "it", "zh-Hant", "zh-Hans"],
+      "note": "After-shot dial-in sheet: one next step from taste plus shot data; display only until Apply."
     }
   }
 }

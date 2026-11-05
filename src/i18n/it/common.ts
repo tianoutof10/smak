@@ -48,6 +48,6 @@ export const common = {
   "common.utility.scale": "Bilancia",
   "common.utility.tank": "Serbatoio",
   "common.language.label": "Lingua",
-  "common.language.hint": "Solo OpenCoffeeShop; Decaid e i nomi dei profili restano invariati",
+  "common.language.hint": "Solo Smak; Decaid e i nomi dei profili restano invariati",
   "common.language.auto": "Segui il dispositivo ({language})"
 } satisfies Translation<EnglishCatalog>

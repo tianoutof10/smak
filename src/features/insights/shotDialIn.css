@@ -20,6 +20,11 @@
 .dial-bean-pick { display:flex; flex-direction:column; gap:10px; padding:0 24px; }
 .dial-bean-pick div { display:flex; flex-wrap:wrap; gap:8px; }
 .dial-bean-pick .dial-button { min-height:40px; padding:0 16px; font-size:15px; }
+.dial-grind { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:0 24px; font-size:15px; color:var(--d-ink-2); }
+.dial-stepper { display:inline-flex; align-items:center; border:1px solid var(--d-line-2); border-radius:999px; }
+.dial-stepper button { width:48px; height:44px; border:0; background:transparent; color:var(--d-ink); font:inherit; font-size:22px; font-weight:300; cursor:pointer; }
+.dial-stepper button:disabled { color:var(--d-ink-3); cursor:default; }
+.dial-stepper output { min-width:56px; text-align:center; font-size:20px; font-weight:300; color:var(--d-ink); font-variant-numeric:tabular-nums; }
 /* Type */
 .dial-eyebrow { margin:0; font-size:13px; font-weight:500; color:var(--d-ink-3); }
 .dial-muted { margin:0; font-size:14px; line-height:1.5; color:var(--d-ink-3); }

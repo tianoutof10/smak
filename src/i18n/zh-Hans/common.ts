@@ -48,6 +48,6 @@ export const common = {
   "common.utility.scale": "电子秤",
   "common.utility.tank": "水箱",
   "common.language.label": "语言",
-  "common.language.hint": "仅应用于 OpenCoffeeShop，不更改 Decaid 与配方名称",
+  "common.language.hint": "仅应用于 Smak，不更改 Decaid 与配方名称",
   "common.language.auto": "跟随设备（{language}）"
 } satisfies Translation<EnglishCatalog>

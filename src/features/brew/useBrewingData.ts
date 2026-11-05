@@ -40,11 +40,11 @@ import { createBackgroundScaleSearch } from './backgroundScaleSearch'
 import { observeTareShotState, requestGuardedScaleTare, scaleTareBlocked, type ScaleTareState } from './scaleTareSafety'
 import { sleepMachineWithConfiguredScalePolicy } from './sleepControl'
 import { createUtilityDismissal, utilityElapsedMs, utilityTimerStartedAt } from './utilityOperationTiming'
-import { readOpenCoffeeShopPreferences, useOpenCoffeeShopPreferences } from '../settings/openCoffeeShopPreferences'
+import { readSmakPreferences, useSmakPreferences } from '../settings/smakPreferences'
 import { UNIFIED_SETTINGS_SAVED_EVENT, type UnifiedSettingsSnapshot } from '../settings/useUnifiedSettings'
 
 const currentWaterThresholds = () => {
-  const preferences = readOpenCoffeeShopPreferences()
+  const preferences = readSmakPreferences()
   return { warningLevelMl: preferences.waterWarningLevelMl, criticalLevelMl: preferences.waterCriticalLevelMl }
 }
 
@@ -137,7 +137,7 @@ const withHotWaterReadback = (model: BrewingScreenModel): BrewingScreenModel => 
   }) }
 }
 
-const localFavoriteStorageKey = 'opencoffeeshop.favorite-profile-ids.v1'
+const localFavoriteStorageKey = 'smak.favorite-profile-ids.v1'
 
 const favoriteAssignmentsForSlots = (slots: Array<string | null>): FavoriteAssignments => Object.fromEntries(Array.from({ length: 5 }, (_, slot) => [String(slot), slots[slot] ?? null]))
 
@@ -172,7 +172,7 @@ const storeLastSelectedProfileIdLocally = (profileId: string) => {
 }
 
 export function useBrewingData() {
-  const { preferences } = useOpenCoffeeShopPreferences()
+  const { preferences } = useSmakPreferences()
   const [model, setModel] = useState<BrewingScreenModel>(() => withUnknownSteamState({ ...brewingFixture, profiles: fixtureProfiles.slice(0, 5), previousShot: null }))
   const [allProfiles, setAllProfiles] = useState(fixtureProfiles)
   const [favoriteProfileSlots, setFavoriteProfileSlots] = useState<Array<string | null>>(fixtureProfiles.slice(0, 5).map((profile) => profile.id))
@@ -350,7 +350,7 @@ export function useBrewingData() {
   }, [])
 
   const dimDisplay = async () => {
-    try { await displayBrightness.dim(readOpenCoffeeShopPreferences().screensaverBrightness) }
+    try { await displayBrightness.dim(readSmakPreferences().screensaverBrightness) }
     catch { /* Sleeping the machine remains the priority. */ }
   }
 

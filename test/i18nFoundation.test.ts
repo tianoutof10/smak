@@ -4,7 +4,7 @@ import { en } from '../src/i18n/en/index.ts'
 import { LANGUAGES, languageRegistry, isLanguage, matchLanguage } from '../src/i18n/registry.ts'
 import { activeLanguage, activeLocaleTag, loadLanguage, setActiveLanguage, t, pluralTemplate, formatDecimal, localizeDecimalText, parseLocalizedNumber } from '../src/i18n/index.ts'
 import { translationStatus, validateCatalog } from '../src/i18n/validation.ts'
-import { normalizeOpenCoffeeShopPreferences } from '../src/features/settings/openCoffeeShopPreferences.ts'
+import { normalizeSmakPreferences } from '../src/features/settings/smakPreferences.ts'
 import { displayedShotName, displayedStageName, reconcileGeneratedLabels } from '../src/i18n/dataLabels.ts'
 import { shotToDomain } from '../src/api/decaid/adapters.ts'
 import { historyProfileName, normalizeShot, shotRecipeLabel } from '../src/features/insights/historyData.ts'
@@ -29,7 +29,7 @@ test('the registry resolves region and script variants without adding language-s
 test('every registered language shares validation and preference handling', async () => {
   for (const language of LANGUAGES) {
     assert.equal(isLanguage(language), true)
-    assert.equal(normalizeOpenCoffeeShopPreferences({ language }).language, language)
+    assert.equal(normalizeSmakPreferences({ language }).language, language)
     assert.deepEqual(validateCatalog(en, await languageRegistry[language].load(), languageRegistry[language].locale), [])
   }
   assert.equal(isLanguage('constructor'), false)

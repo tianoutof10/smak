@@ -7,7 +7,7 @@ export const shellDe = {
   'shell.app.visualizerSignInRequired': 'Melde dich in den Decaid-Einstellungen bei Visualizer an, bevor du einen Freigabecode importierst.',
   'shell.app.visualizerUnavailable': 'Der Visualizer-Import ist in dieser Decaid-Einrichtung nicht verfügbar.',
   'shell.app.visualizerImportFailed': 'Visualizer konnte diesen Freigabecode nicht importieren.',
-  'shell.app.visualizerImportMissing': 'Das Profil wurde importiert, aber Decaid hat es nicht an OpenCoffeeShop zurückgegeben.',
+  'shell.app.visualizerImportMissing': 'Das Profil wurde importiert, aber Decaid hat es nicht an Smak zurückgegeben.',
 
   // AppShell.tsx
   'shell.appShell.expandUtilityPanels': 'Bedienfelder erweitern',
@@ -142,7 +142,7 @@ export const shellDe = {
   'shell.updates.updateDecaid': 'Decaid aktualisieren',
   'shell.updates.viewDownload': 'Download ansehen',
   'shell.updates.installFailed': 'Das Update konnte nicht gestartet werden.',
-  'shell.updates.connectionLost': 'OpenCoffeeShop hat die Verbindung zu Decaid verloren. Versuch es gleich noch einmal.',
+  'shell.updates.connectionLost': 'Smak hat die Verbindung zu Decaid verloren. Versuch es gleich noch einmal.',
 
   // CleaningSequencePicker.tsx
   'shell.cleaning.title': 'Reinigung',

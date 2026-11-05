@@ -53,10 +53,10 @@ const living = compileChassisProfile(DEFAULT_CHASSIS, undefined,
   'One adaptive profile instead of many. It fills until the bed pressurises, soaks until the pressure relaxes, then extracts by flow under a pressure ceiling. After each shot, Dial in proposes changes to its soak, ceiling, flow and yield, applied with one tap.')
 
 export const RESEARCH_PRESETS: ResearchPreset[] = [
-  { id: 'living', beanStyle: 'anyBean', source: 'Adaptive chassis', doseGrams: DEFAULT_CHASSIS.doseGrams, targetWeight: DEFAULT_CHASSIS.targetWeight, ratio: Math.round(DEFAULT_CHASSIS.targetWeight / DEFAULT_CHASSIS.doseGrams * 10) / 10, profile: living, metadata: { ...chassisMetadata(DEFAULT_CHASSIS), openCoffeeShopPreset: 'living' } },
-  { id: 'turbo', beanStyle: 'lightMedium', source: 'Cameron et al., 2020', doseGrams: 15, targetWeight: 40, ratio: 2.7, profile: turbo, metadata: { openCoffeeShopPreset: 'turbo' } },
-  { id: 'blooming', beanStyle: 'denseLight', source: 'Scott Rao', doseGrams: 18, targetWeight: 45, ratio: 2.5, profile: blooming, metadata: { openCoffeeShopPreset: 'blooming' } },
-  { id: 'flowLed', beanStyle: 'everyday', source: 'Schmieder et al., 2023', doseGrams: 18, targetWeight: 36, ratio: 2, profile: flowLed, metadata: { openCoffeeShopPreset: 'flowLed' } },
+  { id: 'living', beanStyle: 'anyBean', source: 'Adaptive chassis', doseGrams: DEFAULT_CHASSIS.doseGrams, targetWeight: DEFAULT_CHASSIS.targetWeight, ratio: Math.round(DEFAULT_CHASSIS.targetWeight / DEFAULT_CHASSIS.doseGrams * 10) / 10, profile: living, metadata: { ...chassisMetadata(DEFAULT_CHASSIS), smakPreset: 'living' } },
+  { id: 'turbo', beanStyle: 'lightMedium', source: 'Cameron et al., 2020', doseGrams: 15, targetWeight: 40, ratio: 2.7, profile: turbo, metadata: { smakPreset: 'turbo' } },
+  { id: 'blooming', beanStyle: 'denseLight', source: 'Scott Rao', doseGrams: 18, targetWeight: 45, ratio: 2.5, profile: blooming, metadata: { smakPreset: 'blooming' } },
+  { id: 'flowLed', beanStyle: 'everyday', source: 'Schmieder et al., 2023', doseGrams: 18, targetWeight: 36, ratio: 2, profile: flowLed, metadata: { smakPreset: 'flowLed' } },
 ]
 
 export const presetById = (id: PresetId) => RESEARCH_PRESETS.find(preset => preset.id === id)

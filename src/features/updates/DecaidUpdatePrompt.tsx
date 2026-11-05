@@ -3,7 +3,7 @@ import { subscribeWithCommands, type CommandSocketSubscription } from '../../api
 import { t } from '../../i18n/index.ts'
 import { isUpdateState, shouldPresentUpdate, updateProgressPercent, type DecaidUpdateCommand, type DecaidUpdateMessage, type DecaidUpdateState } from './decaidUpdate'
 
-const dismissalKey = 'opencoffeeshop.decaid-update-dismissed'
+const dismissalKey = 'smak.decaid-update-dismissed'
 
 function dismissedVersion() {
   try { return window.sessionStorage.getItem(dismissalKey) }

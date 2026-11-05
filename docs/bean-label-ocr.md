@@ -18,12 +18,12 @@ This feature reads printed label text. It does not attempt to identify a coffee 
 ## Primary user flow
 
 1. The user chooses **Add beans** and then **Scan label**.
-2. OpenCoffeeShop opens the rear camera or Android camera picker.
+2. Smak opens the rear camera or Android camera picker.
 3. The user captures one still image of the label.
-4. OpenCoffeeShop prepares the image and runs OCR.
+4. Smak prepares the image and runs OCR.
 5. Recognised text is mapped into editable bean fields.
 6. The user reviews, corrects, and confirms the metadata.
-7. OpenCoffeeShop saves the bean in the user's bean history.
+7. Smak saves the bean in the user's bean history.
 8. When brewing, the user may associate the selected bean with the selected profile.
 9. A saved grind size becomes the remembered reference for that exact bean and profile combination.
 
@@ -98,7 +98,7 @@ ShotBeanLink
 
 ## Grind-size behaviour
 
-When OpenCoffeeShop needs to show a grind-size reference, use this precedence:
+When Smak needs to show a grind-size reference, use this precedence:
 
 1. Grind size saved for the selected bean and selected profile
 2. Optional general grind reference saved for the bean
@@ -107,7 +107,7 @@ When OpenCoffeeShop needs to show a grind-size reference, use this precedence:
 
 When a bean and profile are both selected, saving an adjusted grind size should update their paired reference. It should not rewrite the Decent profile unless the user is explicitly editing that profile through the profile editor.
 
-The pairing should support OpenCoffeeShop's existing decimal grind-size format and range. The value is a user reference and has no direct effect on extraction control.
+The pairing should support Smak's existing decimal grind-size format and range. The value is a user reference and has no direct effect on extraction control.
 
 ## Bean history behaviour
 
@@ -173,7 +173,7 @@ The current Decaid Android host does not declare camera permission or handle Web
 
 ## Alternative recognition engines
 
-If browser OCR is too slow on the target tablet, preserve the same OpenCoffeeShop flow and replace only the recognition layer.
+If browser OCR is too slow on the target tablet, preserve the same Smak flow and replace only the recognition layer.
 
 ### Native Android OCR
 

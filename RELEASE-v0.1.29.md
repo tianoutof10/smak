@@ -1,4 +1,4 @@
-# OpenCoffeeShop v0.1.29 — Your profile library, redesigned
+# Bestpresso v0.1.29 — Your profile library, redesigned
 
 ## Browse your recipes
 
@@ -36,7 +36,7 @@ The redesigned screens follow your light/dark theme, temperature unit, and chart
 
 Reservoir, scale, profiles, insights, and history remain unchanged by this patch. Both dark and Light Beta themes are supported.
 
-Install `opencoffeeshop-v0.1.29-patch001.zip` in Decaid.
+Install `bestpresso-v0.1.29-patch001.zip` in Decaid.
 
 ## Patch 002 — More comfortable utility cards
 
@@ -45,4 +45,4 @@ Install `opencoffeeshop-v0.1.29-patch001.zip` in Decaid.
 - Simplified Hot water to Temperature and Volume on the home screen. Max duration remains available in Settings and still applies when dispensing.
 - Refined spacing for Scale, Insights, and Last shot on smaller tablets, while preserving smooth expand/collapse and temperature transitions.
 
-Install `opencoffeeshop-v0.1.29-patch002.zip` in Decaid.
+Install `bestpresso-v0.1.29-patch002.zip` in Decaid.

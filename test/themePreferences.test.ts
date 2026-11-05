@@ -1,15 +1,15 @@
 import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
 import test from 'node:test'
-import { applyOpenCoffeeShopPreferences, OPENCOFFEESHOP_PREFERENCES_KEY, normalizeOpenCoffeeShopPreferences, readOpenCoffeeShopPreferences, writeOpenCoffeeShopPreferences } from '../src/features/settings/openCoffeeShopPreferences.ts'
+import { applySmakPreferences, SMAK_PREFERENCES_KEY, normalizeSmakPreferences, readSmakPreferences, writeSmakPreferences } from '../src/features/settings/smakPreferences.ts'
 
 test('new and invalid preferences use the warm Nordic theme; dark and light are explicit choices, and light is never automatic', () => {
   for (const value of [undefined, null, {}, { theme: 'system' }, { theme: 'LIGHT' }, { theme: false }, { clockFormat: '24h' }]) {
-    assert.equal(normalizeOpenCoffeeShopPreferences(value).theme, 'nordic')
+    assert.equal(normalizeSmakPreferences(value).theme, 'nordic')
   }
-  assert.equal(normalizeOpenCoffeeShopPreferences({ theme: 'light' }).theme, 'light')
-  assert.equal(normalizeOpenCoffeeShopPreferences({ theme: 'dark' }).theme, 'dark')
-  assert.equal(normalizeOpenCoffeeShopPreferences({ theme: 'nordic' }).theme, 'nordic')
+  assert.equal(normalizeSmakPreferences({ theme: 'light' }).theme, 'light')
+  assert.equal(normalizeSmakPreferences({ theme: 'dark' }).theme, 'dark')
+  assert.equal(normalizeSmakPreferences({ theme: 'nordic' }).theme, 'nordic')
 })
 
 test('explicit light and dark choices persist and unrelated saves preserve the chosen theme', (t) => {
@@ -28,27 +28,27 @@ test('explicit light and dark choices persist and unrelated saves preserve the c
     if (previousDocument) Object.defineProperty(globalThis, 'document', previousDocument)
     else Reflect.deleteProperty(globalThis, 'document')
   })
-  applyOpenCoffeeShopPreferences()
+  applySmakPreferences()
   assert.equal(dataset.theme, 'nordic')
-  writeOpenCoffeeShopPreferences({ theme: 'light' })
+  writeSmakPreferences({ theme: 'light' })
   assert.equal(dataset.theme, 'light')
-  assert.equal(readOpenCoffeeShopPreferences().theme, 'light')
-  writeOpenCoffeeShopPreferences({ clockFormat: '24h' })
-  assert.equal(JSON.parse(storage.get(OPENCOFFEESHOP_PREFERENCES_KEY)!).theme, 'light')
-  applyOpenCoffeeShopPreferences(readOpenCoffeeShopPreferences())
+  assert.equal(readSmakPreferences().theme, 'light')
+  writeSmakPreferences({ clockFormat: '24h' })
+  assert.equal(JSON.parse(storage.get(SMAK_PREFERENCES_KEY)!).theme, 'light')
+  applySmakPreferences(readSmakPreferences())
   assert.equal(dataset.theme, 'light')
-  writeOpenCoffeeShopPreferences({ theme: 'dark' })
-  assert.equal(readOpenCoffeeShopPreferences().theme, 'dark')
+  writeSmakPreferences({ theme: 'dark' })
+  assert.equal(readSmakPreferences().theme, 'dark')
   assert.equal(dataset.theme, 'dark')
-  storage.set(OPENCOFFEESHOP_PREFERENCES_KEY, '{invalid json')
-  assert.equal(readOpenCoffeeShopPreferences().theme, 'nordic')
+  storage.set(SMAK_PREFERENCES_KEY, '{invalid json')
+  assert.equal(readSmakPreferences().theme, 'nordic')
 })
 
 test('appearance selector labels light as beta and does not depend on the Decaid theme', () => {
   const screen = readFileSync(new URL('../src/features/settings/SettingsScreen.tsx', import.meta.url), 'utf8')
   const app = readFileSync(new URL('../src/App.tsx', import.meta.url), 'utf8')
   const en = readFileSync(new URL('../src/i18n/en/settings.ts', import.meta.url), 'utf8')
-  assert.match(screen, /label=\{t\('settings\.experience\.openCoffeeShopTheme'\)\}[^>]+value=\{preferences.theme\}/)
+  assert.match(screen, /label=\{t\('settings\.experience\.smakTheme'\)\}[^>]+value=\{preferences.theme\}/)
   assert.match(screen, /label: t\('settings\.theme\.lightBeta'\)/)
   assert.match(en, /'settings\.theme\.lightBeta': 'Light \(Beta\)'/)
   assert.match(screen, /label=\{t\('settings\.experience\.decaidTheme'\)\}/)

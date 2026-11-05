@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { SidebarBrand, SidebarNavItem } from '../../components/Sidebar/SidebarNavigation'
 import type { BrewProfile, SettingFeedback } from '../../domain/brewing'
 import { formatTemperatureValue } from '../../domain/temperature'
-import { useOpenCoffeeShopPreferences } from '../settings/openCoffeeShopPreferences'
+import { useSmakPreferences } from '../settings/smakPreferences'
 import { ProfileTargetChart } from '../brew/ProfileTargetChart'
 import { ProfileDeleteDialog } from './ProfileDeleteDialog'
 import { parseProfileImport, type ParsedProfileImport } from './profileImports'
@@ -44,7 +44,7 @@ function Metric({ label, value, unit }: { label:string; value:string; unit?:stri
 function Chart({profile}:{profile:BrewProfile}) { return <ProfileTargetChart profileName={profile.name} points={profile.targetPoints} variant="library"/> }
 
 export function ProfilesPanel({profiles, favoriteProfileSlots, activeProfileId, initialProfileId, editingEnabled=false, profileEditMode, feedback, onSelectProfile, onSetFavoriteSlot, onRemoveFavorite, onClose, onViewProfile, onStartProfile, onImportProfile, onEditProfile, canDeleteProfile, onDeleteProfile}:ProfilesPanelProps) {
-  const { preferences } = useOpenCoffeeShopPreferences()
+  const { preferences } = useSmakPreferences()
   const [section,setSection] = useState<LibrarySection>('All profiles')
   const [query,setQuery] = useState('')
   const [category,setCategory] = useState('')

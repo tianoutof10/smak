@@ -34,7 +34,7 @@ by a hairline, with type doing the work.
 
 - `src/styles/nordic.css`: the theme layer, loaded last.
 - `src/styles/nordicAccents.css`: **generated** by `node scripts/nordic-accents.mjs`.
-  It remaps every OpenCoffeeShop green accent declaration to the neutral palette.
+  It remaps every Smak green accent declaration to the neutral palette.
   Re-run it after upstream style changes; a test fails if it is stale.
 - New screens (`TodayHome`, `TasteSquare`, the dial-in sheet, the rest line)
   carry their own CSS with Nordic values as defaults and Light overrides.

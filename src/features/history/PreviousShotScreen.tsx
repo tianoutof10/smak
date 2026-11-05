@@ -2,7 +2,7 @@ import { displayedShotName } from '../../i18n/dataLabels.ts'
 import { useMemo, useState } from 'react'
 import { reconcileStageReasons } from '../brew/stageMoveOn'
 import { clockOptions, type ClockFormat } from '../sleep/deviceTime'
-import { useOpenCoffeeShopPreferences } from '../settings/openCoffeeShopPreferences'
+import { useSmakPreferences } from '../settings/smakPreferences'
 import { dateFormatter, localizeDecimalText, t } from '../../i18n/index.ts'
 import type { LiveShotPoint, PreviousShot, PreviousShotStatus } from '../../domain/brewing'
 import { LiveBrewStages } from '../brew/LiveBrewStages'
@@ -51,7 +51,7 @@ const timerLabel = (shot: PreviousShot) => {
 }
 
 export function PreviousShotScreen({ shots, initialShot, status, onSelectShot, onDismiss, layout = 'browser' }: PreviousShotScreenProps) {
-  const { preferences } = useOpenCoffeeShopPreferences()
+  const { preferences } = useSmakPreferences()
   const firstShot = initialShot ?? shots[0] ?? null
   const [selectedId, setSelectedId] = useState(firstShot?.id)
   const [selectedShot, setSelectedShot] = useState<PreviousShot | null>(firstShot)

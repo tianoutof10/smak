@@ -35,7 +35,7 @@ test('pace: weight flow after first drops decides fast / normal / slow', () => {
 
 test('pace: a real shot recorded without a scale has no pace, so advice falls back to taste alone', async () => {
   const { shotToDomain } = await import('../src/api/decaid/adapters.ts')
-  const record = JSON.parse(readFileSync(new URL('../src/fixtures/real-shot-lrv3.json', import.meta.url), 'utf8'))
+  const record = JSON.parse(readFileSync(new URL('./fixtures/real-shot-lrv3.json', import.meta.url), 'utf8'))
   const points = shotToDomain(record).points ?? []
   assert.ok(points.length > 100)
   assert.equal(shotPace(points, analyseShot(points)), undefined)

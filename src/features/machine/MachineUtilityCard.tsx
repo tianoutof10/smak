@@ -5,7 +5,7 @@ import scaleIcon from '../../assets/figma/scale.svg'
 import { Metric } from '../../components/Metric/Metric'
 import { scaleWeightCanTare, WATER_TANK_CAPACITY_ML } from '../../domain/brewing'
 import { formatTemperatureValue, temperatureBoundToDisplay, temperatureFromDisplay, temperatureStepToDisplay, temperatureUnitLabel, type TemperatureUnit } from '../../domain/temperature'
-import { useOpenCoffeeShopPreferences } from '../settings/openCoffeeShopPreferences'
+import { useSmakPreferences } from '../settings/smakPreferences'
 import type { EditableMachineSetting, MachineUtility, ScaleConnection, UtilityMetricId } from '../../domain/brewing'
 import { displayUtilityMetric, utilityLabel } from '../../domain/utilityLabels'
 import { VALUE_ADJUSTMENTS } from '../../domain/valueAdjustments'
@@ -66,7 +66,7 @@ const editForMetric = (utility: MachineUtility, metricId: UtilityMetricId, tempe
 
 function MachineUtilityCardComponent({ utility, compact = false, scale, onExpand, onSearchScale, onTareScale, scaleTarePending = false, scaleTareDisabled = false, settingsDisabled, onUpdateSetting }: MachineUtilityCardProps) {
   useLanguage()
-  const { preferences } = useOpenCoffeeShopPreferences()
+  const { preferences } = useSmakPreferences()
   const temperatureUnit = preferences.temperatureUnit
   if (utility.id === 'tank') {
     const metric = utility.metrics[0]

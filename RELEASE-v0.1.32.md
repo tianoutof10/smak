@@ -1,4 +1,4 @@
-# OpenCoffeeShop v0.1.32 — More languages
+# Bestpresso v0.1.32 — More languages
 
 - Added French, Italian, Spanish, Traditional Chinese and Simplified Chinese. Choose your language in Settings → App experience, or follow your device.
 - Localised numbers, decimal input, dates and times respect regional preferences. Profile names and saved measurements stay unchanged.
@@ -14,9 +14,9 @@ Thanks to the Decent Espresso / Streamline.js translation contributors for reusa
 - The hot-water dispensing screen now clearly shows Target temperature, instead of the machine's mix-temperature reading. Dispensing behavior is unchanged.
 - Steam starts with a neutral loading state until its setting is confirmed, avoiding a brief incorrect On display.
 - Improved status-pill spacing, inset utility-card dividers, and breathing room for insight and history cards.
-- Enforced OpenCoffeeShop's tare protection during active shots when enabled.
+- Enforced Bestpresso's tare protection during active shots when enabled.
 
-Install `opencoffeeshop-v0.1.32-patch001.zip` in Decaid.
+Install `bestpresso-v0.1.32-patch001.zip` in Decaid.
 
 ## Patch 002 — Yield consistency and spacing
 
@@ -24,7 +24,7 @@ Install `opencoffeeshop-v0.1.32-patch001.zip` in Decaid.
 - Hot-water, steam and flush modals remain visible for 500 ms after stopping, with content-sized metric panels and balanced padding.
 - Insight and last-shot captions have matching side and bottom padding. The last-shot graph has 4px of bottom clearance to avoid clipping its lowest line.
 
-Install `opencoffeeshop-v0.1.32-patch002.zip` in Decaid.
+Install `bestpresso-v0.1.32-patch002.zip` in Decaid.
 
 ## Patch 003 — Home-card layout
 
@@ -32,13 +32,13 @@ Install `opencoffeeshop-v0.1.32-patch002.zip` in Decaid.
 - Added 4px more horizontal padding to insight and history captions.
 - Added the GPLv3 license declaration to the README.
 
-Install `opencoffeeshop-v0.1.32-patch003.zip` in Decaid.
+Install `bestpresso-v0.1.32-patch003.zip` in Decaid.
 
 ## Patch 004 — History chart height
 
 - Increased the home-screen history chart height by 4px, preserving its top alignment, edge-to-edge layout and caption padding.
 
-Install `opencoffeeshop-v0.1.32-patch004.zip` in Decaid.
+Install `bestpresso-v0.1.32-patch004.zip` in Decaid.
 
 ## Patch 005 — Optional sleep-screen blackout
 
@@ -48,4 +48,4 @@ Install `opencoffeeshop-v0.1.32-patch004.zip` in Decaid.
 
 Thanks to the PR93 contributor for the initial implementation.
 
-Install `opencoffeeshop-v0.1.32-patch005.zip` in Decaid.
+Install `bestpresso-v0.1.32-patch005.zip` in Decaid.

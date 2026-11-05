@@ -1,14 +1,14 @@
 const API_PORT = 8080
 
 function storedGateway() {
-  try { return localStorage.getItem('openCoffeeShopGateway') || localStorage.getItem('reaHostname') }
+  try { return localStorage.getItem('smakGateway') || localStorage.getItem('reaHostname') }
   catch { return null }
 }
 
 export function getGatewayHost() {
   const queryGateway = new URLSearchParams(window.location.search).get('gateway')
   if (queryGateway) {
-    try { localStorage.setItem('openCoffeeShopGateway', queryGateway) } catch { /* storage is optional */ }
+    try { localStorage.setItem('smakGateway', queryGateway) } catch { /* storage is optional */ }
     return queryGateway
   }
   return storedGateway() || window.location.hostname || 'localhost'
@@ -30,6 +30,6 @@ export function getDecaidEndpoints() {
 
 export function getDecaidSettingsUrl() {
   const url = new URL(`${getDecaidEndpoints().apiBase}/plugins/settings.reaplugin/ui`)
-  url.searchParams.set('backName', 'OpenCoffeeShop')
+  url.searchParams.set('backName', 'Smak')
   return url.toString()
 }

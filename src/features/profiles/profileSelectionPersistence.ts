@@ -1,5 +1,5 @@
-export const LAST_SELECTED_PROFILE_SHARED_KEY = 'opencoffeeshop-last-selected-profile'
-export const LAST_SELECTED_PROFILE_LOCAL_KEY = 'opencoffeeshop.last-selected-profile-id.v1'
+export const LAST_SELECTED_PROFILE_SHARED_KEY = 'smak-last-selected-profile'
+export const LAST_SELECTED_PROFILE_LOCAL_KEY = 'smak.last-selected-profile-id.v1'
 
 export const normalizeRememberedProfileId = (value: unknown) => typeof value === 'string' && value.trim() ? value.trim() : null
 

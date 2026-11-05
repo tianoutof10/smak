@@ -6,12 +6,14 @@ Profile** (starting recipe) or **Add to library** (presets). Nothing changes
 automatically. Thresholds are uncalibrated against real shots until the
 calibration step below has been run on a physical machine.
 
-The design uses a morning screen as the default view, swipe-up diagnostics,
-live channel and stall markers, a post-shot taste prompt, research presets by
-bean style, an adaptive "Living Profile", and bean, gear and style context.
-The current flow uses one tap on the brewing control chart, lets the shot's
-pace choose between grind and ratio, and gives each bag a memory: its dial-in
-path, a pinned recipe, rest guidance and drift.
+This round follows the design brief captured in the project's Gemini
+conversations: a morning screen that is the default view, swipe up for
+diagnostics, live channel/stall markers, a taste prompt shown when the shot
+ends, research presets by bean style, an adaptive "Living Profile", and bean,
+gear and style context. The third cut replaces the three-question prompt with
+one tap on the brewing control chart, lets the shot's pace choose between grind
+and ratio, and gives each bag a memory: its dial-in path, a pinned recipe, rest
+guidance and drift.
 
 ## Product point of view
 
@@ -30,8 +32,8 @@ with "possible" where cause is inferred.
 
 Resistance follows Decent's published convention, `R = pressure / flow²`
 (bar per (ml/s)²). Decent's Insight blog tracks the *change* in resistance as
-the signal for when puck integrity falls apart. The ratio `flow / pressure`
-doesn't match DSx or Visualizer values.
+the signal for when puck integrity falls apart. Gemini's earlier prototype used
+`flow / pressure`, which doesn't match DSx or Visualizer values.
 
 Resistance is only computed where it means something:
 
@@ -140,6 +142,23 @@ temperature, profile, bag age). Re-tasting a shot replaces its entry.
   Home suggests one grind step finer: aged coffee extracts faster.
 - **Milk** is remembered on the bag (most coffees are drunk one way).
 
+### Learning from your own shots (`src/features/insights/learnedResponse.ts`)
+
+The rules decide *which* lever; your history decides *how far*. From consecutive
+tastings on the same profile where exactly one lever moved (grind, or yield by
+≥ 1.5 g) and dose and temperature held, each pair gives a slope: how far one
+grind unit or one gram moved the cup across the square. Pairs that move less
+than 0.08, include a drying finish, or point the wrong way (finer making it
+*more* sour) are dropped as noise. With at least two pairs, the median slope
+sizes the step to aim at the centre: grind up to 3 steps, yield up to 8 g. This
+bag's pairs come first; otherwise pairs from all bags are pooled. The sheet says
+which ("Sized from 3 earlier changes on this coffee…"). Without enough history
+the rule's single step stands.
+
+**Grind check.** The sheet shows *Grind for this shot* with − / +, prefilled
+from the bag × profile reference. Correcting it updates the tasting and the
+reference, so the history used above records the grind actually used.
+
 ### Rest (`src/domain/rest.ts`)
 
 Windows by roast level, in days off roast — light: opening from 7, best 14–35;
@@ -162,7 +181,7 @@ cup; on the right, today's recipe (dose → yield, ratio, temperature, grind), t
 active profile, the bag's pinned or carried-over recipe, any drift note, and the
 machine's state. Espresso is started at the group head, so Today says *Start the
 shot at the group head* rather than offering a button; in demo mode it offers a
-demo pull. **Machine** (top-bar switch) is the full OpenCoffeeShop dashboard; the
+demo pull. **Machine** (top-bar switch) is the full Smak dashboard; the
 choice is remembered.
 
 
@@ -182,8 +201,8 @@ One universal three-stage profile instead of many:
 3. **Extraction** by flow under a pressure ceiling, with an optional gentle decline stage.
 
 Its parameters (soak, flow, ceiling, decline, temperature, dose, target weight)
-are stored in the profile's metadata (the profile metadata), clamped to safe
-ranges, and compiled into valid v2.1 steps (verified by OpenCoffeeShop's own builder
+are stored in the profile's metadata (`smakChassis`), clamped to safe
+ranges, and compiled into valid v2.1 steps (verified by Smak's own builder
 validator in tests). The barista controls grind and puck prep; the app proposes
 hydraulic changes, applied by one tap.
 
@@ -209,12 +228,8 @@ library only on **Add to library**:
 | Blooming Espresso (Scott Rao) | Dense light roasts | 4 ml/s to 4 bar, 30 s sealed bloom, 2 ml/s percolation, 45 g |
 | Flow-Prioritized (Schmieder et al., 2023) | Everyday | Fill to 4 bar, flat 1.8 ml/s under 9 bar, 36 g |
 
-The three-slider Living Profile editor is available in Coffee → Living Profile.
-It exposes flow target, pressure ceiling and temperature, bounded by
-`CHASSIS_LIMITS`. It starts from the active Living Profile or the bean-and-gear
-starting recipe. Slider changes stay in the screen draft until the barista taps
-**Apply to Living Profile**; only then is the profile saved and selected. It
-does not change a live shot.
+Not built: the three-slider profile editor from the brief (the compiler exists;
+the screen was left out of this round by choice).
 
 ## 6. Beans and gear (`src/features/beans/`)
 
@@ -234,7 +249,7 @@ does not change a live shot.
   screen, water alkalinity, and Modern Clarity vs Traditional Body. Scale
   latency is already handled by Decaid's weight-flow look-ahead setting.
 
-All of this is stored on the tablet per gateway (a gateway-scoped local storage record).
+All of this is stored on the tablet per gateway (`smak-coffee-v1:<gateway>`).
 
 ## 7. Calibration before trusting advice
 

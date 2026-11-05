@@ -32,7 +32,7 @@
   --n-radius: 16px;
   --n-radius-s: 10px;
   --n-sans: "Inter Variable", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
-  /* OpenCoffeeShop tokens */
+  /* Smak tokens */
   --card-surface: var(--n-surface);
   --card-outline: var(--n-line);
   --metric-label-color: var(--n-ink-3);

@@ -9,7 +9,7 @@ Spanish adds 1,000 of 1,002 catalog entries across all seven feature areas. All 
 - 116 entries reuse context-matched Spanish terminology from the [Streamline translation CSV](https://github.com/decentespresso/streamline-js/blob/c47156be646168bd89587e69c9ec511867658a90/src/ui/de1%20gui%20translation%20-%20Sheet1.csv).
 - 884 entries are authored contextual translations, including compact status labels, settings headings, errors, accessibility labels and plural variants.
 - Upstream main was checked and still pointed to `c47156be646168bd89587e69c9ec511867658a90`. The source CSV's Git blob hash matched the cached file exactly: `0fa4e4b6721a6a247a3a1991604c79437c4050ac`.
-- The owner confirmed reuse permission on 19 September and requested Spanish reuse on 20 September. Attribution remains with Decent Espresso and its translation contributors. Upstream's GPL-3.0-or-later notice is not a change to OpenCoffeeShop's licence; retain the separate permission with project records.
+- The owner confirmed reuse permission on 19 September and requested Spanish reuse on 20 September. Attribution remains with Decent Espresso and its translation contributors. Upstream's GPL-3.0-or-later notice is not a change to Bestpresso's licence; retain the separate permission with project records.
 
 `localisation-spanish-provenance.json` records the current English and Spanish text for every entry. Reused entries also record the source CSV row (header included; quoted newlines do not increment the record number), original English/Spanish and any sentence-case adjustment. No CSV parsing or external translation service runs in the app.
 

@@ -45,6 +45,6 @@ export const commonEn = {
   'common.utility.scale': 'Scale',
   'common.utility.tank': 'Reservoir',
   'common.language.label': 'Language',
-  'common.language.hint': 'OpenCoffeeShop only; Decaid and profile names stay as they are',
+  'common.language.hint': 'Smak only; Decaid and profile names stay as they are',
   'common.language.auto': 'Follow device ({language})',
 } as const

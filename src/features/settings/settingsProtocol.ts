@@ -74,13 +74,13 @@ export const DEFAULT_PRESENCE_SETTINGS: PresenceSettings = {
 export const SETTINGS_PROTOCOL = {
   steam: {
     enabledTemperatureMin: 135,
-    // Match Decaid's steam form and OpenCoffeeShop's existing home-screen dial.
+    // Match Decaid's steam form and Smak's existing home-screen dial.
     temperatureMax: 170,
     duration: { min: 10, max: 120, step: 5 },
     flow: { min: 0.4, max: 2.5, step: 0.1 },
   },
   hotWater: {
-    // Decaid accepts 35 °C and OpenCoffeeShop intentionally exposes that wider
+    // Decaid accepts 35 °C and Smak intentionally exposes that wider
     // range; Streamline's current UI starts at 50 °C.
     temperature: { min: 35, max: 95, step: 1 },
     volume: { min: 10, max: 500, step: 10 },

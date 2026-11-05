@@ -27,7 +27,7 @@ Approved-terminology verification: all 562 tests, catalog/literal checks, build 
 Selected translations come from Decent Espresso's Streamline.js translation contributors:
 [de1 gui translation - Sheet1.csv](https://github.com/decentespresso/streamline-js/blob/c47156be646168bd89587e69c9ec511867658a90/src/ui/de1%20gui%20translation%20-%20Sheet1.csv), pinned to commit `c47156be646168bd89587e69c9ec511867658a90`.
 
-The project owner confirmed permission to reuse this content on 19 September 2026. Upstream carries a GPL-3.0-or-later notice. This import does not change OpenCoffeeShop's project licence or claim ownership of the source translations. Keep the separate reuse permission with project records.
+The project owner confirmed permission to reuse this content on 19 September 2026. Upstream carries a GPL-3.0-or-later notice. This import does not change Bestpresso's project licence or claim ownership of the source translations. Keep the separate reuse permission with project records.
 
 `streamline-translation-provenance.json` records each chosen English source, CSV record number (including the header, not physical lines inside quoted cells), destination token, and languages that reuse it. No network request or CSV parsing happens at runtime.
 

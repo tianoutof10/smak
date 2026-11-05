@@ -56,7 +56,7 @@ test('numeric-string temperatures retain their relative differences', () => {
 })
 
 test('active workflow yield wins over saved metadata, including zero', () => {
-  const record: DecaidProfileRecord = { id: 'recipe', profile: recipe([92], 40), metadata: { targetYield: 42, openCoffeeShopTargetYield: 0 } }
+  const record: DecaidProfileRecord = { id: 'recipe', profile: recipe([92], 40), metadata: { targetYield: 42, smakTargetYield: 0 } }
   for (const [target, display] of [[38, '38'], [0, '—']] as const) {
     const [domain] = profileRecordsToDomain([record], { profile: record.profile, context: { targetYield: target } }, [])
     assert.equal(domain.targetYield, display)

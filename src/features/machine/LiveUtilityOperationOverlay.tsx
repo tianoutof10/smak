@@ -7,7 +7,7 @@ import type { LiveUtilityOperation } from '../../domain/brewing'
 import { formatTemperatureValue, temperatureUnitLabel } from '../../domain/temperature'
 import { utilityMetricLabel } from '../../domain/utilityLabels'
 import { t } from '../../i18n/index.ts'
-import { useOpenCoffeeShopPreferences } from '../settings/openCoffeeShopPreferences'
+import { useSmakPreferences } from '../settings/smakPreferences'
 
 // Getters keep this a module-level constant while still translating lazily at read time,
 // the same pattern as domain/valueAdjustments.ts.
@@ -28,7 +28,7 @@ function Reading({ label, children, align = 'start' }: { label: string; children
 }
 
 export function LiveUtilityOperationOverlay({ operation }: { operation: LiveUtilityOperation }) {
-  const { preferences } = useOpenCoffeeShopPreferences()
+  const { preferences } = useSmakPreferences()
   const state = presentation[operation.kind]
   const seconds = elapsedSeconds(operation.elapsedMs)
   const duration = operation.targetDuration

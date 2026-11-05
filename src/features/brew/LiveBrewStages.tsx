@@ -4,7 +4,7 @@ import skipNext from '../../assets/figma/skip-next.svg'
 import { formatDecimal, t } from '../../i18n/index.ts'
 import type { LiveShotPoint } from '../../domain/brewing'
 import { formatTemperatureValue, temperatureUnitLabel } from '../../domain/temperature'
-import { useOpenCoffeeShopPreferences } from '../settings/openCoffeeShopPreferences'
+import { useSmakPreferences } from '../settings/smakPreferences'
 import { DOUBLE_TAP_CONFIRMATION_WINDOW_MS, registerDoubleTap } from './doubleTapConfirmation'
 import { canStartStageMouseDrag, latestStageScrollLeft, STAGE_MOUSE_DRAG_THRESHOLD_PX, stageMouseDragScrollLeft } from './stageStripScroll'
 import { pressureChainSlotCount } from './stageCardSizing'
@@ -128,7 +128,7 @@ function PressureChain({ pressures, slotCount }: { pressures: number[]; slotCoun
 }
 
 export function LiveBrewStages({ points, elapsedMs, reasons, active = false, finalYield, showYield = true, skipPending = false, selectedStageKey, onStageSelect, onSkipStage }: { points: LiveShotPoint[]; elapsedMs: number; reasons?: StageReasonAnalysis; active?: boolean; finalYield?: number | string; showYield?: boolean; skipPending?: boolean; selectedStageKey?: string; onStageSelect?: (stage: BrewStageSelection | null) => void; onSkipStage?: () => Promise<boolean> }) {
-  const { preferences } = useOpenCoffeeShopPreferences()
+  const { preferences } = useSmakPreferences()
   const stages = summarizeLiveBrewStages(points, elapsedMs)
   const stripRef = useRef<HTMLElement>(null)
   const trackRef = useRef<HTMLDivElement>(null)

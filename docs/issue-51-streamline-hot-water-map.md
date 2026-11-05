@@ -4,15 +4,15 @@ Reviewed 13 September 2026. Read-only investigation; no implementation or issue 
 
 ## New evidence
 
-Reporter retest (issue 51): updated OpenCoffeeShop 0.1.28, hot-water look-ahead saved at 0.30 s, target 20 g, stops at 14.2 g. Decaid logs arming at 20 g but no weight-target stop message. Same machine/Bookoo Themis Mini succeeds using Streamline.
+[Reporter retest](https://github.com/xinghendri/bestpresso/issues/51#issuecomment-5651875879): updated Bestpresso 0.1.28, hot-water look-ahead saved at 0.30 s, target 20 g, stops at 14.2 g. Decaid logs arming at 20 g but no weight-target stop message. Same machine/Bookoo Themis Mini succeeds using Streamline.
 
 This shows the previous calibration-copy fix was insufficient. Assuming the log is complete, the predictive weight controller did not request this stop. It does not yet identify which other stop path won. The two tests establish a skin-dependent outcome, not that all machine settings were identical.
 
-Source scope: Streamline origin/main `d8f9eb2d8f7df8645d18d74c1b07eb6e0b0988aa`, including changes beyond the older local checkout; OpenCoffeeShop released revision `a63c3c0`; authoritative local Decaid source `/Users/hendri/Downloads/decaid-main`. Reporter’s Decaid and Streamline versions remain unconfirmed. No hardware trace reproduced locally.
+Source scope: Streamline origin/main `d8f9eb2d8f7df8645d18d74c1b07eb6e0b0988aa`, including changes beyond the older local checkout; Bestpresso released revision `a63c3c0`; authoritative local Decaid source `/Users/hendri/Downloads/decaid-main`. Reporter’s Decaid and Streamline versions remain unconfirmed. No hardware trace reproduced locally.
 
 ## Ownership map
 
-| Stage | Streamline | OpenCoffeeShop | Owner |
+| Stage | Streamline | Bestpresso | Owner |
 |---|---|---|---|
 | Calibration | Separate weightFlowMultiplier and hotWaterFlowMultiplier; latter defaults to 0.3 s, step 0.05 | Now independent, same default and precision | Decaid settings |
 | Scale stop switch | Honors stored stopHotWaterAtWeight; control disabled without scale | Forces true when a scale connects, per product decision | Decaid settings |
@@ -37,7 +37,7 @@ Home amount and temperature setters in [api.js](https://github.com/decentespress
 
 Settings flushPendingChanges also persists `last-hot-water-volume` and `last-hot-water-temp` when their workflow values change. It queues workflow writes and shared writes differently from the awaited Home setter; it should not be described as one universal atomic transaction.
 
-OpenCoffeeShop Home uses these same shared keys but writes them after the workflow response. OpenCoffeeShop Settings does not maintain these keys. Consequently a later Streamline session can restore a different remembered target after a OpenCoffeeShop Settings edit. This is a confirmed consistency gap, not proof that it caused the reported stop.
+Bestpresso Home uses these same shared keys but writes them after the workflow response. Bestpresso Settings does not maintain these keys. Consequently a later Streamline session can restore a different remembered target after a Bestpresso Settings edit. This is a confirmed consistency gap, not proof that it caused the reported stop.
 
 ## 2. Streamline workflow versus physical machine settings
 
@@ -45,7 +45,7 @@ In [app.js](https://github.com/decentespresso/streamline-js/blob/d8f9eb2/src/mod
 
 handleShotSettingsData receives the machine shotSettings stream, updates the display, and calls resyncDriftedShotSettings. Amount/temp are among tracked fields. Corrections have a 30-second per-field cooldown to avoid repeated writes and BLE instability. This is not continuous weight-control logic.
 
-OpenCoffeeShop applies the workflow to its home model and polls every 15 seconds. It does not consume machine shotSettings. Thus the overlay’s “20” is a workflow/model value, not independent confirmation of all physical stop settings.
+Bestpresso applies the workflow to its home model and polls every 15 seconds. It does not consume machine shotSettings. Thus the overlay’s “20” is a workflow/model value, not independent confirmation of all physical stop settings.
 
 Important Decaid limitation: local updateWorkflowSettings compares old/new workflow values and returns early if no relevant values changed. Re-sending an identical workflow field is therefore NOT guaranteed to force a physical-machine rewrite. Any proposed repair must verify the actual device settings rather than assume PUT success proves resynchronization.
 
@@ -63,7 +63,7 @@ Decaid separately programs the machine with hot-water flow, volume and duration.
 
 ## 4. Overlay disappearance
 
-OpenCoffeeShop LiveUtilityOperationOverlay is presentational: no click-to-stop, timer-to-stop, weight comparison stop, or unmount stop effect. useBrewingData clears it when a snapshot leaves hotWater; a device disconnection can also remove the monitored operation. Disappearance is evidence of the observed lifecycle ending, not a cause established by the UI.
+Bestpresso LiveUtilityOperationOverlay is presentational: no click-to-stop, timer-to-stop, weight comparison stop, or unmount stop effect. useBrewingData clears it when a snapshot leaves hotWater; a device disconnection can also remove the monitored operation. Disappearance is evidence of the observed lifecycle ending, not a cause established by the UI.
 
 The displayed 14.2 g is the most recent scale value shown then, not guaranteed settled cup weight after drips. The reporter should capture both where possible.
 

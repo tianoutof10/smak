@@ -33,6 +33,6 @@
   "src/features/profiles/ProfileBuilderScreen.tsx: g": "Standard measurement unit, not prose.",
   "src/features/profiles/ProfileBuilderScreen.tsx: s": "Standard measurement unit, not prose.",
   "src/features/profiles/ProfilesPanel.tsx: g": "Standard measurement unit, not prose.",
-  "src/features/settings/SettingsScreen.tsx: B": "OpenCoffeeShop brand monogram.",
+  "src/features/settings/SettingsScreen.tsx: B": "Smak brand monogram.",
   "src/features/settings/SettingsScreen.tsx: ml": "Standard measurement unit, not prose."
 }

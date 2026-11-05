@@ -1,7 +1,6 @@
 import type { BrewProfile } from '../../domain/brewing'
 import type { DecaidProfileRecord } from '../../api/decaid/types'
 import { t } from '../../i18n/index.ts'
-import { migrateProfileMetadata } from '../../compatibility/legacyDataMigration.ts'
 
 export type ProfileSource = 'Created' | 'Imported' | 'Built-in' | 'Saved'
 export type LibrarySource = 'Preloaded' | 'Imported' | 'My profiles'
@@ -30,15 +29,15 @@ export function beverageTypeLabel(beverageType: string | undefined): string {
 
 export function sourceForRecord(record: DecaidProfileRecord): ProfileSource {
   if (record.isDefault === true) return 'Built-in'
-  const origin = migrateProfileMetadata(record.metadata).openCoffeeShopSource
+  const origin = record.metadata?.smakSource
   return origin === 'created' ? 'Created' : origin === 'imported' ? 'Imported' : 'Saved'
 }
 export const profileLibrarySource = (profile: BrewProfile): LibrarySource =>
   profile.source === 'Built-in' ? 'Preloaded' : profile.source === 'Imported' ? 'Imported' : 'My profiles'
 export function librarySaveMetadata(metadata: Record<string, unknown> | null | undefined, source: DecaidProfileRecord | undefined, overwrite: boolean, now: string) {
-  const merged = migrateProfileMetadata({ ...source?.metadata, ...metadata })
+  const merged = { ...source?.metadata, ...metadata }
   if (overwrite) return merged
-  return { ...merged, openCoffeeShopSource: !source && merged.openCoffeeShopSource === 'imported' ? 'imported' : 'created', openCoffeeShopCreatedAt: now }
+  return { ...merged, smakSource: !source && merged.smakSource === 'imported' ? 'imported' : 'created', smakCreatedAt: now }
 }
 export function filterLibraryProfiles(profiles: BrewProfile[], options: { section: LibrarySection; query: string; category: string; sort: 'name' | 'recent' }) {
   const query = options.query.trim().toLocaleLowerCase()

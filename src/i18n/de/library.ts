@@ -105,11 +105,4 @@ export const libraryDe = {
   'library.verification.metadataChanged': 'Decaid hat beim Speichern die Profil-Metadaten geändert. Der Editor hat deinen Entwurf zur Prüfung offen gelassen.',
   'library.verification.unexpectedLineage': 'Decaid hat eine unerwartete Profil-Abstammung zurückgegeben. Der Editor hat deinen Entwurf zur Prüfung offen gelassen.',
   'library.verification.readbackMismatch': 'Das von Decaid zurückgegebene Profil konnte nach dem Speichern nicht verifiziert werden.',
-  'library.coffee.tab.livingProfile': 'Living-Profil',
-  'library.coffee.livingEditor.title': 'Living-Profil abstimmen',
-  'library.coffee.livingEditor.active': 'Du bearbeitest dein aktives Living-Profil. Änderungen bleiben ein Entwurf, bis du sie anwendest.',
-  'library.coffee.livingEditor.fromBean': 'Ausgangsrezept für {bean}. Änderungen bleiben ein Entwurf, bis du sie anwendest.',
-  'library.coffee.livingEditor.hint': 'Ändere jeweils nur eine Variable. Durchflussziel, Druckgrenze und Temperatur bleiben innerhalb der unterstützten Bereiche. Dieser Editor ändert keinen laufenden Bezug.',
-  'library.coffee.livingEditor.applyHint': 'Speichert dieses Profil und wählt es aus; während eines laufenden Bezugs werden keine Einstellungen geändert.',
-  'library.coffee.livingEditor.saved': 'Profil gespeichert und ausgewählt.',
 } satisfies Translation<typeof libraryEn>

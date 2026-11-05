@@ -1,3 +1,4 @@
+import { migrateRecord } from './legacyNames'
 import { t } from '../../i18n/index.ts'
 import { getDecaidEndpoints } from './config'
 import { parseJsonBody } from './jsonBody'
@@ -43,8 +44,8 @@ async function getJson<T>(path: string, timeoutMs = 4500): Promise<T> {
 }
 
 export const getWorkflow = () => getJson<DecaidWorkflow>('/workflow')
-export const getProfiles = () => getJson<DecaidProfileRecord[]>('/profiles')
-export const getProfile = (profileId: string) => getJson<DecaidProfileRecord>(`/profiles/${encodeURIComponent(profileId)}`)
+export const getProfiles = () => getJson<DecaidProfileRecord[]>('/profiles').then(records => Array.isArray(records) ? records.map(migrateRecord) : records)
+export const getProfile = (profileId: string) => getJson<DecaidProfileRecord>(`/profiles/${encodeURIComponent(profileId)}`).then(migrateRecord)
 export const getFavoriteAssignments = () => getJson<FavoriteAssignments>('/store/streamline-app/favorite-profiles')
 export const getSharedSetting = <T>(key: string) => getJson<T>(`/store/streamline-app/${encodeURIComponent(key)}`)
 export const getDevices = () => getJson<DecaidDevice[]>('/devices')
@@ -81,7 +82,7 @@ export async function createProfile(profile: DecaidProfile, parentId?: string, m
     body: JSON.stringify({ profile, parentId: parentId ?? null, metadata: metadata ?? null }),
   })
   if (!response.ok) throw await responseError(response, t('common.error.profileCreation', { status: response.status }))
-  return await response.json() as DecaidProfileRecord
+  return migrateRecord(await response.json() as DecaidProfileRecord)
 }
 
 export async function updateProfile(profileId: string, profile: DecaidProfile, metadata?: Record<string, unknown> | null) {
@@ -91,7 +92,7 @@ export async function updateProfile(profileId: string, profile: DecaidProfile, m
     body: JSON.stringify({ profile, metadata: metadata ?? null }),
   })
   if (!response.ok) throw await responseError(response, t('common.error.profileUpdate', { status: response.status }))
-  return await response.json() as DecaidProfileRecord
+  return migrateRecord(await response.json() as DecaidProfileRecord)
 }
 
 export async function deleteProfile(profileId: string) {
@@ -220,7 +221,7 @@ export async function updateProfileMetadata(profileId: string, metadata: Record<
     body: JSON.stringify({ metadata }),
   })
   if (!response.ok) throw new Error(t('common.error.profileUpdate', { status: response.status }) + ': ' + await response.text())
-  return await response.json() as DecaidProfileRecord
+  return migrateRecord(await response.json() as DecaidProfileRecord)
 }
 
 export async function setSharedSetting(key: string, value: unknown) {

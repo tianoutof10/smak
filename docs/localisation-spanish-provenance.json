@@ -284,8 +284,8 @@
       "adjustment": "none"
     },
     "common.language.hint": {
-      "english": "OpenCoffeeShop only; Decaid and profile names stay as they are",
-      "translation": "Solo OpenCoffeeShop; Decaid y los nombres de perfiles no cambian",
+      "english": "Smak only; Decaid and profile names stay as they are",
+      "translation": "Solo Smak; Decaid y los nombres de perfiles no cambian",
       "kind": "contextual"
     },
     "common.language.auto": {
@@ -314,8 +314,8 @@
       "kind": "contextual"
     },
     "shell.app.visualizerImportMissing": {
-      "english": "The profile was imported, but Decaid did not return it to OpenCoffeeShop.",
-      "translation": "El perfil se importó, pero Decaid no lo devolvió a OpenCoffeeShop.",
+      "english": "The profile was imported, but Decaid did not return it to Smak.",
+      "translation": "El perfil se importó, pero Decaid no lo devolvió a Smak.",
       "kind": "contextual"
     },
     "shell.appShell.expandUtilityPanels": {
@@ -909,8 +909,8 @@
       "kind": "contextual"
     },
     "shell.updates.connectionLost": {
-      "english": "OpenCoffeeShop lost its connection to Decaid. Try again in a moment.",
-      "translation": "OpenCoffeeShop perdió la conexión con Decaid. Vuelve a intentarlo en un momento.",
+      "english": "Smak lost its connection to Decaid. Try again in a moment.",
+      "translation": "Smak perdió la conexión con Decaid. Vuelve a intentarlo en un momento.",
       "kind": "contextual"
     },
     "shell.cleaning.title": {
@@ -3877,9 +3877,9 @@
       "sourceSpanish": "Avanzado",
       "adjustment": "none"
     },
-    "settings.group.openCoffeeShop": {
-      "english": "OpenCoffeeShop",
-      "translation": "OpenCoffeeShop",
+    "settings.group.smak": {
+      "english": "Smak",
+      "translation": "Smak",
       "kind": "contextual"
     },
     "settings.group.makeMaintain": {
@@ -3967,8 +3967,8 @@
       "adjustment": "none"
     },
     "settings.section.overview.description": {
-      "english": "Your machine, preparation and OpenCoffeeShop preferences in one place.",
-      "translation": "Tu máquina, preparación y preferencias de OpenCoffeeShop en un solo lugar.",
+      "english": "Your machine, preparation and Smak preferences in one place.",
+      "translation": "Tu máquina, preparación y preferencias de Smak en un solo lugar.",
       "kind": "contextual"
     },
     "settings.section.prepare.title": {
@@ -3997,8 +3997,8 @@
       "kind": "contextual"
     },
     "settings.section.alerts.description": {
-      "english": "Choose when OpenCoffeeShop should draw attention and which brewing safeguards apply.",
-      "translation": "Elige cuándo debe avisarte OpenCoffeeShop y qué protecciones se aplican a la extracción.",
+      "english": "Choose when Smak should draw attention and which brewing safeguards apply.",
+      "translation": "Elige cuándo debe avisarte Smak y qué protecciones se aplican a la extracción.",
       "kind": "contextual"
     },
     "settings.section.devices.title": {
@@ -4007,8 +4007,8 @@
       "kind": "contextual"
     },
     "settings.section.devices.description": {
-      "english": "Find, connect and choose the machine and scale OpenCoffeeShop should prefer.",
-      "translation": "Busca, conecta y elige la máquina y la báscula preferidas de OpenCoffeeShop.",
+      "english": "Find, connect and choose the machine and scale Smak should prefer.",
+      "translation": "Busca, conecta y elige la máquina y la báscula preferidas de Smak.",
       "kind": "contextual"
     },
     "settings.section.power.title": {
@@ -4037,8 +4037,8 @@
       "kind": "contextual"
     },
     "settings.section.data.description": {
-      "english": "Back up or restore Decaid data without leaving OpenCoffeeShop.",
-      "translation": "Crea o restaura copias de los datos de Decaid sin salir de OpenCoffeeShop.",
+      "english": "Back up or restore Decaid data without leaving Smak.",
+      "translation": "Crea o restaura copias de los datos de Decaid sin salir de Smak.",
       "kind": "contextual"
     },
     "settings.section.extensions.title": {
@@ -4219,8 +4219,8 @@
       "kind": "contextual"
     },
     "settings.overview.hero.description": {
-      "english": "Everyday OpenCoffeeShop and Decaid controls now share this settings surface.",
-      "translation": "Los controles habituales de OpenCoffeeShop y Decaid se reúnen en estos ajustes.",
+      "english": "Everyday Smak and Decaid controls now share this settings surface.",
+      "translation": "Los controles habituales de Smak y Decaid se reúnen en estos ajustes.",
       "kind": "contextual"
     },
     "settings.overview.hero.machineConnected": {
@@ -4317,8 +4317,8 @@
       "kind": "contextual"
     },
     "settings.action.personalize": {
-      "english": "Personalize OpenCoffeeShop",
-      "translation": "Personalizar OpenCoffeeShop",
+      "english": "Personalize Smak",
+      "translation": "Personalizar Smak",
       "kind": "contextual"
     },
     "settings.eyebrow.decaid": {
@@ -4959,12 +4959,12 @@
       "translation": "Pantalla",
       "kind": "contextual"
     },
-    "settings.experience.openCoffeeShopTheme": {
-      "english": "OpenCoffeeShop theme",
-      "translation": "Tema de OpenCoffeeShop",
+    "settings.experience.smakTheme": {
+      "english": "Smak theme",
+      "translation": "Tema de Smak",
       "kind": "contextual"
     },
-    "settings.experience.openCoffeeShopThemeHint": {
+    "settings.experience.smakThemeHint": {
       "english": "Light mode is in beta. Dark is the default.",
       "translation": "El modo claro está en beta. El oscuro es el predeterminado.",
       "kind": "contextual"
@@ -4985,8 +4985,8 @@
       "kind": "contextual"
     },
     "settings.experience.decaidThemeHint": {
-      "english": "Appearance outside OpenCoffeeShop",
-      "translation": "Apariencia fuera de OpenCoffeeShop",
+      "english": "Appearance outside Smak",
+      "translation": "Apariencia fuera de Smak",
       "kind": "contextual"
     },
     "settings.option.followDevice": {
@@ -5005,8 +5005,8 @@
       "kind": "contextual"
     },
     "settings.experience.clockFormatHint": {
-      "english": "Screensaver and history times in OpenCoffeeShop",
-      "translation": "Horas del salvapantallas y del historial de OpenCoffeeShop",
+      "english": "Screensaver and history times in Smak",
+      "translation": "Horas del salvapantallas y del historial de Smak",
       "kind": "contextual"
     },
     "settings.clock.12h": {
@@ -5020,8 +5020,8 @@
       "kind": "contextual"
     },
     "settings.experience.temperatureUnitHint": {
-      "english": "OpenCoffeeShop display only; Decaid stays in Celsius",
-      "translation": "Solo la pantalla de OpenCoffeeShop; Decaid mantiene Celsius",
+      "english": "Smak display only; Decaid stays in Celsius",
+      "translation": "Solo la pantalla de Smak; Decaid mantiene Celsius",
       "kind": "contextual"
     },
     "settings.unit.celsius": {
@@ -5045,8 +5045,8 @@
       "kind": "contextual"
     },
     "settings.experience.lineWeight.description": {
-      "english": "Apply one telemetry line weight throughout OpenCoffeeShop.",
-      "translation": "Usa el mismo grosor de línea de telemetría en todo OpenCoffeeShop.",
+      "english": "Apply one telemetry line weight throughout Smak.",
+      "translation": "Usa el mismo grosor de línea de telemetría en todo Smak.",
       "kind": "contextual"
     },
     "settings.experience.reset.title": {
@@ -5060,8 +5060,8 @@
       "kind": "contextual"
     },
     "settings.action.resetPreferences": {
-      "english": "Reset OpenCoffeeShop preferences",
-      "translation": "Restablecer preferencias de OpenCoffeeShop",
+      "english": "Reset Smak preferences",
+      "translation": "Restablecer preferencias de Smak",
       "kind": "contextual"
     },
     "settings.data.backup.eyebrow": {
@@ -7377,224 +7377,49 @@
       "translation": "La báscula no está conectada: no se registrarán peso ni ritmo, y los consejos se basarán solo en el sabor.",
       "kind": "contextual"
     },
-    "insights.lab.eyebrow": {
-      "english": "SHOT LAB",
-      "translation": "LABORATORIO DE SHOTS",
+    "insights.dialIn.grindUsed": {
+      "english": "Grind for this shot",
+      "translation": "Molienda de esta extracción",
       "kind": "contextual"
     },
-    "insights.lab.title": {
-      "english": "Compare two pulls",
-      "translation": "Compara dos extracciones",
+    "insights.dialIn.grindFinerAria": {
+      "english": "One step finer",
+      "translation": "Un punto más fino",
       "kind": "contextual"
     },
-    "insights.lab.subtitle": {
-      "english": "Overlay recorded pressure and flow on each shot’s own timeline.",
-      "translation": "Superpone la presión y el caudal registrados según la duración de cada extracción.",
+    "insights.dialIn.grindCoarserAria": {
+      "english": "One step coarser",
+      "translation": "Un punto más grueso",
       "kind": "contextual"
     },
-    "insights.lab.measuredOnly": {
-      "english": "Recorded telemetry",
-      "translation": "Telemetría registrada",
+    "insights.dialIn.step.grindFinerSteps": {
+      "english": "Grind {count} steps finer: {from} → {to}.",
+      "translation": "Muele {count} puntos más fino: {from} → {to}.",
       "kind": "contextual"
     },
-    "insights.lab.pressure": {
-      "english": "Pressure",
-      "translation": "Presión",
+    "insights.dialIn.step.grindCoarserSteps": {
+      "english": "Grind {count} steps coarser: {from} → {to}.",
+      "translation": "Muele {count} puntos más grueso: {from} → {to}.",
       "kind": "contextual"
     },
-    "insights.lab.flow": {
-      "english": "Flow",
-      "translation": "Caudal",
+    "insights.dialIn.learned.grindBag": {
+      "english": "Sized from {count} earlier changes on this coffee: one grind step moved the cup about {effect} across the square.",
+      "translation": "Calculado a partir de {count} cambios anteriores con este café: un punto de molienda movió la taza unos {effect} en el cuadro.",
       "kind": "contextual"
     },
-    "insights.lab.plotAria": {
-      "english": "{metric} comparison chart",
-      "translation": "Gráfico comparativo de {metric}",
+    "insights.dialIn.learned.grindAll": {
+      "english": "Sized from {count} earlier changes across your coffees: one grind step moved the cup about {effect} across the square.",
+      "translation": "Calculado a partir de {count} cambios anteriores con tus cafés: un punto de molienda movió la taza unos {effect} en el cuadro.",
       "kind": "contextual"
     },
-    "insights.lab.shotA": {
-      "english": "Shot A",
-      "translation": "Shot A",
+    "insights.dialIn.learned.yieldBag": {
+      "english": "Sized from {count} earlier changes on this coffee: each gram of yield moved the cup about {effect} across the square.",
+      "translation": "Calculado a partir de {count} cambios anteriores con este café: cada gramo de peso en taza movió la taza unos {effect} en el cuadro.",
       "kind": "contextual"
     },
-    "insights.lab.shotB": {
-      "english": "Shot B",
-      "translation": "Shot B",
-      "kind": "contextual"
-    },
-    "insights.lab.normalizedTime": {
-      "english": "Elapsed time (%)",
-      "translation": "Tiempo transcurrido (%)",
-      "kind": "contextual"
-    },
-    "insights.lab.dose": {
-      "english": "Dose",
-      "translation": "Dosis",
-      "kind": "contextual"
-    },
-    "insights.lab.secondsUnit": {
-      "english": "s",
-      "translation": "s",
-      "kind": "contextual"
-    },
-    "insights.lab.gramsUnit": {
-      "english": "g",
-      "translation": "g",
-      "kind": "contextual"
-    },
-    "insights.lab.note": {
-      "english": "Curves are aligned by elapsed-time percentage, not by matching events. Similar shapes do not prove similar extraction or taste.",
-      "translation": "Las curvas se alinean por porcentaje del tiempo, no por eventos coincidentes. Una forma similar no demuestra una extracción ni un sabor iguales.",
-      "kind": "contextual"
-    },
-    "insights.lab.emptyTitle": {
-      "english": "Two recorded shots needed",
-      "translation": "Se necesitan dos shots registrados",
-      "kind": "contextual"
-    },
-    "insights.lab.emptyBody": {
-      "english": "Once two saved espresso shots include pressure or flow telemetry, you can compare their curves here.",
-      "translation": "Cuando dos espressos guardados incluyan telemetría de presión o caudal, podrás comparar aquí sus curvas.",
-      "kind": "contextual"
-    },
-    "insights.lab.phaseAligned": {
-      "english": "Matching recorded phases (%)",
-      "translation": "Mismas fases registradas (%)",
-      "kind": "contextual"
-    },
-    "insights.lab.phaseNote": {
-      "english": "Aligned at recorded phase boundaries: {phases}. Phase alignment is used only because both shots recorded the same sequence; values remain observations, not taste predictions.",
-      "translation": "Alineación en los límites de fase registrados: {phases}. Solo se alinean las fases porque ambos shots registraron la misma secuencia; los valores son observaciones, no predicciones de sabor.",
-      "kind": "contextual"
-    },
-    "insights.lab.contextLabel": {
-      "english": "Bean and recipe context for both shots",
-      "translation": "Contexto de café y receta de ambos shots",
-      "kind": "contextual"
-    },
-    "insights.lab.beanUnlinked": {
-      "english": "No bean linked to this shot",
-      "translation": "Este shot no tiene un café vinculado",
-      "kind": "contextual"
-    },
-    "insights.lab.grindUnknown": {
-      "english": "Grind setting not recorded",
-      "translation": "Ajuste de molienda no registrado",
-      "kind": "contextual"
-    },
-    "insights.lab.observationsLabel": {
-      "english": "Recorded observations and next experiment",
-      "translation": "Observaciones registradas y próximo experimento",
-      "kind": "contextual"
-    },
-    "insights.lab.observedLabel": {
-      "english": "Recorded values",
-      "translation": "Valores registrados",
-      "kind": "contextual"
-    },
-    "insights.lab.durationObserved": {
-      "english": "Duration · A {a} s / B {b} s",
-      "translation": "Duración · A {a} s / B {b} s",
-      "kind": "contextual"
-    },
-    "insights.lab.yieldObserved": {
-      "english": "Yield · A {a} g / B {b} g",
-      "translation": "Bebida · A {a} g / B {b} g",
-      "kind": "contextual"
-    },
-    "insights.lab.hypothesisLabel": {
-      "english": "Interpretation limits",
-      "translation": "Límites de interpretación",
-      "kind": "contextual"
-    },
-    "insights.lab.hypothesisCaution": {
-      "english": "These measurements show what changed in the recorded shots. They do not establish why, extraction quality, or taste.",
-      "translation": "Estas medidas muestran qué cambió entre los shots registrados. No demuestran por qué, la calidad de extracción ni el sabor.",
-      "kind": "contextual"
-    },
-    "insights.lab.nextExperiment": {
-      "english": "One controlled next experiment",
-      "translation": "Un próximo experimento controlado",
-      "kind": "contextual"
-    },
-    "insights.lab.experiment": {
-      "english": "Repeat the recipe and change only the grind setting by one small step.",
-      "translation": "Repite la receta y cambia solo la molienda un paso pequeño.",
-      "kind": "contextual"
-    },
-    "insights.lab.experimentDetail": {
-      "english": "Keep the same bean, dose, target yield, profile, and water temperature. Record the result; no machine setting is changed here.",
-      "translation": "Mantén iguales el café, la dosis, el rendimiento objetivo, el perfil y la temperatura del agua. Registra el resultado; aquí no se cambia ningún ajuste de la máquina.",
-      "kind": "contextual"
-    },
-    "insights.lab.phaseSummary": {
-      "english": "Measured values by matching phase",
-      "translation": "Valores medidos por fase coincidente",
-      "kind": "contextual"
-    },
-    "insights.lab.phase": {
-      "english": "Phase",
-      "translation": "Fase",
-      "kind": "contextual"
-    },
-    "insights.lab.phaseDuration": {
-      "english": "Duration · s",
-      "translation": "Duración · s",
-      "kind": "contextual"
-    },
-    "insights.lab.phasePressure": {
-      "english": "Mean pressure · bar",
-      "translation": "Presión media · bar",
-      "kind": "contextual"
-    },
-    "insights.lab.phaseFlow": {
-      "english": "Mean flow · ml/s",
-      "translation": "Caudal medio · ml/s",
-      "kind": "contextual"
-    },
-    "insights.lab.phaseSamples": {
-      "english": "Samples · pressure / flow",
-      "translation": "Muestras · presión / caudal",
-      "kind": "contextual"
-    },
-    "insights.lab.phaseMeanNote": {
-      "english": "Means use recorded samples only; the sample counts show pressure and flow coverage in A/B order. These are descriptive measurements, not calibrated phase scores.",
-      "translation": "Las medias usan solo muestras registradas; los recuentos muestran la cobertura de presión y caudal en orden A/B. Son medidas descriptivas, no puntuaciones de fase calibradas.",
-      "kind": "contextual"
-    },
-    "library.coffee.tab.livingProfile": {
-      "english": "Living Profile",
-      "translation": "Perfil vivo",
-      "kind": "contextual"
-    },
-    "library.coffee.livingEditor.title": {
-      "english": "Tune the Living Profile",
-      "translation": "Ajustar el Perfil vivo",
-      "kind": "contextual"
-    },
-    "library.coffee.livingEditor.active": {
-      "english": "Editing your active Living Profile. Changes remain a draft until you apply them.",
-      "translation": "Estás editando el Perfil vivo activo. Los cambios son un borrador hasta que los apliques.",
-      "kind": "contextual"
-    },
-    "library.coffee.livingEditor.fromBean": {
-      "english": "Starting from a recipe for {bean}. Changes remain a draft until you apply them.",
-      "translation": "Receta inicial para {bean}. Los cambios son un borrador hasta que los apliques.",
-      "kind": "contextual"
-    },
-    "library.coffee.livingEditor.hint": {
-      "english": "Adjust one variable at a time. Flow target, pressure ceiling, and temperature stay within supported ranges. This editor never changes a live shot.",
-      "translation": "Ajusta una variable cada vez. El caudal, el límite de presión y la temperatura respetan los rangos admitidos. Este editor nunca modifica una extracción en curso.",
-      "kind": "contextual"
-    },
-    "library.coffee.livingEditor.applyHint": {
-      "english": "Saves this profile and selects it; it will not change settings during a live shot.",
-      "translation": "Guarda este perfil y lo selecciona; no modifica ajustes durante una extracción.",
-      "kind": "contextual"
-    },
-    "library.coffee.livingEditor.saved": {
-      "english": "Profile saved and selected.",
-      "translation": "Perfil guardado y seleccionado.",
+    "insights.dialIn.learned.yieldAll": {
+      "english": "Sized from {count} earlier changes across your coffees: each gram of yield moved the cup about {effect} across the square.",
+      "translation": "Calculado a partir de {count} cambios anteriores con tus cafés: cada gramo de peso en taza movió la taza unos {effect} en el cuadro.",
       "kind": "contextual"
     }
   }

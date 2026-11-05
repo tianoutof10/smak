@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { t } from '../../i18n/index.ts'
 import { browserFullscreenPromptVariant, isFullscreenElementActive, requestFullscreen, type FullscreenPromptVariant } from '../../lib/fullscreen'
 
-const dismissedKey = 'opencoffeeshop.fullscreen-prompt-dismissed.v1'
+const dismissedKey = 'smak.fullscreen-prompt-dismissed.v1'
 
 const initialVariant = (): FullscreenPromptVariant => {
   try {

@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import type { LiveShotPoint } from '../../domain/brewing'
 import { daysOffRoast } from '../../domain/beans'
 import type { ChassisParams } from '../../domain/chassis'
-import { analysisOverridesForGear } from '../../domain/gear'
+import { analysisOverridesForGear, nextGrindSetting } from '../../domain/gear'
 import { restState } from '../../domain/rest'
 import { analyseShot, type ShotAnalysis, type ShotFinding } from '../../domain/shotAnalysis'
 import { paceAgainstBaseline, shotPace, type PaceReading } from '../../domain/shotPace'
@@ -13,6 +13,7 @@ import { activeBean, coffeeUpdates, useCoffeeLibrary } from '../beans/coffeeLibr
 import { journeyFor, recipeFromEntry, targetFor } from '../beans/dialJourney'
 import { adviceApplyAction, extractionYieldPct, measuredPoint, palateDisagrees, recommendNextShot, TASTE_ZONES, type ApplyAction, type Finish } from './dialIn'
 import { applySummary, stepText } from './dialInText'
+import { learnedResponse, sizeFromHistory } from './learnedResponse'
 import './shotDialIn.css'
 
 export interface ShotDialInPanelProps {
@@ -74,7 +75,7 @@ function Segmented<Value extends string>({ label, value, options, onChange }: { 
 
 type ApplyState = 'idle' | 'applying' | 'applied' | 'failed'
 
-export function ShotDialInPanel({ points, shotKey, shotId, profileId, profileName, dose, yieldGrams, grindSetting, temperatureC, chassis, onApply, onAddTurbo, onClose }: ShotDialInPanelProps) {
+export function ShotDialInPanel({ points, shotKey, shotId, profileId, profileName, dose, yieldGrams, grindSetting: profileGrind, temperatureC, chassis, onApply, onAddTurbo, onClose }: ShotDialInPanelProps) {
   const { library, update, source } = useCoffeeLibrary()
   const gear = library.gear
   const bean = activeBean(library)
@@ -89,6 +90,8 @@ export function ShotDialInPanel({ points, shotKey, shotId, profileId, profileNam
   const stored = key ? journey.entries.find(entry => entry.key === key) : undefined
   const [point, setPoint] = useState<TastePoint | undefined>(stored ? { extraction: stored.extraction, strength: stored.strength } : undefined)
   const [finish, setFinish] = useState<Finish>(stored?.finish ?? 'clean')
+  // The grind this shot was actually pulled at: confirmed here, so the bag's memory stays honest.
+  const [grindSetting, setGrindSetting] = useState<string | undefined>(stored?.grindSetting ?? profileGrind)
   const [milk, setMilk] = useState<boolean>(stored?.milk ?? bean?.forMilk === true)
   const [tds, setTds] = useState(stored?.tdsPct !== undefined ? String(stored.tdsPct) : '')
   const [touched, setTouched] = useState(false)
@@ -134,7 +137,12 @@ export function ShotDialInPanel({ points, shotKey, shotId, profileId, profileNam
 
   const note = point ? { extraction: point.extraction, strength: point.strength, finish, milk } : undefined
   const context = { dose, yield: yieldGrams, grindSetting, temperatureC, peakPressureBar, gear, chassis, pace: pace?.pace, rest: rest?.phase }
-  const advice = note ? recommendNextShot(note, analysis, context) : undefined
+  const allEntries = Object.values(library.dialLog).flat()
+  const bagHistory = journey.entries.filter(entry => entry.key !== key)
+  const allHistory = allEntries.filter(entry => entry.key !== key)
+  const responses = { grind: learnedResponse(bagHistory, allHistory, 'grind'), yield: learnedResponse(bagHistory, allHistory, 'yield') }
+  const sized = note ? sizeFromHistory(recommendNextShot(note, analysis, context), note.extraction, context, responses) : undefined
+  const advice = sized?.advice
   const action = adviceApplyAction(advice)
   const ratio = dose && yieldGrams ? yieldGrams / dose : undefined
   const earlier = journey.entries.filter(entry => entry.key !== key)
@@ -142,6 +150,15 @@ export function ShotDialInPanel({ points, shotKey, shotId, profileId, profileNam
   const onTargetPair = journey.status === 'dialedIn' && journey.entries.at(-1)?.key === key
   const pinned = beanId ? library.pinned[beanId] : undefined
   const pinnedThis = Boolean(pinned && stored && pinned.pinnedAt >= stored.at && pinned.grindSetting === stored.grindSetting && pinned.yield === stored.yield)
+  const grindNumber = grindSetting !== undefined && Number.isFinite(Number(grindSetting.replace(',', '.'))) && grindSetting.trim() !== '' ? Number(grindSetting.replace(',', '.')) : undefined
+  const changeGrind = (direction: 1 | -1) => {
+    const next = nextGrindSetting(grindSetting, direction, gear)
+    if (next === undefined) return
+    const text = String(next)
+    setGrindSetting(text); setApplyState('idle')
+    if (point) setTouched(true)
+    if (beanId && profileId) update(current => coffeeUpdates.rememberGrind(current, beanId, profileId, text))
+  }
   const choose = (next: TastePoint) => { setPoint(next); setTouched(true); setApplyState('idle') }
   const apply = async () => {
     if (!action || !onApply) return
@@ -171,6 +188,14 @@ export function ShotDialInPanel({ points, shotKey, shotId, profileId, profileNam
             <div>{recentBeans.map(candidate => <button key={candidate.id} type="button" className="dial-button" onClick={() => update(current => coffeeUpdates.loadBean(current, candidate.id))}>{candidate.name}</button>)}</div>
           </div>}
           <TasteSquare value={point} onChange={choose} path={earlier.map(entry => ({ extraction: entry.extraction, strength: entry.strength }))} measured={measured} targetStrength={targetFor(milk).strength} targetRadius={TASTE_ZONES.centre} />
+          <div className="dial-grind">
+            <span id="dial-grind-label">{t('insights.dialIn.grindUsed')}</span>
+            <div className="dial-stepper" role="group" aria-labelledby="dial-grind-label">
+              <button type="button" aria-label={t('insights.dialIn.grindFinerAria')} disabled={grindNumber === undefined} onClick={() => changeGrind(-1)}>−</button>
+              <output aria-live="polite">{grindSetting ?? '—'}</output>
+              <button type="button" aria-label={t('insights.dialIn.grindCoarserAria')} disabled={grindNumber === undefined} onClick={() => changeGrind(1)}>+</button>
+            </div>
+          </div>
           <div className="dial-sheet__controls">
             <Segmented<Finish> label={t('insights.taste.finish')} value={finish} onChange={value => { setFinish(value); setTouched(true); setApplyState('idle') }} options={[{ value: 'clean', label: t('insights.taste.clean') }, { value: 'drying', label: t('insights.taste.drying') }]} />
             <label className="dial-switch"><input type="checkbox" checked={milk} onChange={event => toggleMilk(event.target.checked)} /><span aria-hidden="true" /><b>{t('insights.taste.withMilk')}</b></label>
@@ -192,6 +217,7 @@ export function ShotDialInPanel({ points, shotKey, shotId, profileId, profileNam
               <span>{applyState === 'failed' ? t('insights.dialIn.apply.failed') : applySummary(action)}</span>
             </div>}
             <p className="dial-next__why">{t(`insights.dialIn.reason.${advice.reason}`, { ratio: advice.ratio === undefined ? '—' : t('insights.dialIn.ratioValue', { ratio: formatDecimal(advice.ratio, 1) }), rate: pace ? formatDecimal(pace.gramsPerSecond, 1) : '—', days: rest?.days ?? '—' })}</p>
+            {sized?.learned && <p className="dial-next__note">{t(sized.learned.lever === 'grind' ? (sized.learned.scope === 'bag' ? 'insights.dialIn.learned.grindBag' : 'insights.dialIn.learned.grindAll') : (sized.learned.scope === 'bag' ? 'insights.dialIn.learned.yieldBag' : 'insights.dialIn.learned.yieldAll'), { count: sized.learned.samples, effect: formatDecimal(Math.abs(sized.learned.slope) * (sized.learned.lever === 'grind' ? (gear.grindStepSize ?? 1) : 1), 2) })}</p>}
             {advice.confidence === 'tentative' && advice.primary.kind !== 'keep' && <p className="dial-next__note">{t('insights.dialIn.tentative')}</p>}
             {advice.milk && advice.primary.kind !== 'keep' && <p className="dial-next__note">{t('insights.dialIn.milkTarget')}</p>}
             {advice.secondary && <p className="dial-next__more"><span>{advice.primary.kind === 'puckPrep' ? t('insights.dialIn.thenAfterPrep') : t('insights.dialIn.then')}</span>{stepText(advice.secondary)}</p>}

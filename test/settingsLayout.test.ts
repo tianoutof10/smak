@@ -32,7 +32,7 @@ test('power controls remain present once, grouped in independent screen and slee
 test('reset action lives inside an explanatory card and still only stages local defaults', () => {
   const experience = screen.split('const experience =')[1].split('const onImport =')[0]
   assert.match(experience, /title=\{t\('settings\.experience\.reset\.title'\)\}[^]*?onClick=\{resetPreferences\}[^]*?<\/SettingsCard>/)
-  assert.match(screen, /const resetPreferences = \(\) => setPreferencePatch\(DEFAULT_OPENCOFFEESHOP_PREFERENCES\)/)
+  assert.match(screen, /const resetPreferences = \(\) => setPreferencePatch\(DEFAULT_SMAK_PREFERENCES\)/)
 })
 
 test('lists remove trailing separators, retaining the boundary when columns collapse', () => {

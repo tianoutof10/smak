@@ -27,9 +27,7 @@ import './styles/lightMode.css'
 import './styles/settingsLayout.css'
 import './features/machine/drinkUtilityCards.css'
 import './features/insights/insights.css'
-import './features/insights/shotComparisonLab.css'
 import './styles/homeAnimations.css'
-import './features/brew/brewSignature.css'
 import '@fontsource-variable/inter'
 import './styles/nordicAccents.css'
 import './styles/nordic.css'
@@ -93,7 +91,7 @@ export default function App() {
   const editImportedProfile = ({ profile, metadata }: ParsedProfileImport) => {
     const existingTitles = data.allProfiles.map((item) => item.category ? `${item.category} / ${item.name}` : item.name)
     const title = deduplicateImportedProfileTitle(profile, existingTitles)
-    setImportedProfileRecord({ profile: { ...profile, title }, metadata: { ...metadata, openCoffeeShopSource: 'imported' }, visibility: 'visible', isDefault: true })
+    setImportedProfileRecord({ profile: { ...profile, title }, metadata: { ...metadata, smakSource: 'imported' }, visibility: 'visible', isDefault: true })
     navigate('profile-builder')
   }
 
@@ -195,7 +193,7 @@ export default function App() {
   const builderRecord = editingRecord ?? importedProfileRecord
   const creatingProfile = page === 'profile-builder' && !profileId
   if (page === 'profile-builder' && (creatingProfile || builderRecord) && !data.liveBrew.visible) screen = <ProfileBuilderScreen key={editingRecord?.id ?? (importedProfileRecord ? 'imported-profile' : 'new-profile')} initialRecord={builderRecord} existingTitles={data.allProfiles.map((profile) => profile.category ? `${profile.category} / ${profile.name}` : profile.name)} knownCategories={data.allProfiles.map((profile) => profile.category).filter((category): category is string => Boolean(category))} knownVersions={data.allProfiles.map((profile) => profile.version).filter((version): version is string => Boolean(version))} onSave={data.saveProfileDraft} onSaved={(created) => { setImportedProfileRecord(undefined); navigate('profiles', created.id) }} onClose={() => { setImportedProfileRecord(undefined); navigate('profiles', profileId) }} />
-  else if (page === 'coffee' && !data.liveBrew.visible) screen = <CoffeeScreen key={new URLSearchParams(window.location.search).get('tab') ?? 'beans'} initialTab={(new URLSearchParams(window.location.search).get('tab') as CoffeeTab | null) ?? 'beans'} existingProfileTitles={data.allProfiles.map(profileTitle)} connected={data.connection === 'connected' || data.connection === 'fixture'} doseGrams={Number.isFinite(activeDose) && activeDose > 0 ? activeDose : undefined} targetYield={Number.isFinite(activeYield) && activeYield > 0 ? activeYield : undefined} activeChassis={activeChassis} onSetYield={setActiveYield} onAddPreset={addPreset} onApplyStartingRecipe={applyChassis} onClose={() => navigate('home')} />
+  else if (page === 'coffee' && !data.liveBrew.visible) screen = <CoffeeScreen key={new URLSearchParams(window.location.search).get('tab') ?? 'beans'} initialTab={(new URLSearchParams(window.location.search).get('tab') as CoffeeTab | null) ?? 'beans'} existingProfileTitles={data.allProfiles.map(profileTitle)} connected={data.connection === 'connected' || data.connection === 'fixture'} doseGrams={Number.isFinite(activeDose) && activeDose > 0 ? activeDose : undefined} targetYield={Number.isFinite(activeYield) && activeYield > 0 ? activeYield : undefined} onSetYield={setActiveYield} onAddPreset={addPreset} onApplyStartingRecipe={applyChassis} onClose={() => navigate('home')} />
   else if (page === 'settings' && !data.liveBrew.visible) screen = <SettingsScreen model={data.model} connection={data.connection} machineConnection={data.machineConnection} scale={data.scale} onClose={() => navigate('home')} />
   else if (page === 'profiles' && !data.liveBrew.visible) screen = <ProfilesPanel profiles={data.allProfiles} favoriteProfileSlots={data.favoriteProfileSlots} activeProfileId={data.model.activeProfileId} initialProfileId={profileId} onViewProfile={(id) => navigate('profiles', id)} editingEnabled profileEditMode={(selectedProfileId) => data.profileRecordForEditing(selectedProfileId)?.isDefault === false ? 'edit' : 'copy'} canDeleteProfile={data.profileCanBeDeleted} onDeleteProfile={async id => { await data.deleteSavedProfile(id); if (requestedProfileId() === id) { const url = new URL(window.location.href); url.searchParams.delete('profileId'); window.history.replaceState({ page: 'profiles' }, '', url); setPage(value => value + 1) } }} feedback={data.settingFeedback} onSelectProfile={async (selectedProfileId) => { const selected = await data.selectProfile(selectedProfileId); if (selected) navigate('home'); return selected }} onSetFavoriteSlot={data.setFavoriteProfileSlot} onRemoveFavorite={data.removeFavoriteProfile} onStartProfile={startProfileFromScratch} onImportProfile={editImportedProfile} onCheckVisualizer={checkVisualizerImport} onImportVisualizer={importFromVisualizer} onOpenSettings={() => navigate('settings')} onEditProfile={(selectedProfileId) => navigate('profile-builder', selectedProfileId)} onClose={() => navigate('home')} />
   else if ((page === 'insights' || page === 'previous-pull') && !data.liveBrew.visible && !data.sleepScreenActive) screen = <InsightsScreen data={insights} route={insightsRoute} navigate={navigateInsights} onClose={() => navigate('home')} />

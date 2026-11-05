@@ -1,11 +1,10 @@
+import './migrateLegacyStorage.ts'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.tsx'
-import { applyOpenCoffeeShopPreferences } from './features/settings/openCoffeeShopPreferences.ts'
-import { migrateLegacyBrowserData } from './compatibility/legacyDataMigration.ts'
+import { applySmakPreferences } from './features/settings/smakPreferences.ts'
 
-migrateLegacyBrowserData()
-applyOpenCoffeeShopPreferences()
+applySmakPreferences()
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

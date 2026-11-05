@@ -5,7 +5,7 @@ export const shellEn = {
   'shell.app.visualizerSignInRequired': 'Sign in to Visualizer in Decaid settings before importing a share code.',
   'shell.app.visualizerUnavailable': 'Visualizer import is not available in this Decaid setup.',
   'shell.app.visualizerImportFailed': 'Visualizer could not import that share code.',
-  'shell.app.visualizerImportMissing': 'The profile was imported, but Decaid did not return it to OpenCoffeeShop.',
+  'shell.app.visualizerImportMissing': 'The profile was imported, but Decaid did not return it to Smak.',
 
   // AppShell.tsx
   'shell.appShell.expandUtilityPanels': 'Expand utility panels',
@@ -140,7 +140,7 @@ export const shellEn = {
   'shell.updates.updateDecaid': 'Update Decaid',
   'shell.updates.viewDownload': 'View download',
   'shell.updates.installFailed': 'The update could not be started.',
-  'shell.updates.connectionLost': 'OpenCoffeeShop lost its connection to Decaid. Try again in a moment.',
+  'shell.updates.connectionLost': 'Smak lost its connection to Decaid. Try again in a moment.',
 
   // CleaningSequencePicker.tsx
   'shell.cleaning.title': 'Cleaning',

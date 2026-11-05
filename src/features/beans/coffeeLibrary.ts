@@ -80,8 +80,8 @@ export function normalizePinned(value: unknown): PinnedRecipe | undefined {
   const optional = { profileId: text(candidate.profileId), profileName: text(candidate.profileName), dose: finite(candidate.dose), yield: finite(candidate.yield), grindSetting: text(candidate.grindSetting, 20), temperatureC: finite(candidate.temperatureC), beanAgeDays: finite(candidate.beanAgeDays) }
   return { pinnedAt: text(candidate.pinnedAt) ?? new Date(0).toISOString(), ...Object.fromEntries(Object.entries(optional).filter(([, entry]) => entry !== undefined)) }
 }
-const keyFor = (source: string) => `opencoffeeshop-coffee-v1:${source}`
-const changeEvent = 'opencoffeeshop:coffee-changed'
+const keyFor = (source: string) => `smak-coffee-v1:${source}`
+const changeEvent = 'smak:coffee-changed'
 const memory = new Map<string, CoffeeLibrary>()
 
 const text = (value: unknown, max = 120) => typeof value === 'string' && value.trim() ? value.trim().slice(0, max) : undefined

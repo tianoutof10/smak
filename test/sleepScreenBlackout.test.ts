@@ -7,7 +7,7 @@ const policy = readFileSync(new URL('../src/features/settings/displayBrightnessP
 const styles = readFileSync(new URL('../src/styles/index.css', import.meta.url), 'utf8')
 
 test('the sleep screen arms the timed blackout only for a positive delay', () => {
-  assert.match(screen, /const delaySeconds = readOpenCoffeeShopPreferences\(\).screensaverScreenOffDelaySeconds/)
+  assert.match(screen, /const delaySeconds = readSmakPreferences\(\).screensaverScreenOffDelaySeconds/)
   assert.match(screen, /if \(delaySeconds > 0\)/)
   assert.match(screen, /displayBrightness\.deepen\(SCREEN_OFF_BRIGHTNESS\)\.catch\(\(\) => \{\}\)/)
 })

@@ -17,10 +17,9 @@ import { analyseShot } from '../../domain/shotAnalysis'
 import { shotPace } from '../../domain/shotPace'
 import { recordPace } from '../insights/paceHistory'
 import { activeBean, grindReferenceFor, useCoffeeLibrary } from '../beans/coffeeLibrary'
-import { daysOffRoast } from '../../domain/beans'
 import type { ApplyAction } from '../insights/dialIn'
 import { ShotDialInPanel } from '../insights/ShotDialInPanel'
-import { useOpenCoffeeShopPreferences, type LiveView } from '../settings/openCoffeeShopPreferences'
+import { useSmakPreferences, type LiveView } from '../settings/smakPreferences'
 import { CalmLiveView } from './CalmLiveView'
 
 interface LiveBrewingScreenProps {
@@ -59,7 +58,7 @@ export function LiveBrewingScreen({ model, liveBrew, stopPending, skipPending, a
   }), [liveBrew.points, liveBrew.profileSteps, liveBrew.active, liveBrew.stageEvidence, liveBrew.telemetryStartedAt, liveBrew.stopReason])
   const [dimmedSeries, setDimmedSeries] = useState<ChartSeries[]>([])
   const [stageSelection, setStageSelection] = useState<{ shotStartedAt: number | undefined; stage: BrewStageSelection } | null>(null)
-  const { preferences } = useOpenCoffeeShopPreferences()
+  const { preferences } = useSmakPreferences()
   const { library, source } = useCoffeeLibrary()
   // Per-shot view choice (swipe or button); the saved preference is only the starting view.
   const [viewOverride, setViewOverride] = useState<{ startedAt: number | undefined; view: LiveView } | null>(null)
@@ -114,7 +113,6 @@ export function LiveBrewingScreen({ model, liveBrew, stopPending, skipPending, a
   const profileDose = Number(profile?.dose)
   const profileTemperature = Number(profile?.temperature)
   const bean = activeBean(library)
-  const beanAge = daysOffRoast(bean)
   const grindSetting = grindReferenceFor(library, bean?.id, profile?.id, profile?.grindSetting)
   const lastPoint = liveBrew.points.at(-1)
   const soaking = liveBrew.active && isSoakStage(lastPoint) && (lastPoint?.pressure ?? 0) > 0.3
@@ -134,10 +132,7 @@ export function LiveBrewingScreen({ model, liveBrew, stopPending, skipPending, a
   return <main className="live-brew-screen" onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>
     {actionError && <div className="system-messages"><div className="system-message system-message--error" role="alert">{actionError}</div></div>}
     <header className="live-pull-header">
-      <div className="live-pull-header__identity">
-        <h1>{profileName}</h1>
-        {bean && <p className="live-pull-header__bean"><span>{bean.name}</span>{beanAge !== undefined && <small>{t('brew.liveScreen.calmDaysOffRoast', { days: beanAge })}</small>}</p>}
-      </div>
+      <h1>{profileName}</h1>
       <div className="live-pull-header__controls">
         <div className={`live-pull-header__metrics metric-scale--medium${isCleaning ? ' live-pull-header__metrics--single' : ' live-pull-header__metrics--live'}`} aria-live="polite">
           <div><span>{t('brew.liveScreen.timerLabel')}</span><strong>{timedLabel(liveBrew.elapsedMs)}</strong></div>

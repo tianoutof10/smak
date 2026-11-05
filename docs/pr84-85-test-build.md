@@ -16,7 +16,7 @@ Branch: `test/pr84-85-integration`.
 - Steam updates use metric IDs, never translated labels. Reservoir and scale model values remain canonical; only presentation is localized.
 - Keep current stop-confirmation, timeout, auto-tare and background-search safeguards. New stop messages and the animation setting are included in both catalogs.
 - Preserve older-WebView viewport fallbacks and static animation rendering. Phone settings controls hug content instead of inheriting desktop flex-basis as vertical space.
-- Normal skin ID and preference/history keys are unchanged. This is a replacement OpenCoffeeShop skin for testing, not a separate installation.
+- Normal skin ID and preference/history keys are unchanged. This is a replacement Bestpresso skin for testing, not a separate installation.
 
 ## Verification
 

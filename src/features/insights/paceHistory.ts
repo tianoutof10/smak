@@ -8,7 +8,7 @@ import { BASELINE } from '../../domain/shotPace.ts'
 interface PaceEntry { key: string; rate: number }
 type PaceStore = Record<string, PaceEntry[]>
 
-const keyFor = (source: string) => `opencoffeeshop-pace-v1:${source}`
+const keyFor = (source: string) => `smak-pace-v1:${source}`
 const memory = new Map<string, PaceStore>()
 
 function read(source: string): PaceStore {

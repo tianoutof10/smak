@@ -5,18 +5,18 @@ import { profileRecordsToDomain } from '../src/api/decaid/adapters.ts'
 import type { BrewProfile } from '../src/domain/brewing'
 const base = {temperature:'92',grindSetting:'—',dose:'18',targetYield:'36'}
 test('profile origins are explicit, with honest fallback for legacy records',()=>{
-  assert.equal(sourceForRecord({isDefault:true,metadata:{openCoffeeShopSource:'imported'}}),'Built-in')
-  assert.equal(sourceForRecord({isDefault:false,metadata:{openCoffeeShopSource:'imported'}}),'Imported')
-  assert.equal(sourceForRecord({isDefault:false,metadata:{openCoffeeShopSource:'created'}}),'Created')
+  assert.equal(sourceForRecord({isDefault:true,metadata:{smakSource:'imported'}}),'Built-in')
+  assert.equal(sourceForRecord({isDefault:false,metadata:{smakSource:'imported'}}),'Imported')
+  assert.equal(sourceForRecord({isDefault:false,metadata:{smakSource:'created'}}),'Created')
   assert.equal(sourceForRecord({isDefault:false}),'Saved')
   assert.equal(sourceForRecord({}),'Saved')
 })
 test('save provenance preserves existing metadata and dates; copies are newly created',()=>{
-  const metadata={description:'notes',openCoffeeShopSource:'imported',openCoffeeShopCreatedAt:'2026-01-01'}
+  const metadata={description:'notes',smakSource:'imported',smakCreatedAt:'2026-01-01'}
   assert.deepEqual(librarySaveMetadata({description:'updated'},{metadata},true,'2026-09-14'),{...metadata,description:'updated'})
-  assert.equal(librarySaveMetadata(metadata,undefined,false,'2026-09-14').openCoffeeShopSource,'imported')
-  assert.equal(librarySaveMetadata(null,{metadata},false,'2026-09-14').openCoffeeShopSource,'created')
-  assert.equal(librarySaveMetadata(null,undefined,false,'2026-09-14').openCoffeeShopCreatedAt,'2026-09-14')
+  assert.equal(librarySaveMetadata(metadata,undefined,false,'2026-09-14').smakSource,'imported')
+  assert.equal(librarySaveMetadata(null,{metadata},false,'2026-09-14').smakSource,'created')
+  assert.equal(librarySaveMetadata(null,undefined,false,'2026-09-14').smakCreatedAt,'2026-09-14')
 })
 test('library filters, search, deterministic sort and unknown-date fallback',()=>{
   const profiles:BrewProfile[]=[
@@ -41,7 +41,7 @@ test('library groups preloaded, imported, and created or saved profiles without 
   assert.equal(profileLibrarySource(profile),'My profiles')
 })
 test('real records retain actual graphs, metadata and missing targets',()=>{
-  const profiles=profileRecordsToDomain([{id:'real',isDefault:false,metadata:{openCoffeeShopSource:'imported',openCoffeeShopCreatedAt:'2026-09-14'},profile:{title:'Test',author:'Me',steps:[{name:'Brew',pump:'pressure',pressure:7,seconds:20,temperature:94}]}}],{},[])
+  const profiles=profileRecordsToDomain([{id:'real',isDefault:false,metadata:{smakSource:'imported',smakCreatedAt:'2026-09-14'},profile:{title:'Test',author:'Me',steps:[{name:'Brew',pump:'pressure',pressure:7,seconds:20,temperature:94}]}}],{},[])
   assert.equal(profiles[0].source,'Imported')
   assert.equal(profiles[0].author,'Me')
   assert.equal(profiles[0].targetYield,'—')

@@ -1,4 +1,4 @@
-# OpenCoffeeShop v0.1.30 — Understand each stage
+# Bestpresso v0.1.30 — Understand each stage
 
 - See why a stage moved on in live brew and shot history: time, pressure, flow, yield, volume, or manual advance.
 - Compact condition labels sit beneath each stage title, with advance and stop icons. Active stages show a green indicator and timer.
@@ -8,7 +8,7 @@
 
 Recorded stage-matched events take priority where available. Other explanations are inferred from the saved recipe and telemetry, rather than reported directly by the machine. Older or incomplete records may show “Unknown.” Brewing behavior and profile execution are unchanged.
 
-Install `opencoffeeshop-v0.1.30.zip` in Decaid.
+Install `bestpresso-v0.1.30.zip` in Decaid.
 
 ## Patch 002 — Profile loading and tablet compatibility
 
@@ -20,7 +20,7 @@ Install `opencoffeeshop-v0.1.30.zip` in Decaid.
 
 This patch addresses confirmed compatibility and profile-handling bugs. The separate intermittent issue requiring an app/machine restart remains under investigation.
 
-Install `opencoffeeshop-v0.1.30-patch002.zip` in Decaid.
+Install `bestpresso-v0.1.30-patch002.zip` in Decaid.
 
 ## Patch 003 — Lighter animations and tablet reliability
 
@@ -31,7 +31,7 @@ Install `opencoffeeshop-v0.1.30-patch002.zip` in Decaid.
 - Automatic tare is limited to shot preparation, avoiding a mid-shot tare when reconnecting.
 - Stop confirmation now requires fresh machine feedback. Unconfirmed stops remain clearly indicated and can be retried.
 
-Install `opencoffeeshop-v0.1.30-patch003.zip` in Decaid.
+Install `bestpresso-v0.1.30-patch003.zip` in Decaid.
 
 ## Patch 004 — A lighter home screen
 
@@ -42,4 +42,4 @@ Install `opencoffeeshop-v0.1.30-patch003.zip` in Decaid.
 
 Thanks to Tobias Gregorius for the carousel optimization and scale-display optimization proposal in PR85.
 
-Install `opencoffeeshop-v0.1.30-patch004.zip` in Decaid.
+Install `bestpresso-v0.1.30-patch004.zip` in Decaid.

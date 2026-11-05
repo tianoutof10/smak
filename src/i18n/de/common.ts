@@ -47,6 +47,6 @@ export const commonDe = {
   'common.utility.scale': 'Waage',
   'common.utility.tank': 'Wassertank',
   'common.language.label': 'Sprache',
-  'common.language.hint': 'Nur OpenCoffeeShop; Decaid und Profilnamen bleiben unverändert',
+  'common.language.hint': 'Nur Smak; Decaid und Profilnamen bleiben unverändert',
   'common.language.auto': 'Wie Gerät ({language})',
 } satisfies Translation<typeof commonEn>

@@ -4,7 +4,7 @@ import { formatDecimal, t } from '../../i18n/index.ts'
 import type { LiveShotPoint } from '../../domain/brewing'
 import type { ShotFinding } from '../../domain/shotAnalysis'
 import { formatTemperatureValue, temperatureUnitLabel } from '../../domain/temperature'
-import { useOpenCoffeeShopPreferences } from '../settings/openCoffeeShopPreferences'
+import { useSmakPreferences } from '../settings/smakPreferences'
 import { ChartLegend } from './ChartLegend'
 import { ChartStageMarkers } from './ChartStageMarkers'
 import type { ChartStageMarker } from './ChartStageMarkers'
@@ -143,7 +143,7 @@ const useAnimatedChartFocus = (target: ChartFocusTransform) => {
 }
 
 export function LiveShotChart({ points, elapsedMs, startMs = 0, fitDuration = false, contextPoints, showWeight = true, legendFilterEnabled = false, dimmedSeries = [], onToggleSeries, findings = [] }: LiveShotChartProps) {
-  const { preferences } = useOpenCoffeeShopPreferences()
+  const { preferences } = useSmakPreferences()
   const gradientId = useId().replaceAll(':', '')
   const svgRef = useRef<SVGSVGElement>(null)
   const inspectionGesture = useRef<{ pointerId: number; startX: number; startY: number; timer: number; active: boolean } | null>(null)
